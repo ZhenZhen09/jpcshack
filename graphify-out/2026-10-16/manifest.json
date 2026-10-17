@@ -1,0 +1,152 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1792157692.0059252,
+    "ast_hash": "d0e875e2800fd65a46494f14154bd7ec",
+    "semantic_hash": "d0e875e2800fd65a46494f14154bd7ec"
+  },
+  "prompt_me_maybe/public/app.js": {
+    "mtime": 1792123402.8153532,
+    "ast_hash": "31fa8ea7938c6bb02d0a51073d7a001c",
+    "semantic_hash": "31fa8ea7938c6bb02d0a51073d7a001c"
+  },
+  "prompt_me_maybe/server.py": {
+    "mtime": 1792121758.6037173,
+    "ast_hash": "61b4fa1ee25c7c07fe7181b3582de1ea",
+    "semantic_hash": "61b4fa1ee25c7c07fe7181b3582de1ea"
+  },
+  "prompt_me_maybe/tests/test_server.py": {
+    "mtime": 1792121852.8707988,
+    "ast_hash": "8135edd8bea4c3a173d1663d61bed4de",
+    "semantic_hash": "8135edd8bea4c3a173d1663d61bed4de"
+  },
+  "AI-1/app.py": {
+    "mtime": 1792159652.9331634,
+    "ast_hash": "4b34377d8a774cf332a9248406fcccd6",
+    "semantic_hash": ""
+  },
+  "AI-1/vercel.json": {
+    "mtime": 1792158685.7884958,
+    "ast_hash": "c7226dd02babde9bd86e90ad22ced368",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ponytail/SKILL.md": {
+    "mtime": 1792048557.9879723,
+    "ast_hash": "34babf47e80487c8826b505a59233830",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/SKILL.md": {
+    "mtime": 1792157691.995547,
+    "ast_hash": "addc33b2f59fe59c9213f773287d1987",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/add-watch.md": {
+    "mtime": 1783743788.6907427,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/exports.md": {
+    "mtime": 1783743788.6927507,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1783743788.694954,
+    "ast_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1783743788.6965008,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/hooks.md": {
+    "mtime": 1783743788.699963,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/query.md": {
+    "mtime": 1783743788.7005832,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/transcribe.md": {
+    "mtime": 1783743788.7023525,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/update.md": {
+    "mtime": 1783743788.7025497,
+    "ast_hash": "c698309979460d0f02ba616417844399",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1792157691.9988294,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "AI-1/requirements.txt": {
+    "mtime": 1792158684.5598428,
+    "ast_hash": "ea97fd4c7a42a8072a5438934e623ae8",
+    "semantic_hash": ""
+  },
+  "AI-1/templates/index.html": {
+    "mtime": 1792158685.4756906,
+    "ast_hash": "b8b2bfb058fd147c81a9298d68d3918e",
+    "semantic_hash": ""
+  },
+  "Prompt-Me-Maybe-Playbook.txt": {
+    "mtime": 1792052002.1118095,
+    "ast_hash": "9136b07ba48ff6e39f0761a39a672b94",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-15-prompt-me-maybe.md": {
+    "mtime": 1792053962.5698166,
+    "ast_hash": "6d33de7d993f8486cce387d29ae3086e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-deepfake-helpdesk-adversarial-audio.md": {
+    "mtime": 1792155439.9182203,
+    "ast_hash": "a0fb2983178e54e20e031247fbf7a1b0",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-prompt-me-maybe-token-audit.md": {
+    "mtime": 1792116135.5129306,
+    "ast_hash": "0623f76e91e415687c91d9e28f43ceb4",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-prompt-me-maybe-windows-ubuntu.md": {
+    "mtime": 1792113246.3865187,
+    "ast_hash": "bdc1ab95dff780c3befacf8102d6951c",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-15-prompt-me-maybe-design.md": {
+    "mtime": 1792053734.1092353,
+    "ast_hash": "1a7fb9436ee2e89b25863fa75fe18b02",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-16-deepfake-helpdesk-adversarial-audio-design.md": {
+    "mtime": 1792155305.8160765,
+    "ast_hash": "b6acc6e2537e997b3ac306a599b562fd",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-16-prompt-me-maybe-token-audit-design.md": {
+    "mtime": 1792115868.1748724,
+    "ast_hash": "6b6ab0f28cfe7ad68fd62d8594a09bd7",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/README.md": {
+    "mtime": 1792121852.4328287,
+    "ast_hash": "421026e8d463bc6e6c7a4ab96031c5ce",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/public/index.html": {
+    "mtime": 1792121814.9628928,
+    "ast_hash": "5f541c4ae0de1659582a40b57eb99061",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/public/favicon.svg": {
+    "mtime": 1792120214.7679129,
+    "ast_hash": "d678a3ea8bf6bc66d461f2f1de0a58ea",
+    "semantic_hash": ""
+  }
+}

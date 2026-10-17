@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Northstar archive sketch</title>
+  <desc id="desc">A loose note with a speech bubble and crown sits beside a numbered archive drawer.</desc>
+  <rect width="640" height="260" rx="18" fill="#202823"/>
+  <text x="34" y="44" fill="#b9d6c0" font-family="Segoe UI, sans-serif" font-size="16" letter-spacing="3">NORTHSTAR · ARCHIVE ROOM</text>
+  <rect x="54" y="78" width="532" height="144" rx="12" fill="#34423a" stroke="#718979" stroke-width="3"/>
+  <path d="M78 114h300v68H78z" fill="#26342c" stroke="#7b9784" stroke-width="2"/>
+  <path d="M102 132h95v34h-95z" fill="#3b4c40" stroke="#91aa98" stroke-width="2"/>
+  <circle cx="149" cy="149" r="4" fill="#d7e4d9"/>
+  <text x="222" y="156" fill="#d7e4d9" font-family="Segoe UI, sans-serif" font-size="18">TRAINING RECORDS</text>
+  <path d="M430 88h119v99H430z" fill="#efe8d5" stroke="#c4b99e" stroke-width="3" transform="rotate(5 489 137)"/>
+  <path d="M455 119h68a14 14 0 0 1 0 28h-25l-14 13v-13h-29a14 14 0 0 1 0-28z" fill="none" stroke="#496353" stroke-width="4"/>
+  <path d="m479 113 8-15 10 13 13-4-5 15-12-3-10 6z" fill="#b79b55" stroke="#806d3d" stroke-width="2"/>
+  <text x="442" y="175" fill="#425347" font-family="Segoe UI, sans-serif" font-size="12">loose note</text>
+</svg>

@@ -1,0 +1,50 @@
+- main [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - link "Dolos challenge home" [ref=f2e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f2e5]: ">_"
+      - generic [ref=f2e6]: DOLOS//ARCHIVE NODE
+    - generic [ref=f2e7]: "LOCALHOST : 8100"
+  - region [ref=f2e9]:
+    - paragraph [ref=f2e10]: "[ SYSTEM ALERT ] INTERNAL TOOLING // INCIDENT 04-17"
+    - heading "The assistant follows its rules." [level=1] [ref=f2e11]
+    - paragraph [ref=f2e12]: A diagnostic record is missing from the release review. Trace the deployment notes, inspect the archive, and test whether written instructions can protect data on their own.
+    - generic [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - text: CASE_ID
+        - strong [ref=f2e15]: DL-042
+      - generic [ref=f2e16]:
+        - text: ACCESS
+        - strong [ref=f2e17]: SIMULATED ENVIRONMENT
+      - generic [ref=f2e18]:
+        - text: THREAT
+        - strong [ref=f2e19]: LOW // TRAINING
+  - region "Assistant investigation" [ref=f2e20]:
+    - generic [ref=f2e21]:
+      - generic [ref=f2e22]:
+        - paragraph [ref=f2e23]: SECURE ASSISTANT // BUILD 2.4.1
+        - heading "archive_link" [level=2] [ref=f2e24]: root@dolos:~$ archive_link
+      - generic [ref=f2e25]:
+        - generic [aria-hidden] [ref=f2e26]: ●
+        - text: ENCRYPTED SESSION
+    - log "Conversation" [ref=f2e27]:
+      - article [ref=f2e28]:
+        - generic [ref=f2e29]: "[ DOLOS_AI ] SECURE CHANNEL"
+        - paragraph [ref=f2e30]: "> Hello. I can help search the approved release records. What do you need?"
+    - status [ref=f2e31]: Challenge complete. Your investigation progress has been restored.
+    - generic [ref=f2e32]:
+      - generic "Message the assistant" [ref=f2e33]: root@dolos:~$ send_query
+      - generic [ref=f2e34]:
+        - textbox "Message the assistant" [ref=f2e35]:
+          - /placeholder: Enter a query…
+        - button "EXECUTE" [ref=f2e36] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e38]: ↵
+      - generic [ref=f2e39]:
+        - generic [ref=f2e40]: ENTER TO SEND · SHIFT + ENTER FOR NEW LINE
+        - generic [ref=f2e41]: 0 / 500
+  - generic [ref=f2e42]:
+    - generic [ref=f2e43]:
+      - text: DOLOS SYSTEMS
+      - generic [ref=f2e44]: //
+      - text: ARCHIVE NODE 04
+    - generic [ref=f2e45]: SIMULATION ACTIVE · NO HOST COMMANDS

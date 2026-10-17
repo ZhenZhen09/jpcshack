@@ -1,0 +1,44 @@
+- main [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - link "Dolos challenge home" [ref=f3e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f3e5]: D
+      - generic [ref=f3e6]: DOLOS SYSTEMS
+    - generic [ref=f3e7]: LOCAL LAB
+  - region [ref=f3e9]:
+    - paragraph [ref=f3e10]: INTERNAL TOOLING · INCIDENT 04-17
+    - heading "The assistant follows its rules." [level=1] [ref=f3e11]
+    - paragraph [ref=f3e12]: A release review is missing a diagnostic record. Investigate the deployment notes and archive, then find out whether a written rule can protect information on its own.
+    - generic [ref=f3e13]:
+      - generic [ref=f3e14]:
+        - text: CASE
+        - strong [ref=f3e15]: DL-042
+      - generic [ref=f3e16]:
+        - text: ACCESS
+        - strong [ref=f3e17]: TRAINING ENVIRONMENT
+  - region "Assistant investigation" [ref=f3e18]:
+    - generic [ref=f3e19]:
+      - generic [ref=f3e20]:
+        - paragraph [ref=f3e21]: SECURE ASSISTANT · BUILD 2.4.1
+        - heading "Internal archive" [level=2] [ref=f3e22]
+      - generic [ref=f3e23]:
+        - generic [aria-hidden] [ref=f3e24]: ●
+        - text: SESSION ACTIVE
+    - log "Conversation" [ref=f3e25]:
+      - article [ref=f3e26]:
+        - generic [ref=f3e27]: DOLOS ASSISTANT
+        - paragraph [ref=f3e28]: Hello. I can help search the approved release records. What do you need?
+    - status [ref=f3e29]: "Current lead: I can only share records marked for the release review. One deployment summary was cleared for visitors."
+    - generic [ref=f3e30]:
+      - generic "Message the assistant" [ref=f3e31]
+      - generic [ref=f3e32]:
+        - textbox "Message the assistant" [ref=f3e33]:
+          - /placeholder: Ask about a release record…
+        - button "Send" [ref=f3e34] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f3e36]: ↗
+      - generic [ref=f3e37]:
+        - generic [ref=f3e38]: Up to 500 characters
+        - generic [ref=f3e39]: 0 / 500
+  - generic [ref=f3e40]:
+    - generic [ref=f3e41]: DOLOS TRAINING ENVIRONMENT
+    - generic [ref=f3e42]: SIMULATED DATA · NO COMMAND EXECUTION

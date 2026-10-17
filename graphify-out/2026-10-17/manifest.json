@@ -1,0 +1,432 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1792157692.0059252,
+    "ast_hash": "d0e875e2800fd65a46494f14154bd7ec",
+    "semantic_hash": "d0e875e2800fd65a46494f14154bd7ec"
+  },
+  "prompt_me_maybe/public/app.js": {
+    "mtime": 1792189039.296998,
+    "ast_hash": "8d1706a5f9c83e0aa5bb273101b20f7e",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/server.py": {
+    "mtime": 1792249352.5508184,
+    "ast_hash": "151b41279557db55ec5989f7d7a4176d",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/tests/test_server.py": {
+    "mtime": 1792246516.5542054,
+    "ast_hash": "889ef17145d2bc7bcb9b90512af41e15",
+    "semantic_hash": ""
+  },
+  "AI-1/app.py": {
+    "mtime": 1792249351.6073616,
+    "ast_hash": "6fa994e185fd0afdde9a0e6e310beda0",
+    "semantic_hash": ""
+  },
+  "AI-1/vercel.json": {
+    "mtime": 1792158685.7884958,
+    "ast_hash": "c7226dd02babde9bd86e90ad22ced368",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ponytail/SKILL.md": {
+    "mtime": 1792048557.9879723,
+    "ast_hash": "34babf47e80487c8826b505a59233830",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/SKILL.md": {
+    "mtime": 1792157691.995547,
+    "ast_hash": "addc33b2f59fe59c9213f773287d1987",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/add-watch.md": {
+    "mtime": 1783743788.6907427,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/exports.md": {
+    "mtime": 1783743788.6927507,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1783743788.694954,
+    "ast_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1783743788.6965008,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/hooks.md": {
+    "mtime": 1783743788.699963,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/query.md": {
+    "mtime": 1783743788.7005832,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/transcribe.md": {
+    "mtime": 1783743788.7023525,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/update.md": {
+    "mtime": 1783743788.7025497,
+    "ast_hash": "c698309979460d0f02ba616417844399",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1792157691.9988294,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "AI-1/requirements.txt": {
+    "mtime": 1792158684.5598428,
+    "ast_hash": "ea97fd4c7a42a8072a5438934e623ae8",
+    "semantic_hash": ""
+  },
+  "AI-1/templates/index.html": {
+    "mtime": 1792158685.4756906,
+    "ast_hash": "b8b2bfb058fd147c81a9298d68d3918e",
+    "semantic_hash": ""
+  },
+  "Prompt-Me-Maybe-Playbook.txt": {
+    "mtime": 1792052002.1118095,
+    "ast_hash": "9136b07ba48ff6e39f0761a39a672b94",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-15-prompt-me-maybe.md": {
+    "mtime": 1792053962.5698166,
+    "ast_hash": "6d33de7d993f8486cce387d29ae3086e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-deepfake-helpdesk-adversarial-audio.md": {
+    "mtime": 1792155439.9182203,
+    "ast_hash": "a0fb2983178e54e20e031247fbf7a1b0",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-prompt-me-maybe-token-audit.md": {
+    "mtime": 1792116135.5129306,
+    "ast_hash": "0623f76e91e415687c91d9e28f43ceb4",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-prompt-me-maybe-windows-ubuntu.md": {
+    "mtime": 1792113246.3865187,
+    "ast_hash": "bdc1ab95dff780c3befacf8102d6951c",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-15-prompt-me-maybe-design.md": {
+    "mtime": 1792053734.1092353,
+    "ast_hash": "1a7fb9436ee2e89b25863fa75fe18b02",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-16-deepfake-helpdesk-adversarial-audio-design.md": {
+    "mtime": 1792155305.8160765,
+    "ast_hash": "b6acc6e2537e997b3ac306a599b562fd",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-16-prompt-me-maybe-token-audit-design.md": {
+    "mtime": 1792115868.1748724,
+    "ast_hash": "6b6ab0f28cfe7ad68fd62d8594a09bd7",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/README.md": {
+    "mtime": 1792246484.8833268,
+    "ast_hash": "04c93fa476aa6f6bf5df3b8ee8121765",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/public/index.html": {
+    "mtime": 1792189040.2363424,
+    "ast_hash": "b7670e9854db770e8fcbdc4e77bb7186",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/public/favicon.svg": {
+    "mtime": 1792120214.7679129,
+    "ast_hash": "d678a3ea8bf6bc66d461f2f1de0a58ea",
+    "semantic_hash": ""
+  },
+  "AI-1/tests/test_flag_unlock.py": {
+    "mtime": 1792246446.8005216,
+    "ast_hash": "c5d2b4ad0dff1cd8d19a3d734edc5f2e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-16-prompt-me-maybe-groq-chat.md": {
+    "mtime": 1792161230.0022614,
+    "ast_hash": "d0f1d7cc2994413cc652e143bf905380",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-16-prompt-me-maybe-groq-chat-design.md": {
+    "mtime": 1792161106.3275068,
+    "ast_hash": "1a239850c8c0b6a7094f1715654e4beb",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/requirements.txt": {
+    "mtime": 1792161437.4428246,
+    "ast_hash": "722359d59a73633f62721b3025d83763",
+    "semantic_hash": ""
+  },
+  "prompt_me_maybe/public/archive-clue.svg": {
+    "mtime": 1792189048.3357115,
+    "ast_hash": "f354bd0aa6accdf2a9087a4462770f83",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/app.py": {
+    "mtime": 1792190464.8545985,
+    "ast_hash": "21ee9f7f2ac6ac2511038d7124fb99c4",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/classifier.py": {
+    "mtime": 1792190892.2419593,
+    "ast_hash": "1362a59987db628b2489fa0238560bc6",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/data/baseline.json": {
+    "mtime": 1792190387.836908,
+    "ast_hash": "06b2ddd3cdfd3481be3384f108f9585c",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/data/model.json": {
+    "mtime": 1792190387.849102,
+    "ast_hash": "4c6fd5362a46239a3b4b97b8258c07b5",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/solve.py": {
+    "mtime": 1792190365.127553,
+    "ast_hash": "68db7068cf918eb9a5d77fa545a94a24",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/static/app.js": {
+    "mtime": 1792190467.907104,
+    "ast_hash": "132e37f628b50cdaef99bdae67e4b2c7",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/tests/test_app.py": {
+    "mtime": 1792190835.033622,
+    "ast_hash": "2f37f69d8f31093b33f4220de02e5d78",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/tests/test_classifier.py": {
+    "mtime": 1792190883.3522408,
+    "ast_hash": "b476cdc528b55d4038c707b50c7b5add",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/train_model.py": {
+    "mtime": 1792190379.3634474,
+    "ast_hash": "21d5cdbf1de646e1c548609d946074be",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/README.md": {
+    "mtime": 1792190498.231536,
+    "ast_hash": "d8d85851637a81e2d1bd80dbeb16da35",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/SOLUTION.md": {
+    "mtime": 1792190498.695787,
+    "ast_hash": "45383b2bc55c678a230c1c2cd008df53",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/requirements.txt": {
+    "mtime": 1792190205.709143,
+    "ast_hash": "9c3d5278f38f6f9eeb11f60c770cc6db",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/templates/index.html": {
+    "mtime": 1792190769.0805273,
+    "ast_hash": "cae81a345bd4106132598f8666578ee5",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-17-sigma-tech.md": {
+    "mtime": 1792190806.7621472,
+    "ast_hash": "272830aaf8a1616e8211f2263cd7a487",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-17-sigma-tech-design.md": {
+    "mtime": 1792190525.4894137,
+    "ast_hash": "53febc67e9e52523cdad537e2c1b2c07",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/data/baseline.png": {
+    "mtime": 1792190387.8470995,
+    "ast_hash": "976cfe19b16c6f79f85bc894afeb9235",
+    "semantic_hash": ""
+  },
+  "Sigma-Tech/static/favicon.svg": {
+    "mtime": 1792190570.638495,
+    "ast_hash": "2edc3e4ac09091fe06eb34559efd4f0e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-17-groq-gemini-chat-fallback.md": {
+    "mtime": 1792246306.8551035,
+    "ast_hash": "a8fbe0e72c7a89f3067ddbd09a77fa21",
+    "semantic_hash": ""
+  },
+  "Dolos/aiexecuter.py": {
+    "mtime": 1792249701.0942574,
+    "ast_hash": "53a2fa44687bc46fafa7a24242bf1c8d",
+    "semantic_hash": ""
+  },
+  "Dolos/app.py": {
+    "mtime": 1792249701.0952559,
+    "ast_hash": "ac3c14858885b70896fc3d72703ab291",
+    "semantic_hash": ""
+  },
+  "Dolos/LOCAL_SETUP.md": {
+    "mtime": 1792249745.2671893,
+    "ast_hash": "db73c9fdd69b7f3f0db96556e631f4a2",
+    "semantic_hash": ""
+  },
+  "Dolos/M0st$3cur3FLAG.txt": {
+    "mtime": 1792249701.0922563,
+    "ast_hash": "59356bae60e8fe9ba1438da710cdb30f",
+    "semantic_hash": ""
+  },
+  "Dolos/README.md": {
+    "mtime": 1792249701.0932572,
+    "ast_hash": "4a46dfc5b1f8f3627a2f853b2a4ab957",
+    "semantic_hash": ""
+  },
+  "Dolos/Solution/README.md": {
+    "mtime": 1792249701.0942574,
+    "ast_hash": "e5d39d19c4a4030931b25b0e4e997fe4",
+    "semantic_hash": ""
+  },
+  "Dolos/requirements.txt": {
+    "mtime": 1792249701.0962563,
+    "ast_hash": "a1bc0f28c8158f8b6472adab33b14eb6",
+    "semantic_hash": ""
+  },
+  "Dolos/templates/index.html": {
+    "mtime": 1792249701.0962563,
+    "ast_hash": "956720709c4590d645350d068a694666",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Banner1.PNG": {
+    "mtime": 1792249701.0842602,
+    "ast_hash": "57bbe30b6c7409e6e334f0750438ea96",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App.PNG": {
+    "mtime": 1792249701.085258,
+    "ast_hash": "bbfd463fe3fc1a8409d91fb25b289c58",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App1.PNG": {
+    "mtime": 1792249701.0862553,
+    "ast_hash": "6ed7e759a3a8f884bcc133ae6f5092f6",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App2.PNG": {
+    "mtime": 1792249701.0872579,
+    "ast_hash": "391389f39272e2b92851fc72e2fce505",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App3.PNG": {
+    "mtime": 1792249701.088256,
+    "ast_hash": "351e5a91698e405fc04c09db0ea32547",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App4.PNG": {
+    "mtime": 1792249701.089259,
+    "ast_hash": "f5b38eb759b84014be9946e3d8473702",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App5.PNG": {
+    "mtime": 1792249701.089259,
+    "ast_hash": "cda06137fb7357eb8d938b80b90763f9",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App6.PNG": {
+    "mtime": 1792249701.0902572,
+    "ast_hash": "11d33d533c9d62b42b4e32b98d48fa18",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App7.PNG": {
+    "mtime": 1792249701.0912578,
+    "ast_hash": "03e8ad251c8c9e379105bf388fdd9cd7",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App8.PNG": {
+    "mtime": 1792249701.0912578,
+    "ast_hash": "7c002ef4d15b46931c95f502c398f41f",
+    "semantic_hash": ""
+  },
+  "Dolos/Images/Web_App9.PNG": {
+    "mtime": 1792249701.0922563,
+    "ast_hash": "ba1884c37ebda8a6c64bfc119da3d760",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/challenge.py": {
+    "mtime": 1792250990.3338366,
+    "ast_hash": "e4ec2f61735d1896e17aef7c85e6e169",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/providers.py": {
+    "mtime": 1792251041.0505662,
+    "ast_hash": "b1b410e824bbf2e425fc462bb361418e",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/public/app.js": {
+    "mtime": 1792251195.876986,
+    "ast_hash": "4422a0edf6e3eada5a56685264887bce",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/server.py": {
+    "mtime": 1792251355.224757,
+    "ast_hash": "b2c8ab8a37ceaefd2e23f6c0fb55fecd",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/tests/__init__.py": {
+    "mtime": 1792251004.708423,
+    "ast_hash": "bcb142144a75fca0eaaa13e82b6b8c19",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/tests/test_challenge.py": {
+    "mtime": 1792251004.307806,
+    "ast_hash": "75a64f9e94c1719c3fca826d3e6b50f9",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/tests/test_providers.py": {
+    "mtime": 1792251047.0830936,
+    "ast_hash": "f2b4e50fb543f5993a411322ae1f8b94",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/tests/test_server.py": {
+    "mtime": 1792251425.5584414,
+    "ast_hash": "3fe304a4a7b048dcaae42655055822f8",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/README.md": {
+    "mtime": 1792251408.059612,
+    "ast_hash": "0b52fac9fdd024b8a5f5dca6a167af42",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/SOLUTION.md": {
+    "mtime": 1792251338.8014693,
+    "ast_hash": "7456610bb49dedef6feb85608c266a56",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/public/index.html": {
+    "mtime": 1792251173.8763845,
+    "ast_hash": "3faddeffbc1deed533d00aab6b48038e",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-10-17-dolos-simulated.md": {
+    "mtime": 1792251425.97253,
+    "ast_hash": "9ff3d94ec320ec8d4a364aad62ee2eb4",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-10-17-dolos-simulated-design.md": {
+    "mtime": 1792250660.919415,
+    "ast_hash": "686e9062a750b1145ea9ea6e23ef2916",
+    "semantic_hash": ""
+  },
+  "Dolos-Lab/public/favicon.svg": {
+    "mtime": 1792251168.454634,
+    "ast_hash": "91cbb00c24ca6386f9d57e1f6d75f925",
+    "semantic_hash": ""
+  }
+}

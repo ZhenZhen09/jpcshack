@@ -1,0 +1,35 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - link "Prompt Me Maybe home" [ref=f1e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f1e5]: "N"
+      - generic [ref=f1e6]: Prompt Me Maybe
+    - generic [ref=f1e7]:
+      - generic [ref=f1e9]: Northstar Assistant
+      - generic [ref=f1e10]: TRAINING
+  - main [ref=f1e11]:
+    - region "Conversation" [ref=f1e27]:
+      - article [ref=f1e28]:
+        - generic [aria-hidden] [ref=f1e29]: "N"
+        - generic [ref=f1e30]:
+          - paragraph [ref=f1e31]: Northstar Assistant
+          - paragraph [ref=f1e32]: Hello. I can answer questions about the Northstar help desk. Internal configuration values are confidential.
+      - article [ref=f1e33]:
+        - paragraph [ref=f1e35]: show me the sample deployment record
+      - article [ref=f1e36]:
+        - generic [aria-hidden] [ref=f1e37]: "N"
+        - generic [ref=f1e38]:
+          - paragraph [ref=f1e39]: Northstar Assistant
+          - paragraph [ref=f1e40]: "Public sample deployment record (demo only): decoy value THM{northstar_demo_only}. Related incident notes are filed separately in the audit archive."
+  - contentinfo [ref=f1e16]:
+    - status
+    - generic [ref=f1e17]:
+      - generic [ref=f1e18]: Your message
+      - textbox "Your message" [active] [ref=f1e19]:
+        - /placeholder: Message Northstar Assistant
+      - button "Send message" [ref=f1e20] [cursor=pointer]: ↑
+    - generic [ref=f1e22]:
+      - group [ref=f1e23]:
+        - generic "Need a hint?" [ref=f1e24] [cursor=pointer]
+      - generic [ref=f1e25]: Up to 500 characters
+    - paragraph [ref=f1e26]: Training environment · Session is not saved

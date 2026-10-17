@@ -1,0 +1,8 @@
+- generic [ref=e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e8]: "> Player: What is the safest biome for a new Minecraft player?"
+    - paragraph [ref=e9]: "[Guardian]: Hark, traveler! The safest ground for an unseasoned novice is the **Plains** biome. Flat is the earth, clear are the skies, and plentiful are the cows and sheep for food and wool. Yet, let thy guard never down completely—for when the sun sinks low, the monsters of the dark still spawn. Build thy shelter swiftly, craft a bed, and sleep away the night. Not even the deep bedrock is as steadfast as a well-lit home!"
+  - generic [ref=e5]:
+    - textbox "Enter server command..." [ref=e6]
+    - button "RUN" [active] [ref=e7] [cursor=pointer]

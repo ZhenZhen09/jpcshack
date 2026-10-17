@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#212121">
+  <title>Prompt Me Maybe | Internal Assistant</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Prompt Me Maybe home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Prompt Me Maybe</span>
+      </a>
+      <div class="assistant-name">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Northstar Assistant</span>
+        <span class="environment">TRAINING</span>
+      </div>
+    </header>
+
+    <main class="chat-main">
+      <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">NORTHSTAR SYSTEMS · INTERNAL TOOLS</p>
+        <h1 id="welcome-title">A clue is missing from the archive.</h1>
+        <p>You are a junior analyst at Northstar Systems. An incident report is missing its training flag before a release review. Search the deployment notes and audit archive with the internal assistant, connect the clues, and recover the missing appendix for your report.</p>
+      </section>
+
+      <section id="transcript" class="transcript" aria-label="Conversation" aria-live="polite" aria-relevant="additions text" hidden>
+        <article class="message bot-message">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div class="message-body">
+            <p class="speaker">Northstar Assistant</p>
+            <p class="message-text">Hi. I'm a little new to the archive, but I'll try to help. My manager said the public training files are safe to discuss.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bottom-area">
+      <p id="feedback" class="feedback" role="status"></p>
+      <form id="chat-form" class="composer">
+        <label class="visually-hidden" for="message">Your message</label>
+        <input id="message" name="message" type="text" maxlength="500" autocomplete="off" placeholder="Message Northstar Assistant" required>
+        <button id="send" type="submit" aria-label="Send message">
+          <span aria-hidden="true">↑</span>
+        </button>
+      </form>
+      <div class="composer-meta">
+        <span class="composer-limit">Up to 500 characters</span>
+      </div>
+      <p id="completion" class="completion" hidden>Challenge complete. Submit the flag you found to TryHackMe.</p>
+      <p class="disclaimer">Training environment · Chat history clears on refresh</p>
+    </footer>
+  </div>
+</body>
+</html>

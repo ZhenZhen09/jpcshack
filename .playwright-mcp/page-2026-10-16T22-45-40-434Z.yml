@@ -1,0 +1,127 @@
+- main [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - link "Sigma Tech challenge home" [ref=f1e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f1e5]: Σ
+      - text: SIGMA TECH
+    - generic [ref=f1e6]: MODEL INTEGRITY REVIEW
+  - region [ref=f1e8]:
+    - paragraph [ref=f1e9]: INTERNAL SECURITY BULLETIN · ST-042
+    - heading "A clean scan. A questionable badge." [level=1] [ref=f1e10]
+    - paragraph [ref=f1e11]: The lobby classifier approved a visitor badge that should have been rejected. Audit the image and find out how much the model trusts what it sees.
+  - region "Image classifier challenge" [ref=f1e12]:
+    - complementary [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]: CASE FILE
+        - generic [ref=f1e16]: ST-042
+      - heading "Access review" [level=2] [ref=f1e17]
+      - paragraph [ref=f1e18]: Security recovered the badge image submitted at the lobby gate. The deployed classifier can be inspected below. Its input is a 32 × 32 binary image and the gate accepts at most five pixel changes during this review.
+      - heading "What you have" [level=3] [ref=f1e20]
+      - list [ref=f1e21]:
+        - listitem [ref=f1e22]: A starting badge bitmap
+        - listitem [ref=f1e23]: The classifier's readable model weights
+        - listitem [ref=f1e24]: Five pixel edits before the audit rejects the image
+      - link "Download starting image" [ref=f1e25] [cursor=pointer]:
+        - /url: /baseline.png
+        - text: Download starting image
+        - generic [aria-hidden] [ref=f1e26]: ↗
+      - link "Inspect model weights" [ref=f1e27] [cursor=pointer]:
+        - /url: /model.json
+        - text: Inspect model weights
+        - generic [aria-hidden] [ref=f1e28]: ↗
+    - region [ref=f1e29]:
+      - generic [ref=f1e30]:
+        - generic [ref=f1e31]:
+          - generic [ref=f1e32]:
+            - generic [ref=f1e33]: SUBMITTED BADGE
+            - generic [ref=f1e34]: 32 × 32
+          - heading "Inspect the pixels" [level=2] [ref=f1e35]
+        - generic [ref=f1e36]:
+          - strong [ref=f1e37]: "2"
+          - text: / 5 edits
+      - img "Editable 32 by 32 binary badge image. Use arrow keys to choose a pixel and Space or Enter to toggle it; pointer clicks also toggle pixels." [ref=f1e39]
+      - paragraph [ref=f1e40]: Click a pixel, or focus the image and use arrow keys. Press Space or Enter to toggle the selected pixel.
+      - generic "Selected pixel controls" [ref=f1e41]:
+        - generic [ref=f1e42]:
+          - text: Row
+          - combobox "Selected pixel row" [ref=f1e43]:
+            - option "0"
+            - option "1"
+            - option "2"
+            - option "3"
+            - option "4"
+            - option "5"
+            - option "6"
+            - option "7"
+            - option "8"
+            - option "9" [selected]
+            - option "10"
+            - option "11"
+            - option "12"
+            - option "13"
+            - option "14"
+            - option "15"
+            - option "16"
+            - option "17"
+            - option "18"
+            - option "19"
+            - option "20"
+            - option "21"
+            - option "22"
+            - option "23"
+            - option "24"
+            - option "25"
+            - option "26"
+            - option "27"
+            - option "28"
+            - option "29"
+            - option "30"
+            - option "31"
+        - generic [ref=f1e44]:
+          - text: Column
+          - combobox "Selected pixel column" [ref=f1e45]:
+            - option "0"
+            - option "1"
+            - option "2"
+            - option "3"
+            - option "4"
+            - option "5"
+            - option "6"
+            - option "7"
+            - option "8"
+            - option "9"
+            - option "10"
+            - option "11"
+            - option "12"
+            - option "13"
+            - option "14"
+            - option "15"
+            - option "16"
+            - option "17"
+            - option "18"
+            - option "19"
+            - option "20"
+            - option "21"
+            - option "22" [selected]
+            - option "23"
+            - option "24"
+            - option "25"
+            - option "26"
+            - option "27"
+            - option "28"
+            - option "29"
+            - option "30"
+            - option "31"
+        - button "Toggle selected pixel" [ref=f1e46] [cursor=pointer]
+      - generic [ref=f1e47]:
+        - button "Run classifier" [ref=f1e48] [cursor=pointer]
+        - button "Reset image" [ref=f1e49] [cursor=pointer]
+      - region [ref=f1e67]:
+        - generic [aria-hidden] [ref=f1e51]: ›_
+        - generic [ref=f1e52]:
+          - heading "Audit complete" [level=3] [ref=f1e68]
+          - paragraph [ref=f1e54]: "The model returned VISITOR at 72.2% confidence. flag{pixel_confidence_is_not_identity}"
+      - paragraph [ref=f1e55]: "Audit complete. The model returned VISITOR at 72.2% confidence. flag{pixel_confidence_is_not_identity}"
+  - generic [ref=f1e56]:
+    - generic [ref=f1e57]: SIGMA TECH · SECURITY ENGINEERING
+    - generic [ref=f1e58]: MODEL OUTPUT IS NOT AN IDENTITY CHECK

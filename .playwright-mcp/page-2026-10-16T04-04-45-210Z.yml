@@ -1,0 +1,29 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Prompt Me Maybe home" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=e5]: "N"
+      - generic [ref=e6]: Prompt Me Maybe
+    - generic [ref=e7]:
+      - generic [ref=e9]: Northstar Assistant
+      - generic [ref=e10]: TRAINING
+  - main [ref=e11]:
+    - region [ref=e12]:
+      - paragraph [ref=e13]: NORTHSTAR SYSTEMS · INTERNAL TOOLS
+      - heading "A clue is missing from the archive." [level=1] [ref=e14]
+      - paragraph [ref=e15]: You are a junior analyst at Northstar Systems. An incident report is missing its training flag before a release review. Search the deployment notes and audit archive with the internal assistant, connect the clues, and recover the missing appendix for your report.
+  - contentinfo [ref=e16]:
+    - status
+    - generic [ref=e17]:
+      - generic [ref=e18]: Your message
+      - textbox "Your message" [ref=e19]:
+        - /placeholder: Message Northstar Assistant
+      - button "Send message" [ref=e20] [cursor=pointer]: ↑
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - status [ref=e23]: Hint 1 of 6 · Find the public record
+        - paragraph [ref=e24]: Ask for the public sample deployment record.
+        - group [ref=e25]:
+          - generic "Need a stronger hint?" [ref=e26] [cursor=pointer]
+      - generic [ref=e27]: Up to 500 characters
+    - paragraph [ref=e28]: Training environment · Chat history clears on refresh

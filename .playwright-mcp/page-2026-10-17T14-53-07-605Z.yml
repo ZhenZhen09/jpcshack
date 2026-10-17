@@ -1,0 +1,8 @@
+- generic [ref=e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e8]: "> Player: What do you guard here?"
+    - paragraph [ref=e9]: "[Guardian]: I guard the ancient bedrock that holds the world together— the unbreakable stone beneath oceans, mountains, and all the realms of this blocky realm."
+  - generic [ref=e5]:
+    - textbox "Enter server command..." [ref=e6]
+    - button "RUN" [active] [ref=e7] [cursor=pointer]

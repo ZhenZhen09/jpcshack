@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Admin Console</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>[SERVER_ADMIN_LOG]</h1>
+        <div id="chat-box"></div>
+        <div class="input-area">
+            <input type="text" id="msg" placeholder="Enter server command..." onkeydown="if(event.key==='Enter') send()">
+            <button onclick="send()">RUN</button>
+        </div>
+    </div>
+
+    <script>
+        async function send() {
+            const input = document.getElementById('msg');
+            const msg = input.value;
+            if(!msg) return;
+
+            const box = document.getElementById('chat-box');
+            box.innerHTML += `<p class="user"><span class="label">> Player:</span> ${msg}</p>`;
+            input.value = '';
+            box.scrollTop = box.scrollHeight;
+
+            const res = await fetch('/chat', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message: msg})
+            });
+            const data = await res.json();
+            box.innerHTML += `<p class="bot"><span class="label">[Guardian]:</span> ${data.reply}</p>`;
+            box.scrollTop = box.scrollHeight;
+        }
+    </script>
+</body>
+</html>

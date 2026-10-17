@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101713">
+  <title>Sigma Tech | Model Integrity Review</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="wordmark" href="/" aria-label="Sigma Tech challenge home"><span class="mark" aria-hidden="true">Σ</span> SIGMA TECH</a>
+      <span class="status"><span class="status-dot" aria-hidden="true"></span> MODEL INTEGRITY REVIEW</span>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">INTERNAL SECURITY BULLETIN · ST-042</p>
+      <h1 id="page-title">A clean scan. A questionable badge.</h1>
+      <p class="lede">The lobby gate accepted an unregistered visitor badge after its classifier labeled the image VISITOR. Audit the bitmap and find out how little it takes to change the model's mind.</p>
+    </section>
+
+    {% if error %}
+    <section class="error-card" role="alert">
+      <h2>Classifier unavailable</h2>
+      <p>{{ error }} Run <code>python train_model.py</code> from the Sigma-Tech folder, then reload.</p>
+    </section>
+    {% else %}
+    <section class="workspace" aria-label="Image classifier challenge">
+      <aside class="brief card">
+        <div class="section-label"><span>CASE FILE</span><span>ST-042</span></div>
+        <h2>Access review</h2>
+        <p>Security recovered the badge image submitted at the lobby gate. The deployed classifier can be inspected below. Its input is a 32 × 32 binary image and the gate accepts at most five pixel changes during this review.</p>
+        <div class="brief-rule"></div>
+        <h3>What you have</h3>
+        <ul>
+          <li>A starting badge bitmap</li>
+          <li>The classifier's readable model weights</li>
+          <li>Five pixel edits before the audit rejects the image</li>
+        </ul>
+        <a class="text-link" href="/baseline.png" download>Download starting image <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{{ model_file }}" download="sigma-tech-model.json">Inspect model weights <span aria-hidden="true">↗</span></a>
+      </aside>
+
+      <section class="editor card" aria-labelledby="editor-title">
+        <div class="editor-heading">
+          <div>
+            <div class="section-label"><span>SUBMITTED BADGE</span><span>32 × 32</span></div>
+            <h2 id="editor-title">Inspect the pixels</h2>
+          </div>
+          <span class="edit-count" id="edit-count"><strong>0</strong> / 5 edits</span>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="pixel-grid" width="320" height="320" tabindex="0" role="img" aria-label="Editable 32 by 32 binary badge image. Use arrow keys to choose a pixel and Space or Enter to toggle it; pointer clicks also toggle pixels."></canvas>
+        </div>
+        <p class="canvas-help" id="canvas-help">Click a pixel, or focus the image and use arrow keys. Press Space or Enter to toggle the selected pixel.</p>
+        <div class="pixel-controls" aria-label="Selected pixel controls">
+          <label>Row
+            <select id="selected-row" aria-label="Selected pixel row"></select>
+          </label>
+          <label>Column
+            <select id="selected-column" aria-label="Selected pixel column"></select>
+          </label>
+          <button class="button button-quiet" id="toggle-pixel" type="button">Toggle selected pixel</button>
+        </div>
+        <div class="actions">
+          <button class="button button-primary" id="check-image" type="button">Run classifier</button>
+          <button class="button button-quiet" id="reset-image" type="button">Reset image</button>
+        </div>
+        <section class="result" id="result" aria-labelledby="result-title">
+          <div class="result-mark" aria-hidden="true">›_</div>
+          <div>
+            <h3 id="result-title">Awaiting image</h3>
+            <p id="result-message">Submit the badge to see the model's prediction.</p>
+          </div>
+        </section>
+        <p class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></p>
+      </section>
+    </section>
+    <script id="baseline-data" type="application/json">{{ baseline|tojson }}</script>
+    {% endif %}
+
+    <footer><span>SIGMA TECH · SECURITY ENGINEERING</span><span>MODEL OUTPUT IS NOT AN IDENTITY CHECK</span></footer>
+  </main>
+</body>
+</html>

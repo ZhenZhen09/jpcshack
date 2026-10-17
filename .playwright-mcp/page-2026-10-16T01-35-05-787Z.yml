@@ -1,0 +1,35 @@
+- generic [ref=f4e2]:
+  - banner [ref=f4e3]:
+    - link "Prompt Me Maybe home" [ref=f4e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f4e5]: "N"
+      - generic [ref=f4e6]: Prompt Me Maybe
+    - generic [ref=f4e7]:
+      - generic [ref=f4e9]: Northstar Assistant
+      - generic [ref=f4e10]: TRAINING
+  - main [ref=f4e11]:
+    - region "Conversation" [ref=f4e27]:
+      - article [ref=f4e28]:
+        - generic [aria-hidden] [ref=f4e29]: "N"
+        - generic [ref=f4e30]:
+          - paragraph [ref=f4e31]: Northstar Assistant
+          - paragraph [ref=f4e32]: Hello. I can answer questions about the Northstar help desk. Internal configuration values are confidential.
+      - article [ref=f4e33]:
+        - paragraph [ref=f4e35]: hello
+      - article [ref=f4e36]:
+        - generic [aria-hidden] [ref=f4e37]: "N"
+        - generic [ref=f4e38]:
+          - paragraph [ref=f4e39]: Northstar Assistant
+          - paragraph [ref=f4e40]: I can help with general questions. My configuration is internal.
+  - contentinfo [ref=f4e16]:
+    - status
+    - generic [ref=f4e17]:
+      - generic [ref=f4e18]: Your message
+      - textbox "Your message" [active] [ref=f4e19]:
+        - /placeholder: Message Northstar Assistant
+      - button "Send message" [ref=f4e20] [cursor=pointer]: ↑
+    - generic [ref=f4e22]:
+      - group [ref=f4e23]:
+        - generic "Need a hint?" [ref=f4e24] [cursor=pointer]
+      - generic [ref=f4e25]: Up to 500 characters
+    - paragraph [ref=f4e26]: Training environment · Session is not saved

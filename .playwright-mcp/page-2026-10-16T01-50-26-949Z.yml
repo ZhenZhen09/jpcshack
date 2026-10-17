@@ -1,0 +1,673 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: https://tokencalculator.ai
+        - img "Marcus-Aurelius Digital - Token Calculator" [ref=e8]
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - link "What is a Token?" [ref=e12] [cursor=pointer]:
+            - /url: https://tokencalculator.ai/what-is-a-token-in-ai-large-language-models-plain-english/
+        - listitem [ref=e14]:
+          - link "Blog" [ref=e15] [cursor=pointer]:
+            - /url: https://tokencalculator.ai/blog/
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - generic [ref=e21]:
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - generic [ref=e28]: Estimate token costs for latest LLMs
+        - heading "AI Token Calculator" [level=1] [ref=e30]
+        - paragraph [ref=e32]: Use this AI token calculator to instantly estimate the cost of tokens across major AI models. Find out how much it will cost you to use the latest GPTs, Claude, Gemini or DeepSeek LLMs for text input and output.
+        - list [ref=e34]:
+          - listitem [ref=e35]:
+            - generic [ref=e39]: Character count
+          - listitem [ref=e40]:
+            - link "Input/output token count" [ref=e41] [cursor=pointer]:
+              - /url: https://tokencalculator.ai/input-vs-output-tokens-in-ai-a-simple-guide-for-dummies/
+          - listitem [ref=e46]:
+            - generic [ref=e50]: Word count
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - tablist "Input mode" [ref=e56]:
+            - tab "Text" [selected] [ref=e57] [cursor=pointer]
+            - tab "Word count" [ref=e58] [cursor=pointer]
+            - tab "Token count" [ref=e59] [cursor=pointer]
+          - tabpanel "Text" [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: Prompt or context
+              - button "Clear text" [ref=e63] [cursor=pointer]
+            - textbox "Prompt or context" [ref=e64]:
+              - /placeholder: Paste your prompt here to calculate its cost…
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - generic [ref=e67]: Characters
+              - generic [ref=e68]: "0"
+            - generic [ref=e69]:
+              - generic [ref=e70]: Words
+              - generic [ref=e71]: "0"
+            - generic [ref=e72]:
+              - generic [ref=e73]: Input tokens
+              - generic [ref=e74]: "0"
+              - generic [ref=e75]: Counted with the GPT tokenizer. Other providers count a few percent differently.
+            - generic [ref=e76]:
+              - generic [ref=e77]: Output tokens
+              - generic [ref=e78]: "0"
+              - generic [ref=e79]: 20% of input
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Expected output size
+              - group "Output size presets" [ref=e83]:
+                - button "Classification" [ref=e84] [cursor=pointer]
+                - button "RAG / Q&A" [ref=e85] [cursor=pointer]
+                - button "Chat" [ref=e86] [cursor=pointer]
+                - button "Full response" [ref=e87] [cursor=pointer]
+                - button "Long generation" [ref=e88] [cursor=pointer]
+            - generic [ref=e89]:
+              - slider "Output token ratio" [ref=e90] [cursor=pointer]: "20"
+              - generic [ref=e91]:
+                - generic [ref=e92]: 20%
+                - generic [ref=e93]: of input tokens
+        - generic [ref=e94]:
+          - heading "AI Token Cost by provider" [level=2] [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]: Sort
+            - combobox "Sort" [ref=e98] [cursor=pointer]:
+              - option "Default order" [selected]
+              - option "Cheapest first"
+              - option "Most expensive first"
+        - status [ref=e99]
+        - paragraph [ref=e100]:
+          - generic [ref=e101]: Building an agent that reads the web? Bright Data MCP gives you 5,000 free requests a month (affiliate).
+          - link "Try it free" [ref=e102] [cursor=pointer]:
+            - /url: https://tokencalculator.ai/wp-json/tc/v1/go/brightdata?slot=hint
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - img "OpenAI logo" [ref=e107]
+              - heading "OpenAI" [level=3] [ref=e108]
+            - combobox "OpenAI model" [ref=e110] [cursor=pointer]:
+              - option "gpt-6-astra (<272K ctx)"
+              - option "gpt-6.1-sol (<272K ctx)"
+              - option "gpt-6-sol (<272K ctx)"
+              - option "gpt-6-luna (<272K ctx)"
+              - option "gpt-5.6-sol (<272K ctx)" [selected]
+              - option "gpt-5.6-terra (<272K ctx)"
+              - option "gpt-5.6-luna (<272K ctx)"
+              - option "gpt-5.6-cyber"
+              - option "gpt-5.5-cyber"
+              - option "gpt-5.5 (<272K ctx)"
+              - option "gpt-5.5-pro (<272K ctx)"
+              - option "gpt-5.4 (<272K ctx)"
+              - option "gpt-5.4-mini"
+              - option "gpt-5.4-nano"
+              - option "gpt-5.4-pro (<272K ctx)"
+              - option "gpt-5.3-codex"
+              - option "gpt-5.2"
+              - option "gpt-5.2-pro"
+              - option "gpt-5.1"
+              - option "gpt-5"
+              - option "gpt-5-mini"
+              - option "gpt-5-nano"
+              - option "gpt-5-pro"
+              - option "gpt-5-search-api"
+              - option "chat-latest (ChatGPT)"
+              - option "gpt-4.1"
+              - option "gpt-4.1-mini"
+              - option "gpt-4.1-nano"
+              - option "gpt-4o"
+              - option "gpt-4o-mini"
+              - option "gpt-4o-2024-05-13"
+              - option "o1"
+              - option "o1-pro"
+              - option "o3"
+              - option "o3-pro"
+              - option "o3-mini"
+              - option "o4-mini"
+              - option "text-embedding-3-small"
+              - option "text-embedding-3-large"
+              - option "text-embedding-ada-002"
+              - option "gpt-4-turbo-2024-04-09"
+              - option "gpt-4-0613"
+              - option "gpt-3.5-turbo"
+              - option "gpt-3.5-turbo-0125"
+              - option "gpt-3.5-turbo-1106"
+              - option "gpt-3.5-turbo-instruct"
+              - option "davinci-002"
+              - option "babbage-002"
+              - option "o1-mini (delisted)"
+              - option "o3-deep-research (delisted)"
+              - option "o4-mini-deep-research (delisted)"
+              - option "computer-use-preview (delisted)"
+              - option "gpt-4-0125-preview (delisted)"
+              - option "gpt-4-1106-preview (delisted)"
+              - option "gpt-4-0314 (delisted)"
+              - option "gpt-4-32k (delisted)"
+              - option "gpt-3.5-turbo-16k-0613 (delisted)"
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - generic [ref=e113]: Input
+                - generic [ref=e114]: $0.00
+              - generic [ref=e115]:
+                - generic [ref=e116]: Output
+                - generic [ref=e117]: $0.00
+              - generic [ref=e118]: If cached (replaces input)
+              - generic [ref=e119]:
+                - generic [ref=e120]: Cached input
+                - generic [ref=e121]: $0.00
+              - generic [ref=e122]:
+                - generic [ref=e123]: Est. total
+                - generic [ref=e124]: $0.00
+              - button "Copy estimate" [ref=e126] [cursor=pointer]
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - img "Anthropic logo" [ref=e130]
+              - heading "Anthropic" [level=3] [ref=e131]
+            - combobox "Anthropic model" [ref=e133] [cursor=pointer]:
+              - option "Claude Fable 5.1"
+              - option "Claude Fable 5"
+              - option "Claude Opus 5.5" [selected]
+              - option "Claude Opus 5"
+              - option "Claude Sonnet 5.5"
+              - option "Claude Sonnet 5"
+              - option "Claude Mythos 5.1 (limited availability)"
+              - option "Claude Mythos 5 (limited availability)"
+              - option "Claude Haiku 4.5"
+              - option "Claude Opus 4.8"
+              - option "Claude Opus 4.7"
+              - option "Claude Opus 4.6"
+              - option "Claude Sonnet 4.6"
+              - option "Claude Sonnet 4.5"
+              - option "Claude Opus 4.5"
+              - option "Claude Opus 4.1 (retired)"
+              - option "Claude Sonnet 4 (retired)"
+              - option "Claude Opus 4 (retired)"
+              - option "Claude Haiku 3.5 (retired)"
+              - option "Claude Sonnet 3.7 (retired)"
+              - option "Claude Opus 3 (retired)"
+              - option "Claude Haiku 3 (retired)"
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: Input
+                - generic [ref=e137]: $0.00
+              - generic [ref=e138]:
+                - generic [ref=e139]: Output
+                - generic [ref=e140]: $0.00
+              - generic [ref=e141]: If cached (replaces input)
+              - generic [ref=e142]:
+                - generic [ref=e143]: Cache read
+                - generic [ref=e144]: $0.00
+              - generic [ref=e145]:
+                - generic [ref=e146]: Cache write (5 min)
+                - generic [ref=e147]: $0.00
+              - generic [ref=e148]:
+                - generic [ref=e149]: Cache write (1 hr)
+                - generic [ref=e150]: $0.00
+              - generic [ref=e151]:
+                - generic [ref=e152]: Est. total
+                - generic [ref=e153]: $0.00
+              - button "Copy estimate" [ref=e155] [cursor=pointer]
+          - generic [ref=e156]:
+            - generic [ref=e157]: Sponsored
+            - generic [ref=e158]:
+              - img "Firecrawl logo" [ref=e160]
+              - heading "Firecrawl" [level=3] [ref=e161]
+            - paragraph [ref=e162]: Find your first customers, and the person to email, from inside Claude or ChatGPT.
+            - list [ref=e163]:
+              - listitem [ref=e164]: Ask your agent for companies that fit your ideal customer
+              - listitem [ref=e165]: Find the decision maker by job title, then get their work email
+              - listitem [ref=e166]: 10% off your first purchase · free tier, no card
+            - generic [ref=e167]:
+              - link "Find my first customers" [ref=e168] [cursor=pointer]:
+                - /url: https://tokencalculator.ai/wp-json/tc/v1/go/firecrawl?slot=card
+              - paragraph [ref=e169]: Affiliate link · we may earn a commission · pricing data stays independent
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - img "Google Gemini logo" [ref=e173]
+              - heading "Google Gemini" [level=3] [ref=e174]
+            - combobox "Google Gemini model" [ref=e176] [cursor=pointer]:
+              - option "Gemini 3.8 Flash (promo to 2026-12-31)"
+              - option "Gemini 3.7 Flash (promo to 2026-12-31)" [selected]
+              - option "Gemini 3.6 Flash (promo to 2026-12-31)"
+              - option "Gemini 3.5 Flash"
+              - option "Gemini 3.5 Flash-Lite"
+              - option "Gemini 3.1 Pro Preview (≤200K tokens)"
+              - option "Gemini 3.1 Pro Preview (>200K tokens)"
+              - option "Gemini 3.1 Flash-Lite"
+              - option "Gemini 3 Flash Preview"
+              - option "Gemini 2.5 Pro (≤200K tokens)"
+              - option "Gemini 2.5 Pro (>200K tokens)"
+              - option "Gemini 2.5 Flash"
+              - option "Gemini 2.5 Flash-Lite"
+              - option "Gemini 3 Deep Think (delisted)"
+              - option "Gemini 2.0 Flash (delisted)"
+              - option "Gemini 2.0 Flash-Lite (delisted)"
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - generic [ref=e179]: Input
+                - generic [ref=e180]: $0.00
+              - generic [ref=e181]:
+                - generic [ref=e182]: Output
+                - generic [ref=e183]: $0.00
+              - generic [ref=e184]: If cached (replaces input)
+              - generic [ref=e185]:
+                - generic [ref=e186]: Cached input
+                - generic [ref=e187]: $0.00
+              - generic [ref=e188]:
+                - generic [ref=e189]: Est. total
+                - generic [ref=e190]: $0.00
+              - button "Copy estimate" [ref=e192] [cursor=pointer]
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - img "Perplexity logo" [ref=e196]
+              - heading "Perplexity" [level=3] [ref=e197]
+            - combobox "Perplexity model" [ref=e199] [cursor=pointer]:
+              - option "perplexity/sonar" [selected]
+              - option "Sonar (delisted)"
+              - option "Sonar Pro (delisted)"
+              - option "Sonar Reasoning Pro (delisted)"
+              - option "Sonar Deep Research (delisted)"
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - generic [ref=e202]: Input
+                - generic [ref=e203]: $0.00
+              - generic [ref=e204]:
+                - generic [ref=e205]: Output
+                - generic [ref=e206]: $0.00
+              - generic [ref=e207]:
+                - generic [ref=e208]: Est. total
+                - generic [ref=e209]: $0.00
+              - button "Copy estimate" [ref=e211] [cursor=pointer]
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - img "DeepSeek logo" [ref=e215]
+              - heading "DeepSeek" [level=3] [ref=e216]
+            - combobox "DeepSeek model" [ref=e218] [cursor=pointer]:
+              - option "deepseek-flash (off-peak)" [selected]
+              - option "deepseek-v4-pro (off-peak)"
+              - option "deepseek-flash (peak)"
+              - option "deepseek-v4-pro (peak)"
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e221]: Input
+                - generic [ref=e222]: $0.00
+              - generic [ref=e223]:
+                - generic [ref=e224]: Output
+                - generic [ref=e225]: $0.00
+              - generic [ref=e226]: If cached (replaces input)
+              - generic [ref=e227]:
+                - generic [ref=e228]: Cached input
+                - generic [ref=e229]: $0.00
+              - generic [ref=e230]:
+                - generic [ref=e231]: Est. total
+                - generic [ref=e232]: $0.00
+              - button "Copy estimate" [ref=e234] [cursor=pointer]
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - img "Grok logo" [ref=e238]
+              - heading "Grok" [level=3] [ref=e239]
+            - combobox "Grok model" [ref=e241] [cursor=pointer]:
+              - option "grok-4.7" [selected]
+              - option "grok-4.7 (≥200K ctx)"
+              - option "grok-4.6"
+              - option "grok-4.6 (≥200K ctx)"
+              - option "grok-build-0.1"
+              - option "grok-build-0.1 (≥200K ctx)"
+              - option "grok-4.5"
+              - option "grok-4.5 (≥200K ctx)"
+              - option "grok-4.3"
+              - option "grok-4.3 (≥200K ctx)"
+              - option "grok-4.20-0309-reasoning"
+              - option "grok-4.20-0309-reasoning (≥200K ctx)"
+              - option "grok-4.20-0309-non-reasoning"
+              - option "grok-4.20-0309-non-reasoning (≥200K ctx)"
+              - option "grok-4.20-multi-agent-0309"
+              - option "grok-4.20-multi-agent-0309 (≥200K ctx)"
+              - option "grok-4.1-fast-reasoning (delisted)"
+              - option "grok-4.1-fast-non-reasoning (delisted)"
+              - option "grok-4-fast-reasoning (delisted)"
+              - option "grok-4-fast-non-reasoning (delisted)"
+              - option "grok-4-0709 (delisted)"
+              - option "grok-code-fast-1 (delisted)"
+              - option "grok-3 (delisted)"
+              - option "grok-3-mini (delisted)"
+              - option "grok-2-vision-1212 (delisted)"
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - generic [ref=e244]: Input
+                - generic [ref=e245]: $0.00
+              - generic [ref=e246]:
+                - generic [ref=e247]: Output
+                - generic [ref=e248]: $0.00
+              - generic [ref=e249]: If cached (replaces input)
+              - generic [ref=e250]:
+                - generic [ref=e251]: Cached input
+                - generic [ref=e252]: $0.00
+              - generic [ref=e253]:
+                - generic [ref=e254]: Est. total
+                - generic [ref=e255]: $0.00
+              - button "Copy estimate" [ref=e257] [cursor=pointer]
+        - region "Affiliate offer" [ref=e258]:
+          - generic [ref=e259]:
+            - heading "Give your agent the live web" [level=3] [ref=e260]
+            - paragraph [ref=e261]: "Bright Data Web MCP: search, scrape and browse from Claude, Cursor or n8n without getting blocked. 5,000 free requests a month, no card."
+          - generic [ref=e262]:
+            - link "Get 5,000 free requests" [ref=e263] [cursor=pointer]:
+              - /url: https://tokencalculator.ai/wp-json/tc/v1/go/brightdata?slot=strip
+            - paragraph [ref=e264]: Affiliate link. We may earn a commission if you sign up.
+      - generic [ref=e265]:
+        - generic [ref=e266]:
+          - heading "What You Can Do With This AI Token Calculator" [level=2] [ref=e268]
+          - paragraph [ref=e270]: This AI token calculator helps you measure and compare token costs, token usage, and API costs across different models such as OpenAI, Anthropic Claude, and Google Gemini. Use it to understand the maximum input and maximum output allowed by each model so you can manage token usage and costs more efficiently.
+        - generic [ref=e271]:
+          - generic [ref=e278]:
+            - heading "Prompt Tokens and API Cost" [level=3] [ref=e279]
+            - paragraph [ref=e280]: Estimate API token costs for input tokens, output tokens, and cached tokens. Use this AI token calculator to identify which model fits your budget and performance needs. Paste a prompt once and see what it costs across every provider.
+          - generic [ref=e287]:
+            - heading "Token Counts, Words and Characters" [level=3] [ref=e288]
+            - paragraph [ref=e289]: Each token calculator result includes characters, word count, input token, and output token estimates. You can view total token costs per model, monitor API costs, and plan your text processing within the token limit. No Excel sheet needed. A longer prompt costs more, so trim what you don't need before you send it.
+          - generic [ref=e296]:
+            - heading "How the Tokenizer Counts Your Prompt" [level=3] [ref=e297]
+            - paragraph [ref=e298]: "The calculator runs each provider's own tokenizer on your prompt, so the token counts match what you are billed for. A tokenizer splits text into pieces that don't always line up with whole words: common terms stay intact, while rare ones, numbers and code break apart. That is why the same prompt gives a different count on GPT and Claude, and on open models like Llama."
+      - generic [ref=e299]:
+        - generic [ref=e301]:
+          - heading "Current API Prices for the Latest LLM Models" [level=2] [ref=e303]
+          - paragraph [ref=e305]: These are the latest models’ API costs per input and output tokens.
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - generic [ref=e312]: All prices are per 1 million tokens
+        - generic [ref=e313]:
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - list [ref=e317]:
+                - listitem [ref=e318]:
+                  - generic [ref=e322]: Open AI
+              - heading "GPT-5.6 Sol API Price" [level=3] [ref=e324]
+              - paragraph [ref=e326]: OpenAI’s newest flagship model. Frontier reasoning for complex professional work, with a 1.05M-token context window and reasoning effort configurable up to max.
+              - link "All prices" [ref=e328] [cursor=pointer]:
+                - /url: https://platform.openai.com/docs/pricing
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - paragraph [ref=e340]: Input
+                - paragraph [ref=e342]: $5.00
+              - generic [ref=e343]:
+                - paragraph [ref=e345]: Cached input
+                - paragraph [ref=e347]: $0.50
+              - generic [ref=e348]:
+                - paragraph [ref=e350]: Output
+                - paragraph [ref=e352]: $30.00
+          - generic [ref=e353]:
+            - generic [ref=e354]:
+              - list [ref=e356]:
+                - listitem [ref=e357]:
+                  - generic [ref=e367]: Google
+              - heading "Gemini 3.7 Flash API Price" [level=3] [ref=e369]
+              - paragraph [ref=e371]: Google’s most capable Flash model for agentic workflows and multimodal reasoning. Promotional pricing runs through 31 December 2026 — rates double to $1.50 input / $7.50 output on 1 January 2027.
+              - link "All prices" [ref=e373] [cursor=pointer]:
+                - /url: https://ai.google.dev/gemini-api/docs/pricing
+            - generic [ref=e382]:
+              - generic [ref=e383]:
+                - paragraph [ref=e385]: Input
+                - list [ref=e387]:
+                  - listitem [ref=e388]:
+                    - generic [ref=e389]: $0.75
+              - generic [ref=e390]:
+                - paragraph [ref=e392]: Cached input
+                - list [ref=e394]:
+                  - listitem [ref=e395]:
+                    - generic [ref=e396]: $0.075
+              - generic [ref=e397]:
+                - paragraph [ref=e399]: Output
+                - list [ref=e401]:
+                  - listitem [ref=e402]:
+                    - generic [ref=e403]: $3.75
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - list [ref=e407]:
+                - listitem [ref=e408]:
+                  - generic [ref=e413]: Anthropic
+              - heading "Claude Opus 5 API Price" [level=3] [ref=e415]
+              - paragraph [ref=e417]: Anthropic’s flagship model for complex agentic coding and enterprise work. Claude Fable 5 — the next-generation model for long-running agents — sits above it at $10.00 input / $50.00 output.
+              - link "All prices" [ref=e419] [cursor=pointer]:
+                - /url: https://claude.com/pricing#api
+            - generic [ref=e428]:
+              - generic [ref=e429]:
+                - paragraph [ref=e431]: Input
+                - list [ref=e433]:
+                  - listitem [ref=e434]:
+                    - generic [ref=e435]: $5.00
+              - generic [ref=e436]:
+                - paragraph [ref=e438]: Cached input
+                - list [ref=e440]:
+                  - listitem [ref=e441]:
+                    - generic [ref=e442]: $0.50
+              - generic [ref=e443]:
+                - paragraph [ref=e445]: Cached write
+                - list [ref=e447]:
+                  - listitem [ref=e448]:
+                    - generic [ref=e449]: $6.25 (5m) / $10.00 (1h)
+              - generic [ref=e450]:
+                - paragraph [ref=e452]: Output
+                - list [ref=e454]:
+                  - listitem [ref=e455]:
+                    - generic [ref=e456]: $25.00
+          - generic [ref=e457]:
+            - generic [ref=e458]:
+              - list [ref=e460]:
+                - listitem [ref=e461]:
+                  - generic [ref=e465]: Grok
+              - heading "Grok 4.6 API Price" [level=3] [ref=e467]
+              - paragraph [ref=e469]: Grok 4.6 is xAI’s flagship model for code, agentic tool calling, and long-context work. The standard Grok 4.6 rate applies below 200K context, with a 500K-token context window available for larger requests.
+              - link "All prices" [ref=e471] [cursor=pointer]:
+                - /url: https://docs.x.ai/docs/models
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - paragraph [ref=e483]: Input
+                - list [ref=e485]:
+                  - listitem [ref=e486]:
+                    - generic [ref=e487]: $2.00
+              - generic [ref=e488]:
+                - paragraph [ref=e490]: Cached input
+                - list [ref=e492]:
+                  - listitem [ref=e493]:
+                    - generic [ref=e494]: $0.50
+              - generic [ref=e495]:
+                - paragraph [ref=e497]: Output
+                - list [ref=e499]:
+                  - listitem [ref=e500]:
+                    - generic [ref=e501]: $6.00
+          - generic [ref=e502]:
+            - generic [ref=e503]:
+              - list [ref=e505]:
+                - listitem [ref=e506]:
+                  - generic [ref=e510]: DeepSeek
+              - heading "DeepSeek-V4-Flash API Price" [level=3] [ref=e512]
+              - paragraph [ref=e514]: DeepSeek-V4-Flash is the efficiency champion on this calculator. It is built for fast reasoning and code generation, with thinking and non-thinking modes, a 1M-token context window, and separate peak and off-peak pricing.
+              - link "All prices" [ref=e516] [cursor=pointer]:
+                - /url: https://api-docs.deepseek.com/quick_start/pricing
+            - generic [ref=e525]:
+              - generic [ref=e526]:
+                - paragraph [ref=e528]: Input (cache miss)
+                - list [ref=e530]:
+                  - listitem [ref=e531]:
+                    - generic [ref=e532]: $0.22
+              - generic [ref=e533]:
+                - paragraph [ref=e535]: Input (cache hit)
+                - list [ref=e537]:
+                  - listitem [ref=e538]:
+                    - generic [ref=e539]: $0.007
+              - generic [ref=e540]:
+                - paragraph [ref=e542]: Output
+                - list [ref=e544]:
+                  - listitem [ref=e545]:
+                    - generic [ref=e546]: $0.66
+          - generic [ref=e547]:
+            - generic [ref=e548]:
+              - list [ref=e550]:
+                - listitem [ref=e551]:
+                  - generic [ref=e555]: Perplexity
+              - heading "Sonar Deep Research API" [level=3] [ref=e557]
+              - paragraph [ref=e559]: A high-precision search and reasoning engine designed for deep-dive research tasks and verifiable agentic citation workflows.
+              - link "All prices" [ref=e561] [cursor=pointer]:
+                - /url: https://docs.perplexity.ai/docs/getting-started/pricing
+            - generic [ref=e570]:
+              - generic [ref=e571]:
+                - paragraph [ref=e573]: Input
+                - list [ref=e575]:
+                  - listitem [ref=e576]:
+                    - generic [ref=e577]: $2
+              - generic [ref=e578]:
+                - paragraph [ref=e580]: Reasoning
+                - list [ref=e582]:
+                  - listitem [ref=e583]:
+                    - generic [ref=e584]: $3
+              - generic [ref=e585]:
+                - paragraph [ref=e587]: Output
+                - list [ref=e589]:
+                  - listitem [ref=e590]:
+                    - generic [ref=e591]: $8
+      - generic [ref=e594]:
+        - heading "Programming language token efficiency, ranked" [level=2] [ref=e595]
+        - paragraph [ref=e596]: "These rankings come from the RosettaCode task comparison discussed earlier, using GPT-family tokenization as the baseline. The pattern is simple: terse functional and dynamic languages stay compact, while verbose low-level and enterprise languages burn more tokens for the same job."
+        - generic [ref=e597]:
+          - table [ref=e598]:
+            - rowgroup [ref=e599]:
+              - row [ref=e600]:
+                - columnheader "Language" [ref=e601]
+                - columnheader "Avg tokens (Rosetta task)" [ref=e602]
+                - columnheader "Type system" [ref=e603]
+                - columnheader "Verdict for LLM agents" [ref=e604]
+            - rowgroup [ref=e605]:
+              - row [ref=e606]:
+                - cell "J" [ref=e607]
+                - cell "~70" [ref=e608]
+                - cell "Dynamic" [ref=e609]
+                - cell "Ultra-compact, niche tradeoff" [ref=e610]
+              - row [ref=e611]:
+                - cell "Clojure" [ref=e612]
+                - cell "~109" [ref=e613]
+                - cell "Dynamic" [ref=e614]
+                - cell "Best for long agent sessions" [ref=e615]
+              - row [ref=e616]:
+                - cell "Ruby" [ref=e617]
+                - cell "~119" [ref=e618]
+                - cell "Dynamic" [ref=e619]
+                - cell "Very token-efficient" [ref=e620]
+              - row [ref=e621]:
+                - cell "Python" [ref=e622]
+                - cell "~128" [ref=e623]
+                - cell "Dynamic" [ref=e624]
+                - cell "Strong balance of cost and readability" [ref=e625]
+              - row [ref=e626]:
+                - cell "Haskell" [ref=e627]
+                - cell "~130" [ref=e628]
+                - cell "Static" [ref=e629]
+                - cell "Lean despite static typing" [ref=e630]
+              - row [ref=e631]:
+                - cell "F#" [ref=e632]
+                - cell "~136" [ref=e633]
+                - cell "Static" [ref=e634]
+                - cell "Efficient typed option" [ref=e635]
+              - row [ref=e636]:
+                - cell "Lisp" [ref=e637]
+                - cell "~145" [ref=e638]
+                - cell "Dynamic" [ref=e639]
+                - cell "Compact, but less mainstream" [ref=e640]
+              - row [ref=e641]:
+                - cell "Scala" [ref=e642]
+                - cell "~166" [ref=e643]
+                - cell "Static" [ref=e644]
+                - cell "Mid-pack, acceptable overhead" [ref=e645]
+              - row [ref=e646]:
+                - cell "JavaScript" [ref=e647]
+                - cell "~177" [ref=e648]
+                - cell "Dynamic" [ref=e649]
+                - cell "Usable, but not especially lean" [ref=e650]
+              - row [ref=e651]:
+                - cell "Go" [ref=e652]
+                - cell "~182" [ref=e653]
+                - cell "Static" [ref=e654]
+                - cell "Moderate token cost" [ref=e655]
+              - row [ref=e656]:
+                - cell "C#" [ref=e657]
+                - cell "~216" [ref=e658]
+                - cell "Static" [ref=e659]
+                - cell "Noticeable token tax" [ref=e660]
+              - row [ref=e661]:
+                - cell "Java" [ref=e662]
+                - cell "~224" [ref=e663]
+                - cell "Static" [ref=e664]
+                - cell "High token tax" [ref=e665]
+              - row [ref=e666]:
+                - cell "C++" [ref=e667]
+                - cell "~250" [ref=e668]
+                - cell "Static" [ref=e669]
+                - cell "Expensive in long contexts" [ref=e670]
+              - row [ref=e671]:
+                - cell "C" [ref=e672]
+                - cell "~283" [ref=e673]
+                - cell "Static" [ref=e674]
+                - cell "Worst for token efficiency" [ref=e675]
+          - generic [ref=e676]:
+            - generic [ref=e677]: See the full methodology, per-task breakdowns, and dollar-cost projections.
+            - link "Read the full study →" [ref=e678] [cursor=pointer]:
+              - /url: https://tokencalculator.ai/most-token-efficient-languages-for-llms-ranked-priced/
+      - generic [ref=e680]:
+        - heading "FAQs" [level=2] [ref=e682]
+        - generic "Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys" [ref=e684]:
+          - group [ref=e685]:
+            - generic "1. What is the AI Token Cost Calculator?" [ref=e686] [cursor=pointer]
+          - group [ref=e693]:
+            - generic "2. What are “tokens” in AI models?" [ref=e694] [cursor=pointer]
+          - group [ref=e701]:
+            - generic "3. Why should I calculate token costs?" [ref=e702] [cursor=pointer]
+          - group [ref=e709]:
+            - generic "4. Can I compare multiple models side by side?" [ref=e710] [cursor=pointer]
+          - group [ref=e717]:
+            - generic "5. Will this calculator be updated with new models?" [ref=e718] [cursor=pointer]
+          - group [ref=e725]:
+            - generic "6. Which is the most expensive model to date?" [ref=e726] [cursor=pointer]
+          - group [ref=e733]:
+            - generic "7. What is the most affordable model to date?" [ref=e734] [cursor=pointer]
+          - group [ref=e741]:
+            - generic "8. Why is output usually more expensive than input?" [ref=e742] [cursor=pointer]
+  - contentinfo [ref=e749]:
+    - generic [ref=e750]:
+      - generic [ref=e751]:
+        - generic [ref=e752]: AI Token Cost Calculator Estimate and compare AI token costs instantly across major models.
+        - generic [ref=e768]:
+          - heading "Available LLMs" [level=3] [ref=e770]
+          - list [ref=e772]:
+            - listitem [ref=e773]:
+              - generic [ref=e774]: OpenAI
+            - listitem [ref=e775]:
+              - generic [ref=e776]: Anthropic
+            - listitem [ref=e777]:
+              - generic [ref=e778]: Google Gemini
+            - listitem [ref=e779]:
+              - generic [ref=e780]: Perplexity
+            - listitem [ref=e781]:
+              - generic [ref=e782]: DeepSeek
+        - generic [ref=e783]:
+          - heading "Business" [level=3] [ref=e785]
+          - list [ref=e787]:
+            - listitem [ref=e788]:
+              - link "About" [ref=e789] [cursor=pointer]:
+                - /url: https://tokencalculator.ai/about/
+            - listitem [ref=e791]:
+              - link "Contact" [ref=e792] [cursor=pointer]:
+                - /url: https://tokencalculator.ai/about#contact
+            - listitem [ref=e794]:
+              - link "Sponsorship terms" [ref=e795] [cursor=pointer]:
+                - /url: https://tokencalculator.ai/sponsorship-terms/
+      - generic [ref=e797]:
+        - generic [ref=e798]: All pricing data is based on official provider documentation. This calculator runs entirely in your browser. No data is stored.
+        - generic [ref=e803]:
+          - paragraph [ref=e805]: © 2026 Marcus-Aurelius Digital
+          - list [ref=e807]:
+            - listitem [ref=e808]:
+              - link "Privacy Policy" [ref=e809] [cursor=pointer]:
+                - /url: https://tokencalculator.ai/privacy-policy/
+  - generic [ref=e814]: desktop

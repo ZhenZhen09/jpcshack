@@ -1,0 +1,307 @@
+{
+  "communities": {
+    "0": [
+      "deepfake_helpdesk_app",
+      "deepfake_helpdesk_app_create_app",
+      "deepfake_helpdesk_app_rationale_1",
+      "deepfake_helpdesk_audio_features",
+      "deepfake_helpdesk_audio_features_audiosample",
+      "deepfake_helpdesk_audio_features_audiovalidationerror",
+      "deepfake_helpdesk_audio_features_decode_wav",
+      "deepfake_helpdesk_audio_features_encode_wav",
+      "deepfake_helpdesk_audio_features_extract_features",
+      "deepfake_helpdesk_audio_features_py_valueerror",
+      "deepfake_helpdesk_audio_features_rationale_1",
+      "deepfake_helpdesk_audio_features_rms_delta",
+      "deepfake_helpdesk_audio_features_validated_samples",
+      "deepfake_helpdesk_generate_assets",
+      "deepfake_helpdesk_generate_assets_base_call",
+      "deepfake_helpdesk_generate_assets_generate",
+      "deepfake_helpdesk_generate_assets_generatedassets",
+      "deepfake_helpdesk_generate_assets_rationale_1",
+      "deepfake_helpdesk_tests_test_audio_features",
+      "deepfake_helpdesk_tests_test_audio_features_test_decode_rejects_malformed_wav",
+      "deepfake_helpdesk_tests_test_audio_features_test_decode_rejects_wrong_rate_and_frame_count",
+      "deepfake_helpdesk_tests_test_audio_features_test_decode_round_trip_exact_contract",
+      "deepfake_helpdesk_tests_test_audio_features_test_features_are_ordered_finite_and_numerically_meaningful",
+      "deepfake_helpdesk_tests_test_audio_features_test_silence_is_finite_and_distance_is_hand_derived",
+      "deepfake_helpdesk_tests_test_audio_features_wav_bytes",
+      "deepfake_helpdesk_tests_test_challenge",
+      "deepfake_helpdesk_tests_test_challenge_test_generation_solver_and_http_flag_flow",
+      "deepfake_helpdesk_tests_test_challenge_test_routes_and_invalid_uploads_do_not_disclose",
+      "deepfake_helpdesk_tests_test_challenge_test_solver_runs_as_a_direct_player_command"
+    ],
+    "1": [
+      "prompt_me_maybe_tests_test_server_challengeservertests",
+      "prompt_me_maybe_tests_test_server_challengeservertests_chat",
+      "prompt_me_maybe_tests_test_server_challengeservertests_new_session",
+      "prompt_me_maybe_tests_test_server_challengeservertests_post_json",
+      "prompt_me_maybe_tests_test_server_challengeservertests_reach_count_question",
+      "prompt_me_maybe_tests_test_server_challengeservertests_request",
+      "prompt_me_maybe_tests_test_server_challengeservertests_teardownclass",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_archive_and_appendix_paraphrases_work_at_expected_stages",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_confused_player_gets_current_task_and_an_example",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_count_cannot_be_submitted_before_both_clues_are_discovered",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_count_checkpoint_rejects_skips_wrong_counts_and_bundled_answers",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_current_hint_survives_refresh_and_isolated_sessions_do_not_get_future_clues",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_discovered_records_can_be_replayed_without_regressing_progress",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_empty_and_over_limit_messages_are_rejected",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_malformed_or_wrong_shape_requests_are_rejected",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_natural_indexing_questions_unlock_the_rule_but_unrelated_words_do_not",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_only_public_assets_are_served_and_flag_stays_server_side",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_phrase_and_index_policy_are_separate_ordered_records",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_premature_appendix_request_does_not_reveal_flag",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_repeated_combined_prompt_stops_at_the_count_checkpoint",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_request_body_over_4096_bytes_is_rejected",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_sessions_are_isolated_and_refresh_preserves_progress",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_short_count_answers_are_accepted_only_after_the_rule",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_synonyms_allow_natural_requests_through_the_full_flow",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_token_audit_flow_requires_each_stage",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_unknown_and_encoded_traversal_paths_are_not_served",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_unknown_and_expired_cookies_start_a_fresh_session",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_unmatched_messages_receive_a_stage_aware_reply",
+      "prompt_me_maybe_tests_test_server_challengeservertests_test_unsupported_method_returns_generic_method_not_allowed"
+    ],
+    "2": [
+      "basehttprequesthandler",
+      "prompt_me_maybe_server_challengehandler",
+      "prompt_me_maybe_server_challengehandler_asks_for_archive_record_four",
+      "prompt_me_maybe_server_challengehandler_asks_for_index_policy",
+      "prompt_me_maybe_server_challengehandler_asks_for_phrase_slip",
+      "prompt_me_maybe_server_challengehandler_asks_for_sample_record",
+      "prompt_me_maybe_server_challengehandler_asks_to_quote_release_appendix",
+      "prompt_me_maybe_server_challengehandler_count_answer",
+      "prompt_me_maybe_server_challengehandler_do_get",
+      "prompt_me_maybe_server_challengehandler_do_head",
+      "prompt_me_maybe_server_challengehandler_do_post",
+      "prompt_me_maybe_server_challengehandler_error",
+      "prompt_me_maybe_server_challengehandler_get_or_create_session",
+      "prompt_me_maybe_server_challengehandler_has_synonym",
+      "prompt_me_maybe_server_challengehandler_log_message",
+      "prompt_me_maybe_server_challengehandler_progress",
+      "prompt_me_maybe_server_challengehandler_reply_for_session",
+      "prompt_me_maybe_server_challengehandler_respond",
+      "prompt_me_maybe_server_challengehandler_send_error",
+      "prompt_me_maybe_server_challengehandler_unique_object"
+    ],
+    "3": [
+      "deepfake_helpdesk_detector",
+      "deepfake_helpdesk_detector_detectormodel",
+      "deepfake_helpdesk_detector_load_model",
+      "deepfake_helpdesk_detector_modelvalidationerror",
+      "deepfake_helpdesk_detector_predict",
+      "deepfake_helpdesk_detector_prediction",
+      "deepfake_helpdesk_detector_py_valueerror",
+      "deepfake_helpdesk_detector_rationale_1",
+      "deepfake_helpdesk_detector_readonly",
+      "deepfake_helpdesk_detector_sigmoid",
+      "deepfake_helpdesk_solution_solve",
+      "deepfake_helpdesk_solution_solve_attackresult",
+      "deepfake_helpdesk_solution_solve_find_adversarial",
+      "deepfake_helpdesk_solution_solve_main",
+      "deepfake_helpdesk_solution_solve_rationale_1",
+      "deepfake_helpdesk_tests_test_detector",
+      "deepfake_helpdesk_tests_test_detector_save_model",
+      "deepfake_helpdesk_tests_test_detector_test_load_and_predict_model",
+      "deepfake_helpdesk_tests_test_detector_test_load_rejects_invalid_schema"
+    ],
+    "4": [
+      "prompt_me_maybe_public_app",
+      "prompt_me_maybe_public_app_addmessage",
+      "prompt_me_maybe_public_app_completion",
+      "prompt_me_maybe_public_app_currenthelp",
+      "prompt_me_maybe_public_app_feedback",
+      "prompt_me_maybe_public_app_form",
+      "prompt_me_maybe_public_app_guidanceexample",
+      "prompt_me_maybe_public_app_guidancehint",
+      "prompt_me_maybe_public_app_guidancelabel",
+      "prompt_me_maybe_public_app_input",
+      "prompt_me_maybe_public_app_restoreprogress",
+      "prompt_me_maybe_public_app_sendbutton",
+      "prompt_me_maybe_public_app_setbusy",
+      "prompt_me_maybe_public_app_showprogress",
+      "prompt_me_maybe_public_app_transcript",
+      "prompt_me_maybe_public_app_welcome"
+    ],
+    "5": [
+      "deepfake_helpdesk_public_app",
+      "deepfake_helpdesk_public_app_button",
+      "deepfake_helpdesk_public_app_flag",
+      "deepfake_helpdesk_public_app_flagpanel",
+      "deepfake_helpdesk_public_app_form",
+      "deepfake_helpdesk_public_app_input",
+      "deepfake_helpdesk_public_app_message",
+      "deepfake_helpdesk_public_app_readouts",
+      "deepfake_helpdesk_public_app_result",
+      "deepfake_helpdesk_public_app_set"
+    ],
+    "6": [
+      "prompt_me_maybe_server",
+      "prompt_me_maybe_server_localserver",
+      "prompt_me_maybe_server_rationale_1",
+      "prompt_me_maybe_tests_test_server",
+      "prompt_me_maybe_tests_test_server_challengeservertests_setupclass",
+      "threadinghttpserver"
+    ],
+    "7": [
+      "deepfake_helpdesk_solution_init",
+      "deepfake_helpdesk_solution_init_rationale_1"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14532019704433496,
+    "1": 0.18719211822660098,
+    "2": 0.22105263157894736,
+    "3": 0.2046783625730994,
+    "4": 0.15,
+    "5": 0.2,
+    "6": 0.3333333333333333,
+    "7": 1.0
+  },
+  "gods": [
+    {
+      "id": "prompt_me_maybe_tests_test_server_challengeservertests",
+      "label": "ChallengeServerTests",
+      "degree": 32
+    },
+    {
+      "id": "prompt_me_maybe_server_challengehandler",
+      "label": "ChallengeHandler",
+      "degree": 22
+    },
+    {
+      "id": "deepfake_helpdesk_audio_features_decode_wav",
+      "label": "decode_wav()",
+      "degree": 9
+    },
+    {
+      "id": "deepfake_helpdesk_solution_solve_find_adversarial",
+      "label": "find_adversarial()",
+      "degree": 9
+    },
+    {
+      "id": "deepfake_helpdesk_detector_load_model",
+      "label": "load_model()",
+      "degree": 8
+    },
+    {
+      "id": "deepfake_helpdesk_audio_features_extract_features",
+      "label": "extract_features()",
+      "degree": 7
+    },
+    {
+      "id": "deepfake_helpdesk_detector_predict",
+      "label": "predict()",
+      "degree": 7
+    },
+    {
+      "id": "deepfake_helpdesk_generate_assets_generate",
+      "label": "generate()",
+      "degree": 7
+    },
+    {
+      "id": "deepfake_helpdesk_audio_features_rms_delta",
+      "label": "rms_delta()",
+      "degree": 6
+    },
+    {
+      "id": "deepfake_helpdesk_tests_test_challenge_test_generation_solver_and_http_flag_flow",
+      "label": "test_generation_solver_and_http_flag_flow()",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "create_app()",
+      "target": "load_model()",
+      "source_files": [
+        "deepfake_helpdesk/app.py",
+        "deepfake_helpdesk/detector.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "find_adversarial()",
+      "target": "decode_wav()",
+      "source_files": [
+        "deepfake_helpdesk/solution/solve.py",
+        "deepfake_helpdesk/audio_features.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "find_adversarial()",
+      "target": "encode_wav()",
+      "source_files": [
+        "deepfake_helpdesk/solution/solve.py",
+        "deepfake_helpdesk/audio_features.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "predict()",
+      "target": "extract_features()",
+      "source_files": [
+        "deepfake_helpdesk/detector.py",
+        "deepfake_helpdesk/audio_features.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "test_features_are_ordered_finite_and_numerically_meaningful()",
+      "target": "extract_features()",
+      "source_files": [
+        "deepfake_helpdesk/tests/test_audio_features.py",
+        "deepfake_helpdesk/audio_features.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `test_features_are_ordered_finite_and_numerically_meaningful()` unexpectedly reaches hub `extract_features()`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `ChallengeServerTests` connect `Community 1` to `Community 2`, `Community 6`?",
+      "why": "High betweenness centrality (0.115) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ChallengeHandler` connect `Community 2` to `Community 1`, `Community 6`?",
+      "why": "High betweenness centrality (0.096) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `find_adversarial()` connect `Community 3` to `Community 0`?",
+      "why": "High betweenness centrality (0.013) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `ChallengeServerTests` (e.g. with `ChallengeHandler` and `LocalServer`) actually correct?",
+      "why": "`ChallengeServerTests` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `ChallengeHandler` (e.g. with `ChallengeServerTests` and `.setUpClass()`) actually correct?",
+      "why": "`ChallengeHandler` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `decode_wav()` (e.g. with `create_app()` and `find_adversarial()`) actually correct?",
+      "why": "`decode_wav()` has 6 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `find_adversarial()` (e.g. with `decode_wav()` and `encode_wav()`) actually correct?",
+      "why": "`find_adversarial()` has 6 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

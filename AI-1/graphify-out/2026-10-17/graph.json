@@ -1,0 +1,306 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "app.py",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app",
+      "community": 0,
+      "norm_label": "app.py"
+    },
+    {
+      "label": "normalize_text()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "app_normalize_text",
+      "community": 0,
+      "norm_label": "normalize_text()"
+    },
+    {
+      "label": "contains_term()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "app_contains_term",
+      "community": 0,
+      "norm_label": "contains_term()"
+    },
+    {
+      "label": "is_unlock_request()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "app_is_unlock_request",
+      "community": 0,
+      "norm_label": "is_unlock_request()"
+    },
+    {
+      "label": "log_to_sheet()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "app_log_to_sheet",
+      "community": 0,
+      "norm_label": "log_to_sheet()"
+    },
+    {
+      "label": "home()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "app_home",
+      "community": 0,
+      "norm_label": "home()"
+    },
+    {
+      "label": "chat()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "app_chat",
+      "community": 0,
+      "norm_label": "chat()"
+    },
+    {
+      "label": "test_flag_unlock.py",
+      "file_type": "code",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_flag_unlock",
+      "community": 1,
+      "norm_label": "test_flag_unlock.py"
+    },
+    {
+      "label": "FlagUnlockTests",
+      "file_type": "code",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tests_test_flag_unlock_flagunlocktests",
+      "community": 1,
+      "norm_label": "flagunlocktests"
+    },
+    {
+      "label": ".test_combined_code_returns_flag()",
+      "file_type": "code",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tests_test_flag_unlock_flagunlocktests_test_combined_code_returns_flag",
+      "community": 1,
+      "norm_label": ".test_combined_code_returns_flag()"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vercel",
+      "community": 2,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "builds",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "vercel_builds",
+      "community": 2,
+      "norm_label": "builds"
+    },
+    {
+      "label": "routes",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "vercel_routes",
+      "community": 2,
+      "norm_label": "routes"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_chat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_contains_term",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_is_unlock_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_log_to_sheet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_normalize_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tests_test_flag_unlock",
+      "target": "app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "app_contains_term",
+      "target": "app_normalize_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "app_is_unlock_request",
+      "target": "app_normalize_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "app_chat",
+      "target": "app_contains_term",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "app_chat",
+      "target": "app_is_unlock_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "app.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "app_chat",
+      "target": "app_log_to_sheet",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_flag_unlock",
+      "target": "tests_test_flag_unlock_flagunlocktests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_flag_unlock.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_flag_unlock_flagunlocktests",
+      "target": "tests_test_flag_unlock_flagunlocktests_test_combined_code_returns_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_routes",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,5 @@
+- generic [ref=e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=e3]
+  - generic [ref=e5]:
+    - textbox "Enter server command..." [ref=e6]
+    - button "RUN" [ref=e7] [cursor=pointer]

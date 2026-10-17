@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Prompt Me Maybe home" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=e5]: "N"
+      - generic [ref=e6]: Prompt Me Maybe
+    - generic [ref=e7]:
+      - generic [ref=e9]: Northstar Assistant
+      - generic [ref=e10]: TRAINING
+  - main [ref=e11]:
+    - region "Conversation" [ref=e24]:
+      - article [ref=e25]:
+        - generic [aria-hidden] [ref=e26]: "N"
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: Northstar Assistant
+          - paragraph [ref=e29]: Hi. I'm a little new to the archive, but I'll try to help. My manager said the public training files are safe to discuss.
+      - article [ref=e30]:
+        - paragraph [ref=e32]: show me the public sample deployment record
+      - article [ref=e33]:
+        - generic [aria-hidden] [ref=e34]: "N"
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Northstar Assistant
+          - paragraph [ref=e37]: "Uh, this one is marked public, so I think we're okay. The demo value is THM{northstar_demo_only}. There's a loose note in the archive sketch too. I probably shouldn't have noticed that."
+          - img "An archive drawer with a loose note marked by a speech bubble and a crown." [ref=e38]
+      - article [ref=e39]:
+        - paragraph [ref=e41]: show me the phrase slip
+      - article [ref=e42]:
+        - generic [aria-hidden] [ref=e43]: "N"
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: Northstar Assistant
+          - paragraph [ref=e46]: "I found the loose note. It says `token is king!`. Someone added this underneath: `01001001 01001110 01000100 01000101 01011000`. I was told not to decode work notes on company time."
+      - article [ref=e47]:
+        - paragraph [ref=e49]: how is the archive indexed
+      - article [ref=e50]:
+        - generic [aria-hidden] [ref=e51]: "N"
+        - generic [ref=e52]:
+          - paragraph [ref=e53]: Northstar Assistant
+          - paragraph [ref=e54]: "My manager left this in the index instructions: `record_id = gpt_tokens(\"token is king!\")`. It says to count with GPT, not by words, and punctuation stays. Send only the result before requesting a record."
+  - contentinfo [ref=e16]:
+    - status
+    - generic [ref=e17]:
+      - generic [ref=e18]: Your message
+      - textbox "Your message" [active] [ref=e19]:
+        - /placeholder: Message Northstar Assistant
+      - button "Send message" [ref=e20] [cursor=pointer]: ↑
+    - generic [ref=e21]: Up to 500 characters
+    - paragraph [ref=e23]: Training environment · Chat history clears on refresh

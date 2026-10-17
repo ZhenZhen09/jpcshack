@@ -1,0 +1,30 @@
+[Unit]
+Description=Prompt Me Maybe CTF challenge
+After=network.target
+
+[Service]
+Type=simple
+User=ctf-pmm
+Group=ctf-pmm
+WorkingDirectory=/opt/ctf-challenges/prompt-me-maybe
+EnvironmentFile=-/etc/ctf-challenges/prompt-me-maybe.env
+Environment=CHALLENGE_HOST=0.0.0.0
+Environment=PORT=8000
+ExecStart=/opt/ctf-challenges/prompt-me-maybe/.venv/bin/python /opt/ctf-challenges/prompt-me-maybe/server.py
+Restart=on-failure
+RestartSec=2
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictAddressFamilies=AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

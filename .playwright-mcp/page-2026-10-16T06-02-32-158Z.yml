@@ -1,0 +1,103 @@
+- generic [ref=f4e2]:
+  - link "Skip to case details" [ref=f4e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e4]:
+    - link "Northstar Help Desk home" [ref=f4e5] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f4e6]: "N"
+      - generic [ref=f4e7]: Northstar Help Desk
+    - generic [ref=f4e8]: TRAINING SIMULATION
+  - main [ref=f4e10]:
+    - region [ref=f4e11]:
+      - paragraph [ref=f4e12]: ACCOUNT RECOVERY · CASE HD-2048
+      - generic [ref=f4e13]:
+        - generic [ref=f4e14]:
+          - heading "Verify before you reset." [level=1] [ref=f4e15]
+          - paragraph [ref=f4e16]: An urgent request came in from Finance. Review the records, verify the caller, then decide what the help desk should do.
+        - generic [ref=f4e17]: Urgent request
+    - generic "Case summary" [ref=f4e19]:
+      - generic [ref=f4e20]: CASE HD-2048
+      - generic [ref=f4e21]: REQUESTED BY Maya Chen
+      - generic [ref=f4e22]: RECEIVED 09:14
+      - status [ref=f4e23]: Case resolved
+    - region "Help desk investigation records" [ref=f4e24]:
+      - article [ref=f4e25]:
+        - generic [ref=f4e26]:
+          - generic [ref=f4e27]:
+            - paragraph [ref=f4e28]: INCOMING REQUEST
+            - heading "Reset ticket" [level=2] [ref=f4e29]
+          - generic [ref=f4e30]: "#HD-2048"
+        - generic [ref=f4e31]:
+          - generic [ref=f4e32]:
+            - term [ref=f4e33]: Employee
+            - definition [ref=f4e34]: Maya Chen · Finance
+          - generic [ref=f4e35]:
+            - term [ref=f4e36]: Request
+            - definition [ref=f4e37]: Reset account and MFA
+          - generic [ref=f4e38]:
+            - term [ref=f4e39]: Callback number
+            - definition [ref=f4e40]: 555-0142
+        - generic [ref=f4e41]:
+          - paragraph [ref=f4e42]: VOICE MESSAGE TRANSCRIPT
+          - blockquote [ref=f4e43]: “Hi, I’m locked out and need my MFA reset right away. I’m heading into a meeting, so please call me back at 555-0142. This is Maya.”
+      - article [ref=f4e44]:
+        - generic [ref=f4e45]:
+          - generic [ref=f4e46]:
+            - paragraph [ref=f4e47]: TRUSTED RECORD
+            - heading "Employee directory" [level=2] [ref=f4e48]
+          - generic [ref=f4e49]: On file
+        - generic [ref=f4e50]:
+          - generic [aria-hidden] [ref=f4e51]: MC
+          - generic [ref=f4e52]:
+            - strong [ref=f4e53]: Maya Chen
+            - generic [ref=f4e54]: Finance · Analyst
+        - generic [ref=f4e55]:
+          - generic [ref=f4e56]:
+            - term [ref=f4e57]: Registered number
+            - definition [ref=f4e58]: 555-0187
+          - generic [ref=f4e59]:
+            - term [ref=f4e60]: Account status
+            - definition [ref=f4e61]: Active employee
+        - paragraph [ref=f4e63]: Use this number to verify the request independently.
+      - article [ref=f4e64]:
+        - generic [ref=f4e65]:
+          - generic [ref=f4e66]:
+            - paragraph [ref=f4e67]: HELP DESK PROCEDURE
+            - heading "Reset policy" [level=2] [ref=f4e68]
+          - generic [ref=f4e69]: POL-12
+        - list [ref=f4e70]:
+          - listitem [ref=f4e71]:
+            - generic [ref=f4e72]: "1"
+            - paragraph [ref=f4e73]: Do not reset MFA based on a voice request alone.
+          - listitem [ref=f4e74]:
+            - generic [ref=f4e75]: "2"
+            - paragraph [ref=f4e76]: Call the number listed in the employee directory.
+          - listitem [ref=f4e77]:
+            - generic [ref=f4e78]: "3"
+            - paragraph [ref=f4e79]: If the employee denies the request, reject it and report impersonation.
+      - article [ref=f4e80]:
+        - generic [ref=f4e81]:
+          - generic [ref=f4e82]:
+            - paragraph [ref=f4e83]: SIMULATED VERIFICATION
+            - heading "Choose a number to call" [level=2] [ref=f4e84]
+          - generic [ref=f4e85]: Verified by directory
+        - paragraph [ref=f4e88]: Compare the numbers above. The request is verified only through the trusted directory contact.
+        - generic [ref=f4e89]:
+          - button "Call ticket number 555-0142" [ref=f4e90] [cursor=pointer]:
+            - text: Call ticket number
+            - generic [ref=f4e91]: 555-0142
+          - button "Call directory number 555-0187" [ref=f4e92] [cursor=pointer]:
+            - text: Call directory number
+            - generic [ref=f4e93]: 555-0187
+        - generic [ref=f4e94]: After verification
+        - generic [ref=f4e96]:
+          - button "Approve reset" [ref=f4e97] [cursor=pointer]
+          - button "Reject and report impersonation" [ref=f4e98] [cursor=pointer]
+        - status [ref=f4e99]: This case is already resolved. Your flag is available below.
+        - generic [ref=f4e100]:
+          - paragraph [ref=f4e101]: CASE FLAG
+          - paragraph [ref=f4e102]: "THM{verify_out_of_band}"
+          - paragraph [ref=f4e103]: Submit this mock flag to the CTF platform.
+    - generic [ref=f4e104]:
+      - generic [ref=f4e105]: Northstar Systems · Internal Security Exercise
+      - generic [ref=f4e106]: All names and numbers are fictional

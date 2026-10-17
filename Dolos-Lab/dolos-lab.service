@@ -1,0 +1,29 @@
+[Unit]
+Description=Dolos Lab simulated prompt-injection CTF challenge
+After=network.target
+
+[Service]
+Type=simple
+User=ctf-dolos
+Group=ctf-dolos
+WorkingDirectory=/opt/ctf-challenges/dolos-lab
+Environment=CHALLENGE_HOST=0.0.0.0
+Environment=PORT=8100
+ExecStart=/usr/bin/python3 /opt/ctf-challenges/dolos-lab/server.py
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictAddressFamilies=AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

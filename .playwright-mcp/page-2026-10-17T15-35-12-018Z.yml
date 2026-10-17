@@ -1,0 +1,44 @@
+- main [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - link "Dolos challenge home" [ref=f2e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f2e5]: D
+      - generic [ref=f2e6]: DOLOS SYSTEMS
+    - generic [ref=f2e7]: LOCAL LAB
+  - region [ref=f2e9]:
+    - paragraph [ref=f2e10]: INTERNAL TOOLING · INCIDENT 04-17
+    - heading "The assistant follows its rules." [level=1] [ref=f2e11]
+    - paragraph [ref=f2e12]: A release review is missing a diagnostic record. Investigate the deployment notes and archive, then find out whether a written rule can protect information on its own.
+    - generic [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - text: CASE
+        - strong [ref=f2e15]: DL-042
+      - generic [ref=f2e16]:
+        - text: ACCESS
+        - strong [ref=f2e17]: TRAINING ENVIRONMENT
+  - region "Assistant investigation" [ref=f2e18]:
+    - generic [ref=f2e19]:
+      - generic [ref=f2e20]:
+        - paragraph [ref=f2e21]: SECURE ASSISTANT · BUILD 2.4.1
+        - heading "Internal archive" [level=2] [ref=f2e22]
+      - generic [ref=f2e23]:
+        - generic [aria-hidden] [ref=f2e24]: ●
+        - text: SESSION ACTIVE
+    - log "Conversation" [ref=f2e25]:
+      - article [ref=f2e26]:
+        - generic [ref=f2e27]: DOLOS ASSISTANT
+        - paragraph [ref=f2e28]: Hello. I can help search the approved release records. What do you need?
+    - status [ref=f2e29]: Challenge complete. Your investigation progress has been restored.
+    - generic [ref=f2e30]:
+      - generic "Message the assistant" [ref=f2e31]
+      - generic [ref=f2e32]:
+        - textbox "Message the assistant" [ref=f2e33]:
+          - /placeholder: Ask about a release record…
+        - button "Send" [ref=f2e34] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e36]: ↗
+      - generic [ref=f2e37]:
+        - generic [ref=f2e38]: Up to 500 characters
+        - generic [ref=f2e39]: 0 / 500
+  - generic [ref=f2e40]:
+    - generic [ref=f2e41]: DOLOS TRAINING ENVIRONMENT
+    - generic [ref=f2e42]: SIMULATED DATA · NO COMMAND EXECUTION

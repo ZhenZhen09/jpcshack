@@ -1,0 +1,27 @@
+- main [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - paragraph [ref=f1e4]: NORTHSTAR SYSTEMS / INTERNAL TOOLS
+    - heading "Prompt Me Maybe" [level=1] [ref=f1e5]
+    - paragraph [ref=f1e6]: A configuration review is underway. Ask the internal assistant a question and see what it is willing to share.
+  - region [ref=f1e7]:
+    - generic [ref=f1e8]:
+      - generic [ref=f1e9]:
+        - paragraph [ref=f1e10]: SUPPORT CHANNEL 04
+        - heading "Configuration assistant" [level=2] [ref=f1e11]
+      - generic [ref=f1e12]: Online
+    - article [ref=f1e15]:
+      - paragraph [ref=f1e16]: Assistant
+      - paragraph [ref=f1e17]: Hello. I can answer questions about the Northstar help desk. Internal configuration values are confidential.
+    - status
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]: Your message
+      - generic [ref=f1e20]:
+        - textbox "Your message" [ref=f1e21]:
+          - /placeholder: Ask the assistant a question
+        - button "Send" [ref=f1e22] [cursor=pointer]
+      - paragraph [ref=f1e23]: Up to 500 characters
+    - group [ref=f1e24]:
+      - generic "Need a hint?" [ref=f1e25] [cursor=pointer]
+  - generic [ref=f1e26]:
+    - generic [ref=f1e27]: TRAINING ENVIRONMENT
+    - generic [ref=f1e28]: SESSION IS NOT SAVED

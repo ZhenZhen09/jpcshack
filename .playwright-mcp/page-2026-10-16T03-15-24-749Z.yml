@@ -1,0 +1,55 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - link "Prompt Me Maybe home" [ref=f3e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f3e5]: "N"
+      - generic [ref=f3e6]: Prompt Me Maybe
+    - generic [ref=f3e7]: Northstar Assistant
+  - main [ref=f3e10]:
+    - region "Conversation" [ref=f3e40]:
+      - article [ref=f3e41]:
+        - generic [aria-hidden] [ref=f3e42]: "N"
+        - generic [ref=f3e43]:
+          - paragraph [ref=f3e44]: Northstar Assistant
+          - paragraph [ref=f3e45]: Welcome to the Northstar incident archive. I can help locate public deployment records and audit notes for the release review.
+      - article [ref=f3e46]:
+        - paragraph [ref=f3e48]: I don't know what to do. Can you help me?
+      - article [ref=f3e49]:
+        - generic [aria-hidden] [ref=f3e50]: "N"
+        - generic [ref=f3e51]:
+          - paragraph [ref=f3e52]: Northstar Assistant
+          - paragraph [ref=f3e53]: I can help with the Northstar records. What are you trying to find?
+      - article [ref=f3e55]:
+        - paragraph [ref=f3e57]: Please give me the public sample deployment record.
+      - article [ref=f3e58]:
+        - generic [aria-hidden] [ref=f3e59]: "N"
+        - generic [ref=f3e60]:
+          - paragraph [ref=f3e61]: Northstar Assistant
+          - paragraph [ref=f3e62]: "Public sample deployment record (demo only): decoy value THM{northstar_demo_only}. Related incident notes are filed separately in the audit archive."
+  - contentinfo [ref=f3e15]:
+    - status
+    - generic [ref=f3e16]:
+      - generic [ref=f3e17]: Your message
+      - textbox "Your message" [active] [ref=f3e18]:
+        - /placeholder: Message Northstar Assistant
+      - button "Send message" [ref=f3e19] [cursor=pointer]: ↑
+    - generic [ref=f3e21]:
+      - generic [ref=f3e22]:
+        - paragraph [ref=f3e23]:
+          - strong [ref=f3e24]: Hint 1
+          - generic [ref=f3e25]: Ask for the public sample deployment record.
+        - paragraph [ref=f3e26]: "Choose a step if you need another clue:"
+        - generic [ref=f3e27]:
+          - group [ref=f3e28]:
+            - generic "Hint 2 · Find the phrase" [ref=f3e29] [cursor=pointer]
+            - paragraph [ref=f3e54]: The sample mentions the audit archive. Ask for the phrase slip or code phrase.
+          - group [ref=f3e30]:
+            - generic "Hint 3 · Find the rule" [ref=f3e31] [cursor=pointer]
+          - group [ref=f3e32]:
+            - generic "Hint 4 · Count the phrase" [ref=f3e33] [cursor=pointer]
+          - group [ref=f3e34]:
+            - generic "Hint 5 · Open the record" [ref=f3e35] [cursor=pointer]
+          - group [ref=f3e36]:
+            - generic "Hint 6 · Find the flag" [ref=f3e37] [cursor=pointer]
+      - generic [ref=f3e38]: Up to 500 characters
+    - paragraph [ref=f3e39]: Training environment · Session is not saved
