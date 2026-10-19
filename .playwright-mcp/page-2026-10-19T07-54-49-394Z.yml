@@ -1,0 +1,19 @@
+- main [ref=f1e2]:
+  - link "← Challenge Index" [ref=f1e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f1e4]: FORENSICS / ENCODING
+  - heading "Base64 Cascade" [level=1] [ref=f1e5]
+  - paragraph [ref=f1e6]: A recovered note contains only printable characters. Determine what encoding was used and peel away every layer to recover the flag.
+  - generic [ref=f1e7]:
+    - 'heading "Recovered file: chall.txt" [level=2] [ref=f1e8]'
+    - generic [ref=f1e9]: ZW1WeWIyUmhlWHMyWVRRM1lXSmtOR1V4WWpWbE56UmtNbVl4TnpGbU9XRjk=
+    - group [ref=f1e10]:
+      - generic "Hint" [ref=f1e11]
+  - generic [ref=f1e12]:
+    - generic [ref=f1e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f1e14]:
+      - /placeholder: "zeroday{...}"
+      - text: "zeroday{6a47abd4e1b5e74d2f171f9a}"
+    - button "Submit flag" [active] [ref=f1e15] [cursor=pointer]
+    - generic [ref=f1e16]: "Correct. The note had two Base64 layers. Flag: zeroday{6a47abd4e1b5e74d2f171f9a}"
+  - generic [ref=f1e17]: Offline practice recreation · session-generated artifact

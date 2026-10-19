@@ -5,6 +5,10 @@ const transcript = document.querySelector("#transcript");
 const welcome = document.querySelector("#welcome");
 const feedback = document.querySelector("#feedback");
 const completion = document.querySelector("#completion");
+const promptMeter = document.querySelector("#prompt-meter");
+let challengeClosed = false;
+let promptStatusLoaded = false;
+let requestInFlight = false;
 
 function showProgress(result) {
   const guide = result.guidance;
@@ -17,11 +21,30 @@ function showProgress(result) {
 }
 
 function setBusy(busy) {
-  input.disabled = busy;
-  sendButton.disabled = busy;
+  requestInFlight = busy;
+  const unavailable = busy || challengeClosed || !promptStatusLoaded;
+  input.disabled = unavailable;
+  sendButton.disabled = unavailable;
   sendButton.textContent = busy ? "…" : "↑";
   sendButton.setAttribute("aria-label", busy ? "Sending message" : "Send message");
   form.setAttribute("aria-busy", String(busy));
+}
+
+function updatePromptMeter(data) {
+  if (!Number.isInteger(data.prompts_used) || !Number.isInteger(data.prompts_remaining) ||
+      data.prompt_limit !== 20 || typeof data.closed !== "boolean") {
+    throw new Error("Prompt limit status is invalid.");
+  }
+  challengeClosed = data.closed;
+  promptStatusLoaded = true;
+  if (challengeClosed) {
+    promptMeter.textContent = `Challenge closed · ${data.prompts_used} of ${data.prompt_limit} prompts used · ${data.prompts_remaining} remaining.`;
+  } else if (data.prompts_remaining === 0) {
+    promptMeter.textContent = `${data.prompts_used} of ${data.prompt_limit} prompts used · 0 remaining. The next prompt will close this challenge.`;
+  } else {
+    promptMeter.textContent = `${data.prompts_used} of ${data.prompt_limit} prompts used · ${data.prompts_remaining} remaining.`;
+  }
+  setBusy(requestInFlight);
 }
 
 function addMessage(speaker, text, className, concealFlag = false, artifact = null) {
@@ -70,6 +93,7 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const message = input.value.trim();
   feedback.textContent = "";
+  if (challengeClosed || requestInFlight || !promptStatusLoaded) return;
   if (!message) {
     feedback.textContent = "Enter a message before sending.";
     input.focus();
@@ -92,6 +116,7 @@ form.addEventListener("submit", async (event) => {
       throw new Error("server");
     }
     showProgress(result);
+    updatePromptMeter(result);
     addMessage("Northstar Assistant", result.reply, "bot-message", result.solved, result.artifact);
   } catch {
     userMessage.remove();
@@ -110,13 +135,15 @@ async function restoreProgress() {
     if (!response.ok) throw new Error("server");
     const result = await response.json();
     showProgress(result);
+    updatePromptMeter(result);
     if (result.guidance.step > 1 || result.solved) {
       welcome.hidden = true;
       transcript.hidden = false;
       addMessage("Northstar Assistant", `Your investigation progress is saved for this session. ${result.guidance.hint}`, "bot-message");
     }
   } catch {
-    feedback.textContent = "Could not load your progress. Send a message to reconnect with the assistant.";
+    feedback.textContent = "Could not load your progress. Reload the page to reconnect.";
+    promptMeter.textContent = "Prompt limit status unavailable. Reload this page to reconnect.";
   } finally {
     setBusy(false);
   }

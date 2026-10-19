@@ -7,13 +7,16 @@ Type=simple
 User=ctf-pmm
 Group=ctf-pmm
 WorkingDirectory=/opt/ctf-challenges/prompt-me-maybe
-EnvironmentFile=-/etc/ctf-challenges/prompt-me-maybe.env
+EnvironmentFile=-/etc/ctf-challenges/ai-providers.env
 Environment=CHALLENGE_HOST=0.0.0.0
 Environment=PORT=8000
 ExecStart=/opt/ctf-challenges/prompt-me-maybe/.venv/bin/python /opt/ctf-challenges/prompt-me-maybe/server.py
 Restart=on-failure
 RestartSec=2
 UMask=0077
+StateDirectory=ctf-pmm
+StateDirectoryMode=0700
+Environment=CHALLENGE_STATE_DIR=/var/lib/ctf-pmm
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectHome=true

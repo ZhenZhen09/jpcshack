@@ -1,0 +1,25 @@
+- main [ref=f2e2]:
+  - link "← Challenge Index" [ref=f2e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f2e4]: CRYPTO / INTEGER ALGEBRA
+  - heading "Sugar Free Candies" [level=1] [ref=f2e5]
+  - paragraph [ref=f2e6]: Three candy counts were hidden inside a small system of nonlinear equations. Recover the positive integers x, y, and z, then submit them in order.
+  - generic [ref=f2e7]:
+    - heading "Ledger equations" [level=2] [ref=f2e8]
+    - generic [ref=f2e9]: x^3 + z^2 + y = 3,286 y^3 + x^2 + z = 2,416 z^3 + y^2 + x = 12,350 x + y + z = 50
+    - group [ref=f2e10]:
+      - generic "Hint" [ref=f2e11]
+  - generic [ref=f2e12]:
+    - generic [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]: x
+        - spinbutton "x" [ref=f2e16]: "14"
+      - generic [ref=f2e17]:
+        - generic [ref=f2e18]: "y"
+        - spinbutton "y" [ref=f2e19]: "13"
+      - generic [ref=f2e20]:
+        - generic [ref=f2e21]: z
+        - spinbutton "z" [ref=f2e22]: "23"
+    - button "Check the solution" [active] [ref=f2e23] [cursor=pointer]
+    - generic [ref=f2e24]: "Ledger balanced. Your flag: flag{candy_cd07529418acc222}"
+  - generic [ref=f2e25]: Offline practice recreation · session-generated equations

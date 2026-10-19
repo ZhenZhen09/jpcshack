@@ -5,13 +5,13 @@
     "semantic_hash": "d0e875e2800fd65a46494f14154bd7ec"
   },
   "prompt_me_maybe/public/app.js": {
-    "mtime": 1792189039.296998,
-    "ast_hash": "8d1706a5f9c83e0aa5bb273101b20f7e",
+    "mtime": 1792393024.5868015,
+    "ast_hash": "0c98449bf940a6a009a2d0923d46c7c3",
     "semantic_hash": ""
   },
   "prompt_me_maybe/server.py": {
-    "mtime": 1792249352.5508184,
-    "ast_hash": "151b41279557db55ec5989f7d7a4176d",
+    "mtime": 1792393193.3397095,
+    "ast_hash": "5f3028cfb4185fa03705a3eccbcbbdda",
     "semantic_hash": ""
   },
   "prompt_me_maybe/tests/test_server.py": {
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "AI-1/app.py": {
-    "mtime": 1792254948.3402565,
-    "ast_hash": "87c1eff6003cf1dd9db43994554db328",
+    "mtime": 1792391286.4051638,
+    "ast_hash": "baf37284b5305824eca4eba74dfe231a",
     "semantic_hash": ""
   },
   "AI-1/vercel.json": {
@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "AI-1/templates/index.html": {
-    "mtime": 1792255019.4316754,
-    "ast_hash": "0cc6dde11d1012342d6cfe2bea22ad6b",
+    "mtime": 1792391286.877115,
+    "ast_hash": "f571f0e5b11b69ad8ec153f716d18eee",
     "semantic_hash": ""
   },
   "Prompt-Me-Maybe-Playbook.txt": {
@@ -135,13 +135,13 @@
     "semantic_hash": ""
   },
   "prompt_me_maybe/README.md": {
-    "mtime": 1792255123.59659,
-    "ast_hash": "3fcfd4f77aa84c2e07474c64fae2a73b",
+    "mtime": 1792386967.6444547,
+    "ast_hash": "8df39b413bd5912fc83253385cd6bc8d",
     "semantic_hash": ""
   },
   "prompt_me_maybe/public/index.html": {
-    "mtime": 1792189040.2363424,
-    "ast_hash": "b7670e9854db770e8fcbdc4e77bb7186",
+    "mtime": 1792393001.0448146,
+    "ast_hash": "a2e14de9d12880d39d146571c5868d79",
     "semantic_hash": ""
   },
   "prompt_me_maybe/public/favicon.svg": {
@@ -175,8 +175,8 @@
     "semantic_hash": ""
   },
   "Sigma-Tech/app.py": {
-    "mtime": 1792190464.8545985,
-    "ast_hash": "21ee9f7f2ac6ac2511038d7124fb99c4",
+    "mtime": 1792388389.7324746,
+    "ast_hash": "63a65eea194461c23d8d30409d19d2af",
     "semantic_hash": ""
   },
   "Sigma-Tech/classifier.py": {
@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "Sigma-Tech/README.md": {
-    "mtime": 1792190498.231536,
-    "ast_hash": "d8d85851637a81e2d1bd80dbeb16da35",
+    "mtime": 1792388403.692588,
+    "ast_hash": "3347537eb2c75b9363d6f0344311a7c4",
     "semantic_hash": ""
   },
   "Sigma-Tech/SOLUTION.md": {
@@ -270,18 +270,18 @@
     "semantic_hash": ""
   },
   "Dolos-Lab/providers.py": {
-    "mtime": 1792251041.0505662,
-    "ast_hash": "b1b410e824bbf2e425fc462bb361418e",
+    "mtime": 1792386917.5868268,
+    "ast_hash": "797bafc108c710481ed035c7fb3f8a9c",
     "semantic_hash": ""
   },
   "Dolos-Lab/public/app.js": {
-    "mtime": 1792251195.876986,
-    "ast_hash": "4422a0edf6e3eada5a56685264887bce",
+    "mtime": 1792393026.0338876,
+    "ast_hash": "a29df6ab276d4241b869f8499b3df460",
     "semantic_hash": ""
   },
   "Dolos-Lab/server.py": {
-    "mtime": 1792251538.0032077,
-    "ast_hash": "b7e91e3e7065bfabcb95515d6e4869e6",
+    "mtime": 1792393263.2310731,
+    "ast_hash": "a7d064735a06458f7f851f5d2a388e42",
     "semantic_hash": ""
   },
   "Dolos-Lab/tests/__init__.py": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "Dolos-Lab/README.md": {
-    "mtime": 1792254662.5308144,
-    "ast_hash": "6bb9221b57c66123be206ac2ecb2a41b",
+    "mtime": 1792386993.5629494,
+    "ast_hash": "f4a4fa3ac6b894587f00553dd4cf29fa",
     "semantic_hash": ""
   },
   "Dolos-Lab/SOLUTION.md": {
@@ -315,8 +315,8 @@
     "semantic_hash": ""
   },
   "Dolos-Lab/public/index.html": {
-    "mtime": 1792254001.873162,
-    "ast_hash": "ff0cc00ea62413339e33b6f29bdc899d",
+    "mtime": 1792393025.0589254,
+    "ast_hash": "d972edffe0c8b0546d628de885264ce1",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-10-17-dolos-simulated.md": {
@@ -335,23 +335,588 @@
     "semantic_hash": ""
   },
   "deploy/ubuntu/install.sh": {
-    "mtime": 1792255126.7808075,
-    "ast_hash": "9e0a5c9ab1e9827296c773908f2b0e55",
+    "mtime": 1792399371.4049075,
+    "ast_hash": "02dde301a27d7190b4724f32fce72461",
     "semantic_hash": ""
   },
   "deploy/ubuntu/portal.js": {
-    "mtime": 1792254994.2613823,
-    "ast_hash": "c2292b98323507d1cb3ead58c17406a5",
+    "mtime": 1792392516.0270998,
+    "ast_hash": "dd2cc6e7f3c5d198e21c421fb1a0af84",
     "semantic_hash": ""
   },
   "deploy/ubuntu/README.md": {
-    "mtime": 1792255036.633024,
-    "ast_hash": "b861e42116bfcc4b1586f27739f6e109",
+    "mtime": 1792399431.442613,
+    "ast_hash": "e2ffeea68b26c909fe47b9a978dfbc91",
     "semantic_hash": ""
   },
   "deploy/ubuntu/index.html": {
-    "mtime": 1792254993.4767907,
-    "ast_hash": "ac779916c7df5ba3eaf7ba0fa75de543",
+    "mtime": 1792399370.9477355,
+    "ast_hash": "aae37fcb8b98c466bbe4715d7dbd6653",
+    "semantic_hash": ""
+  },
+  "ai-api-keys.txt": {
+    "mtime": 1792266300.6940339,
+    "ast_hash": "2dbe9811320676fa8b4d7756e185fdf8",
+    "semantic_hash": ""
+  },
+  "local_portal.py": {
+    "mtime": 1792399370.475982,
+    "ast_hash": "9003d9dae6188b86a1c83cd0c57ec2af",
+    "semantic_hash": ""
+  },
+  "challenges/base64-cascade/app.js": {
+    "mtime": 1792394689.1226392,
+    "ast_hash": "e63a95bb80b9f341de64ed2d12479d2b",
+    "semantic_hash": ""
+  },
+  "challenges/ghost-binary/app.js": {
+    "mtime": 1792394689.0424817,
+    "ast_hash": "6dc43275d707b9c4d03a0764e80c42a5",
+    "semantic_hash": ""
+  },
+  "challenges/lots-of-passwords/app.js": {
+    "mtime": 1792394689.1875873,
+    "ast_hash": "0b9a00a2cb680772f56e94de366f992e",
+    "semantic_hash": ""
+  },
+  "challenges/redacted-rsa/app.js": {
+    "mtime": 1792394688.9643302,
+    "ast_hash": "cf5f8444d8daa433e24e13fb53c8164b",
+    "semantic_hash": ""
+  },
+  "challenges/sekur-julius/app.js": {
+    "mtime": 1792394689.1481154,
+    "ast_hash": "594cbbc98bc41bcdb0addffc083f0807",
+    "semantic_hash": ""
+  },
+  "challenges/sugar-free-candies/app.js": {
+    "mtime": 1792394689.161869,
+    "ast_hash": "1e7f990a399f23e660d0bb2d0ee6b760",
+    "semantic_hash": ""
+  },
+  "challenges/base64-cascade/README.md": {
+    "mtime": 1792394854.0343485,
+    "ast_hash": "005e04e36b754c10895e8c64465706f3",
+    "semantic_hash": ""
+  },
+  "challenges/base64-cascade/index.html": {
+    "mtime": 1792394688.9956074,
+    "ast_hash": "e2726f03717dfc434bd1b54f8e027aba",
+    "semantic_hash": ""
+  },
+  "challenges/ghost-binary/README.md": {
+    "mtime": 1792394853.9618423,
+    "ast_hash": "677531109ba7f7ecdf149c779580cb40",
+    "semantic_hash": ""
+  },
+  "challenges/ghost-binary/index.html": {
+    "mtime": 1792394981.4841003,
+    "ast_hash": "2eb2c5fe73170404a693cf5504945c62",
+    "semantic_hash": ""
+  },
+  "challenges/lots-of-passwords/README.md": {
+    "mtime": 1792394854.0542936,
+    "ast_hash": "b2eccfbba4d5be03561456156c2732a6",
+    "semantic_hash": ""
+  },
+  "challenges/lots-of-passwords/index.html": {
+    "mtime": 1792394689.147115,
+    "ast_hash": "750f3a100849b31d698262292776ab69",
+    "semantic_hash": ""
+  },
+  "challenges/redacted-rsa/README.md": {
+    "mtime": 1792394853.9978485,
+    "ast_hash": "67791d847b9585e9b19a8400e000adbb",
+    "semantic_hash": ""
+  },
+  "challenges/redacted-rsa/index.html": {
+    "mtime": 1792394688.9799883,
+    "ast_hash": "b962973055c1b213c2fa58f19fbaf3e8",
+    "semantic_hash": ""
+  },
+  "challenges/sekur-julius/README.md": {
+    "mtime": 1792394854.06077,
+    "ast_hash": "154dfa0b9efe5ff2aa9393a741406ae1",
+    "semantic_hash": ""
+  },
+  "challenges/sekur-julius/index.html": {
+    "mtime": 1792394689.0112536,
+    "ast_hash": "b496f5f80bd55af271ade54b17b75d2a",
+    "semantic_hash": ""
+  },
+  "challenges/sugar-free-candies/README.md": {
+    "mtime": 1792394853.984148,
+    "ast_hash": "3e8908de6dd2de83f5dc783197a0b665",
+    "semantic_hash": ""
+  },
+  "challenges/sugar-free-candies/index.html": {
+    "mtime": 1792394689.1719575,
+    "ast_hash": "506b9c124b7cab1ef70db373ae33c5b6",
+    "semantic_hash": ""
+  },
+  "challenges/base64-cascade/challenge.py": {
+    "mtime": 1792394511.907985,
+    "ast_hash": "f9620d3fe2df91a8709de88467eaa711",
+    "semantic_hash": ""
+  },
+  "challenges/common.js": {
+    "mtime": 1792398551.8951876,
+    "ast_hash": "fbb68e6246a12a66ed862129d2530973",
+    "semantic_hash": ""
+  },
+  "challenges/ghost-binary/challenge.py": {
+    "mtime": 1792394513.7067761,
+    "ast_hash": "1eb29305791d1e7ac92cf01bfe57eb88",
+    "semantic_hash": ""
+  },
+  "challenges/lots-of-passwords/challenge.py": {
+    "mtime": 1792394512.7763016,
+    "ast_hash": "880392ca06a777c47acf755b38c4a140",
+    "semantic_hash": ""
+  },
+  "challenges/redacted-rsa/challenge.py": {
+    "mtime": 1792394840.296357,
+    "ast_hash": "3438d891ff981002a7d4fbf0c72136ec",
+    "semantic_hash": ""
+  },
+  "challenges/sekur-julius/challenge.py": {
+    "mtime": 1792394511.369368,
+    "ast_hash": "a9824ffa291fbc42c1e3c534098e5dcc",
+    "semantic_hash": ""
+  },
+  "challenges/server.py": {
+    "mtime": 1792399369.9311645,
+    "ast_hash": "5a5236328cd534fd0c1acb5eefd62319",
+    "semantic_hash": ""
+  },
+  "challenges/sugar-free-candies/challenge.py": {
+    "mtime": 1792394953.9761195,
+    "ast_hash": "053ba1f1c46d98edb3a7be775965d770",
+    "semantic_hash": ""
+  },
+  "challenges/tftp-last-block/app.js": {
+    "mtime": 1792398607.1201222,
+    "ast_hash": "fbd9c66f593b781de980c25949c8c93b",
+    "semantic_hash": ""
+  },
+  "challenges/tftp-last-block/build_capture.py": {
+    "mtime": 1792398671.3420453,
+    "ast_hash": "f9ac72b144aebe372b588bbb0884e0c2",
+    "semantic_hash": ""
+  },
+  "challenges/tftp-last-block/challenge.py": {
+    "mtime": 1792398606.1919413,
+    "ast_hash": "b72e5fc77536d41639ec82267b938f98",
+    "semantic_hash": ""
+  },
+  "challenges/tftp-last-block/README.md": {
+    "mtime": 1792398605.6778054,
+    "ast_hash": "a5faf17df926627c1db7ac37d5693d20",
+    "semantic_hash": ""
+  },
+  "challenges/tftp-last-block/index.html": {
+    "mtime": 1792398606.662228,
+    "ast_hash": "ea8d4a8fc20e0d53840539fd2a306b62",
+    "semantic_hash": ""
+  },
+  "challenges/api-contract-trap/app.js": {
+    "mtime": 1792399339.6376908,
+    "ast_hash": "2aaf1a9043af357d094bb2b936dd31cd",
+    "semantic_hash": ""
+  },
+  "challenges/api-contract-trap/challenge.py": {
+    "mtime": 1792399339.6356988,
+    "ast_hash": "a6ed531c1751ad248af7f593036b1fc9",
+    "semantic_hash": ""
+  },
+  "challenges/browser-cache-reconstruction/app.js": {
+    "mtime": 1792399339.5880246,
+    "ast_hash": "a295f3f58170949557b64942155ec456",
+    "semantic_hash": ""
+  },
+  "challenges/browser-cache-reconstruction/challenge.py": {
+    "mtime": 1792399339.5870252,
+    "ast_hash": "fa350f577f1cc375f002ac658b238f4e",
+    "semantic_hash": ""
+  },
+  "challenges/cookie-crumbs/app.js": {
+    "mtime": 1792399339.608948,
+    "ast_hash": "85c33c96b2d2d840cd532394e19e2e9d",
+    "semantic_hash": ""
+  },
+  "challenges/cookie-crumbs/challenge.py": {
+    "mtime": 1792399339.606996,
+    "ast_hash": "59bc9e9ef4421cd5b4c25c4665d1b2bd",
+    "semantic_hash": ""
+  },
+  "challenges/dns-breadcrumbs/app.js": {
+    "mtime": 1792399339.5576046,
+    "ast_hash": "d11be1bea4f15689c3490786a494b2ab",
+    "semantic_hash": ""
+  },
+  "challenges/dns-breadcrumbs/challenge.py": {
+    "mtime": 1792399339.5565863,
+    "ast_hash": "c8d073d0125c7c2d0f66baa077bac5ef",
+    "semantic_hash": ""
+  },
+  "challenges/elf-gatekeeper/app.js": {
+    "mtime": 1792399339.6486936,
+    "ast_hash": "3eed653fe06cd6aff0ecb7d1459c65f3",
+    "semantic_hash": ""
+  },
+  "challenges/elf-gatekeeper/challenge.py": {
+    "mtime": 1792399339.6466908,
+    "ast_hash": "ec33d6ffd992cf9c40607b5cc72c0935",
+    "semantic_hash": ""
+  },
+  "challenges/file-carver/app.js": {
+    "mtime": 1792399339.584025,
+    "ast_hash": "5c700b6c843ed2f0b924453373f7671c",
+    "semantic_hash": ""
+  },
+  "challenges/file-carver/challenge.py": {
+    "mtime": 1792399339.5830264,
+    "ast_hash": "4b4ea87b7fcd961deda4efcace579392",
+    "semantic_hash": ""
+  },
+  "challenges/firmware-footnote/app.js": {
+    "mtime": 1792399339.5910292,
+    "ast_hash": "715972a3b9ae4c56703d5a3cd692ee7f",
+    "semantic_hash": ""
+  },
+  "challenges/firmware-footnote/challenge.py": {
+    "mtime": 1792399339.5900285,
+    "ast_hash": "748f3eea42e6538dbea56a424ae9a89d",
+    "semantic_hash": ""
+  },
+  "challenges/git-aftermath/app.js": {
+    "mtime": 1792399339.580025,
+    "ast_hash": "8b470e69df009252a277f3f61c8d1052",
+    "semantic_hash": ""
+  },
+  "challenges/git-aftermath/challenge.py": {
+    "mtime": 1792399339.5780284,
+    "ast_hash": "d09708203ab436d9a53ded9e5a858ee8",
+    "semantic_hash": ""
+  },
+  "challenges/header-hunt/app.js": {
+    "mtime": 1792399339.6020014,
+    "ast_hash": "d4d42a8d5a9635df71695a2be885d1bb",
+    "semantic_hash": ""
+  },
+  "challenges/header-hunt/challenge.py": {
+    "mtime": 1792399339.5990303,
+    "ast_hash": "a153d777cd6a7ad2901affb4a7de928e",
+    "semantic_hash": ""
+  },
+  "challenges/logbook-0317/app.js": {
+    "mtime": 1792399339.5720341,
+    "ast_hash": "7768e4d411f23a4ca05dce67ea9174e7",
+    "semantic_hash": ""
+  },
+  "challenges/logbook-0317/challenge.py": {
+    "mtime": 1792399339.5700374,
+    "ast_hash": "e253f436e7df94829001a1e8fd369b56",
+    "semantic_hash": ""
+  },
+  "challenges/mailbox-in-transit/app.js": {
+    "mtime": 1792399339.5658941,
+    "ast_hash": "d869449afaecb1d35e94537c0ff65e92",
+    "semantic_hash": ""
+  },
+  "challenges/mailbox-in-transit/challenge.py": {
+    "mtime": 1792399339.564808,
+    "ast_hash": "034bada04d31d749eef4ea7029bb8edf",
+    "semantic_hash": ""
+  },
+  "challenges/metadata-mosaic/app.js": {
+    "mtime": 1792399339.5754821,
+    "ast_hash": "bdd9bde5236194fad5d3214cd3679f3f",
+    "semantic_hash": ""
+  },
+  "challenges/metadata-mosaic/challenge.py": {
+    "mtime": 1792399339.5740263,
+    "ast_hash": "649fb3259dcd975eaebcf1629978fdfa",
+    "semantic_hash": ""
+  },
+  "challenges/mock-idor-maze/app.js": {
+    "mtime": 1792399339.6150713,
+    "ast_hash": "540d445459dff9572e5bebb1f9efceda",
+    "semantic_hash": ""
+  },
+  "challenges/mock-idor-maze/challenge.py": {
+    "mtime": 1792399339.6129968,
+    "ast_hash": "771770b3bcfd5feb42dc28c20ae9e47f",
+    "semantic_hash": ""
+  },
+  "challenges/packet-split/app.js": {
+    "mtime": 1792399339.5951679,
+    "ast_hash": "289e11d67fdb2b8e67920318f8b70cb7",
+    "semantic_hash": ""
+  },
+  "challenges/packet-split/challenge.py": {
+    "mtime": 1792399339.5930235,
+    "ast_hash": "330a2232c957525924c00adc1908ef4a",
+    "semantic_hash": ""
+  },
+  "challenges/policy-diff/app.js": {
+    "mtime": 1792399339.6536899,
+    "ast_hash": "17376925397a477e09f09423a7faec45",
+    "semantic_hash": ""
+  },
+  "challenges/policy-diff/challenge.py": {
+    "mtime": 1792399339.652783,
+    "ast_hash": "f298f8fe328abd880419e20f57842aba",
+    "semantic_hash": ""
+  },
+  "challenges/redirect-relay/app.js": {
+    "mtime": 1792399339.6316955,
+    "ast_hash": "d3a5d6f709351307c76b21c4124f8077",
+    "semantic_hash": ""
+  },
+  "challenges/redirect-relay/challenge.py": {
+    "mtime": 1792399339.629686,
+    "ast_hash": "6fc642fca264fe65afd26dbde08343cd",
+    "semantic_hash": ""
+  },
+  "challenges/sql-query-room/app.js": {
+    "mtime": 1792399339.626742,
+    "ast_hash": "81ffbfb82983c6dde4dec2a64a5de8de",
+    "semantic_hash": ""
+  },
+  "challenges/sql-query-room/challenge.py": {
+    "mtime": 1792399430.9825442,
+    "ast_hash": "f1541d990c3bf1d04345408c1a891674",
+    "semantic_hash": ""
+  },
+  "challenges/timeline-drift/app.js": {
+    "mtime": 1792399339.6611156,
+    "ast_hash": "a0b06d2300d9e2d4879c14cdc017f741",
+    "semantic_hash": ""
+  },
+  "challenges/timeline-drift/challenge.py": {
+    "mtime": 1792399339.6586885,
+    "ast_hash": "338caa079db2f70630677d1b87ec0c6e",
+    "semantic_hash": ""
+  },
+  "challenges/tiny-vm/app.js": {
+    "mtime": 1792399339.64369,
+    "ast_hash": "ac99af5edca8f2be6914216c7160c817",
+    "semantic_hash": ""
+  },
+  "challenges/tiny-vm/challenge.py": {
+    "mtime": 1792399339.6416914,
+    "ast_hash": "3da0c2cf928dc12de59d6db8851fb227",
+    "semantic_hash": ""
+  },
+  "challenges/usb-typist/app.js": {
+    "mtime": 1792399339.5617197,
+    "ast_hash": "3207c174e35426cbce3c95f5f958577c",
+    "semantic_hash": ""
+  },
+  "challenges/usb-typist/challenge.py": {
+    "mtime": 1792399339.5607076,
+    "ast_hash": "376cf46e8d267d4f703aa7008d1e396d",
+    "semantic_hash": ""
+  },
+  "challenges/api-contract-trap/README.md": {
+    "mtime": 1792399339.6396928,
+    "ast_hash": "7177edaa550a213755948b913fef6f62",
+    "semantic_hash": ""
+  },
+  "challenges/api-contract-trap/index.html": {
+    "mtime": 1792399339.6366963,
+    "ast_hash": "7e21ccffc9bdff9e84f9ab89a25be8e8",
+    "semantic_hash": ""
+  },
+  "challenges/browser-cache-reconstruction/README.md": {
+    "mtime": 1792399339.5890286,
+    "ast_hash": "82cf748295c4f8e23769bcc17aea03ff",
+    "semantic_hash": ""
+  },
+  "challenges/browser-cache-reconstruction/index.html": {
+    "mtime": 1792399339.5880246,
+    "ast_hash": "939f5b96edd071c7e85a058d4b5218dc",
+    "semantic_hash": ""
+  },
+  "challenges/cookie-crumbs/README.md": {
+    "mtime": 1792399339.611996,
+    "ast_hash": "99c93df79b9dc1bc3c3f111976f49cdb",
+    "semantic_hash": ""
+  },
+  "challenges/cookie-crumbs/index.html": {
+    "mtime": 1792399339.607999,
+    "ast_hash": "f2c3a709fe82357be6a05ecf7a982dd8",
+    "semantic_hash": ""
+  },
+  "challenges/dns-breadcrumbs/README.md": {
+    "mtime": 1792399339.5596266,
+    "ast_hash": "b713bc8155013c48f71468be08b269f6",
+    "semantic_hash": ""
+  },
+  "challenges/dns-breadcrumbs/index.html": {
+    "mtime": 1792399339.5576046,
+    "ast_hash": "8a9ce0b406a3f46af21f2e9142dd777f",
+    "semantic_hash": ""
+  },
+  "challenges/elf-gatekeeper/README.md": {
+    "mtime": 1792399339.650688,
+    "ast_hash": "2d25f2f957292ecb89764006f52538f2",
+    "semantic_hash": ""
+  },
+  "challenges/elf-gatekeeper/index.html": {
+    "mtime": 1792399339.6476922,
+    "ast_hash": "24abe0b77cb1d8f4414e2b2941fabdc3",
+    "semantic_hash": ""
+  },
+  "challenges/file-carver/README.md": {
+    "mtime": 1792399339.5860288,
+    "ast_hash": "5304c17850814a95499a6de44753dd84",
+    "semantic_hash": ""
+  },
+  "challenges/file-carver/index.html": {
+    "mtime": 1792399339.584025,
+    "ast_hash": "c2d15387a5ed1353a9bdccc550d3bc02",
+    "semantic_hash": ""
+  },
+  "challenges/firmware-footnote/README.md": {
+    "mtime": 1792399339.592025,
+    "ast_hash": "847affd20823a8d0c64f0dc3c1f5c1c6",
+    "semantic_hash": ""
+  },
+  "challenges/firmware-footnote/index.html": {
+    "mtime": 1792399339.5910292,
+    "ast_hash": "0e79f05a90204d6504a98ba571d39135",
+    "semantic_hash": ""
+  },
+  "challenges/git-aftermath/README.md": {
+    "mtime": 1792399339.5820265,
+    "ast_hash": "7875f172c58539af497f0583d937c818",
+    "semantic_hash": ""
+  },
+  "challenges/git-aftermath/index.html": {
+    "mtime": 1792399339.579027,
+    "ast_hash": "10a1450160c8b8d5c3ee9161b2bcd386",
+    "semantic_hash": ""
+  },
+  "challenges/header-hunt/README.md": {
+    "mtime": 1792399339.603999,
+    "ast_hash": "84e74d0aa6ac3d9822611aaf30059f32",
+    "semantic_hash": ""
+  },
+  "challenges/header-hunt/index.html": {
+    "mtime": 1792399339.600942,
+    "ast_hash": "370db890356cd1f763b9c7b293bbb4f1",
+    "semantic_hash": ""
+  },
+  "challenges/logbook-0317/README.md": {
+    "mtime": 1792399339.573028,
+    "ast_hash": "64bca5b0047f39f90361a174af70c71e",
+    "semantic_hash": ""
+  },
+  "challenges/logbook-0317/index.html": {
+    "mtime": 1792399339.5710297,
+    "ast_hash": "68d0012eb8513cc4b469cd50e42671be",
+    "semantic_hash": ""
+  },
+  "challenges/mailbox-in-transit/README.md": {
+    "mtime": 1792399339.5680091,
+    "ast_hash": "3cfb1655d20517f8d7653f10abe7741e",
+    "semantic_hash": ""
+  },
+  "challenges/mailbox-in-transit/index.html": {
+    "mtime": 1792399339.5658941,
+    "ast_hash": "8986e2eeb2970814ad5b9bd8788149e1",
+    "semantic_hash": ""
+  },
+  "challenges/metadata-mosaic/README.md": {
+    "mtime": 1792399339.577024,
+    "ast_hash": "e631dd35dba28edf1da833a76b44fab8",
+    "semantic_hash": ""
+  },
+  "challenges/metadata-mosaic/index.html": {
+    "mtime": 1792399339.5740263,
+    "ast_hash": "a38c04fc476cd825edf578fbe84af969",
+    "semantic_hash": ""
+  },
+  "challenges/mock-idor-maze/README.md": {
+    "mtime": 1792399339.620659,
+    "ast_hash": "4c5ee903caf5783e45c4e650dfa13295",
+    "semantic_hash": ""
+  },
+  "challenges/mock-idor-maze/index.html": {
+    "mtime": 1792399339.6139958,
+    "ast_hash": "af620cd0060c334ad12861f9c4c7a575",
+    "semantic_hash": ""
+  },
+  "challenges/packet-split/README.md": {
+    "mtime": 1792399339.5970247,
+    "ast_hash": "e7ab8e19e5eae2bcc988acc8733bdfc8",
+    "semantic_hash": ""
+  },
+  "challenges/packet-split/index.html": {
+    "mtime": 1792399339.5940259,
+    "ast_hash": "8bf06ed38749459c7bb3fb29c4b90fa1",
+    "semantic_hash": ""
+  },
+  "challenges/policy-diff/README.md": {
+    "mtime": 1792399339.6567748,
+    "ast_hash": "17e8c299b8b97ab44fe30dab715ba0ae",
+    "semantic_hash": ""
+  },
+  "challenges/policy-diff/index.html": {
+    "mtime": 1792399339.652783,
+    "ast_hash": "d818b3c137cf0033dbfd461a67f00a91",
+    "semantic_hash": ""
+  },
+  "challenges/redirect-relay/README.md": {
+    "mtime": 1792399339.6336987,
+    "ast_hash": "454e7d2d4cb190d13b8a66d9c6a91bdd",
+    "semantic_hash": ""
+  },
+  "challenges/redirect-relay/index.html": {
+    "mtime": 1792399339.6306925,
+    "ast_hash": "c1118c81225239eb5d0db5d5455d845a",
+    "semantic_hash": ""
+  },
+  "challenges/sql-query-room/README.md": {
+    "mtime": 1792399339.628687,
+    "ast_hash": "b3af82117b3a5a4d859635d764118e88",
+    "semantic_hash": ""
+  },
+  "challenges/sql-query-room/index.html": {
+    "mtime": 1792399339.6258907,
+    "ast_hash": "3de662f9116f86889e800956d29c8998",
+    "semantic_hash": ""
+  },
+  "challenges/timeline-drift/README.md": {
+    "mtime": 1792399339.6632307,
+    "ast_hash": "bf412573976446faabebacd44c2c20ba",
+    "semantic_hash": ""
+  },
+  "challenges/timeline-drift/index.html": {
+    "mtime": 1792399339.6601732,
+    "ast_hash": "d0ad361fd56ebbfaa39657696b857846",
+    "semantic_hash": ""
+  },
+  "challenges/tiny-vm/README.md": {
+    "mtime": 1792399339.6446884,
+    "ast_hash": "28a82abcf31bd22afbc4c665a6d0c2d1",
+    "semantic_hash": ""
+  },
+  "challenges/tiny-vm/index.html": {
+    "mtime": 1792399339.642689,
+    "ast_hash": "81f8e8177375501efc0175edd2748040",
+    "semantic_hash": ""
+  },
+  "challenges/usb-typist/README.md": {
+    "mtime": 1792399339.5638733,
+    "ast_hash": "ee72e5eb621b3e361e253dfe4ab64d11",
+    "semantic_hash": ""
+  },
+  "challenges/usb-typist/index.html": {
+    "mtime": 1792399339.5617197,
+    "ast_hash": "9579aeac5672737377c70478b7026a5a",
     "semantic_hash": ""
   }
 }

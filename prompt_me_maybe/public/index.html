@@ -45,12 +45,13 @@
       <p id="feedback" class="feedback" role="status"></p>
       <form id="chat-form" class="composer">
         <label class="visually-hidden" for="message">Your message</label>
-        <input id="message" name="message" type="text" maxlength="500" autocomplete="off" placeholder="Message Northstar Assistant" required>
-        <button id="send" type="submit" aria-label="Send message">
+        <input id="message" name="message" type="text" maxlength="500" autocomplete="off" placeholder="Message Northstar Assistant" required disabled>
+        <button id="send" type="submit" aria-label="Send message" disabled>
           <span aria-hidden="true">↑</span>
         </button>
       </form>
       <div class="composer-meta">
+        <span id="prompt-meter" class="prompt-meter" role="status" aria-live="polite">Loading prompt limit…</span>
         <span class="composer-limit">Up to 500 characters</span>
       </div>
       <p id="completion" class="completion" hidden>Challenge complete. Submit the flag you found to TryHackMe.</p>

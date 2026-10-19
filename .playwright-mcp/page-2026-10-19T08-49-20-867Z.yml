@@ -1,0 +1,19 @@
+- main [ref=f10e2]:
+  - link "← Challenge Index" [ref=f10e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f10e4]: FORENSICS / BROWSER ARTIFACTS
+  - heading "Browser Cache Reconstruction" [level=1] [ref=f10e5]
+  - paragraph [ref=f10e6]: A cache index lists pieces of a downloaded report. Reassemble the matching entries and decode the result.
+  - generic [ref=f10e7]:
+    - heading "Recovered evidence" [level=2] [ref=f10e8]
+    - generic [ref=f10e9]: "cache-index.csv (same URL hash means same report): report-part-02.cache,seq=02,body=UNIRV9SRU report-part-04.cache,seq=04,body== report-part-01.cache,seq=01,body=RkxBR3tDQ report-part-03.cache,seq=03,body=JVSUxUfQ="
+    - group [ref=f10e10]:
+      - generic "Hint" [ref=f10e11] [cursor=pointer]
+  - generic [ref=f10e12]:
+    - generic [ref=f10e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f10e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{CACHE_REBUILT}"
+    - button "Submit flag" [active] [ref=f10e15] [cursor=pointer]
+    - generic [ref=f10e16]: "Correct. Flag accepted. Flag: FLAG{CACHE_REBUILT}"
+  - generic [ref=f10e17]: Self-contained challenge · one fixed answer shared by all teams

@@ -1,16 +1,122 @@
 import os
 import re
 import requests
+import secrets
+import sqlite3
+import tempfile
 import threading # <-- Background logging
+import time
+from pathlib import Path
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent.parent / "ai-providers.env")
 
 app = Flask(__name__)
 
+MAX_PROMPTS = 30
+PROMPT_SESSION_TTL_SECONDS = 48 * 60 * 60
+PROMPT_SESSION_COOKIE = "ancient_guardian_session"
+PROMPT_STATE_DIR = Path(
+    os.environ.get(
+        "AI1_STATE_DIR",
+        str(Path(tempfile.gettempdir()) / "ancient-guardian"),
+    )
+)
+PROMPT_DATABASE = PROMPT_STATE_DIR / "prompt-sessions.sqlite3"
+
+
+def _connect_prompt_database():
+    PROMPT_STATE_DIR.mkdir(parents=True, exist_ok=True)
+    connection = sqlite3.connect(PROMPT_DATABASE, timeout=15)
+    connection.execute("PRAGMA busy_timeout = 15000")
+    return connection
+
+
+def _initialize_prompt_database():
+    with _connect_prompt_database() as connection:
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS prompt_sessions (
+                session_id TEXT PRIMARY KEY,
+                prompts_used INTEGER NOT NULL DEFAULT 0,
+                closed INTEGER NOT NULL DEFAULT 0,
+                updated_at REAL NOT NULL
+            )
+            """
+        )
+
+
+def _prompt_session_id():
+    session_id = request.cookies.get(PROMPT_SESSION_COOKIE, "")
+    if not session_id or len(session_id) > 128:
+        return secrets.token_urlsafe(32), True
+    return session_id, False
+
+
+def _prompt_status(session_id, consume_prompt=False):
+    now = time.time()
+    connection = _connect_prompt_database()
+    try:
+        connection.execute("BEGIN IMMEDIATE")
+        connection.execute(
+            "DELETE FROM prompt_sessions WHERE updated_at < ?",
+            (now - PROMPT_SESSION_TTL_SECONDS,),
+        )
+        connection.execute(
+            "INSERT OR IGNORE INTO prompt_sessions (session_id, updated_at) VALUES (?, ?)",
+            (session_id, now),
+        )
+        row = connection.execute(
+            "SELECT prompts_used, closed FROM prompt_sessions WHERE session_id = ?",
+            (session_id,),
+        ).fetchone()
+        prompts_used, closed = row
+
+        if consume_prompt and not closed:
+            if prompts_used >= MAX_PROMPTS:
+                closed = 1
+            else:
+                prompts_used += 1
+
+        connection.execute(
+            "UPDATE prompt_sessions SET prompts_used = ?, closed = ?, updated_at = ? WHERE session_id = ?",
+            (prompts_used, closed, now, session_id),
+        )
+        connection.commit()
+    except Exception:
+        connection.rollback()
+        raise
+    finally:
+        connection.close()
+
+    return {
+        "prompts_used": prompts_used,
+        "prompts_remaining": max(0, MAX_PROMPTS - prompts_used),
+        "prompt_limit": MAX_PROMPTS,
+        "closed": bool(closed),
+    }
+
+
+def _prompt_response(payload, session_id):
+    response = jsonify(payload)
+    response.set_cookie(
+        PROMPT_SESSION_COOKIE,
+        session_id,
+        max_age=PROMPT_SESSION_TTL_SECONDS,
+        httponly=True,
+        secure=request.is_secure,
+        samesite="Lax",
+        path="/",
+    )
+    return response
+
+
+_initialize_prompt_database()
+
 # --- CONFIGURATION ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID", "")
@@ -139,7 +245,7 @@ def groq_reply(message):
             "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
             json={
-                "model": "openai/gpt-oss-20b",
+                "model": GROQ_MODEL,
                 "messages": [
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": message},
@@ -227,35 +333,52 @@ def model_reply(message):
 def home():
     return render_template('index.html')
 
+@app.route('/status', methods=['GET'])
+def prompt_limit_status():
+    session_id, _new_session = _prompt_session_id()
+    return _prompt_response(_prompt_status(session_id), session_id)
+
 @app.route('/chat', methods=['POST'])
 def chat():
     payload = request.get_json(silent=True) or {}
     user_input = str(payload.get("message", ""))
+    session_id, _new_session = _prompt_session_id()
 
     if not user_input.strip():
-        return jsonify({"reply": "Command rejected."})
+        status = _prompt_status(session_id)
+        return _prompt_response({**status, "reply": "Command rejected."}, session_id)
+
+    status = _prompt_status(session_id, consume_prompt=True)
+    if status["closed"]:
+        return _prompt_response(
+            {**status, "reply": "Prompt limit reached. This challenge is now closed."},
+            session_id,
+        )
+
+    def respond(reply):
+        return _prompt_response({**status, "reply": reply}, session_id)
 
     if user_input.strip() == "001017829":
-        return jsonify({"reply": "flag{001017829}"})
+        return respond("flag{001017829}")
 
     if contains_term(user_input, BLOCKED_KEYWORDS):
-        return jsonify({"reply": "Command rejected."})
+        return respond("Command rejected.")
 
     if contains_term(user_input, INTERNAL_PROBE_TERMS):
-        return jsonify({"reply": TOO_SMART_REPLY})
+        return respond(TOO_SMART_REPLY)
 
     if is_unlock_request(user_input):
         if GSHEET_LOGGING_ENABLED:
             threading.Thread(target=log_to_sheet, args=(user_input, RECIPE_TEXT), daemon=True).start()
-        return jsonify({"reply": RECIPE_TEXT})
+        return respond(RECIPE_TEXT)
 
     reply = model_reply(user_input)
     if reply is None:
-        return jsonify({"reply": "Guardian offline. AI providers unavailable."})
+        return respond("Guardian offline. AI providers unavailable.")
 
     if GSHEET_LOGGING_ENABLED:
         threading.Thread(target=log_to_sheet, args=(user_input, reply), daemon=True).start()
-    return jsonify({"reply": reply})
+    return respond(reply)
 
 # Vercel ignores this block, but it allows you to still run `python app.py` locally
 if __name__ == '__main__':

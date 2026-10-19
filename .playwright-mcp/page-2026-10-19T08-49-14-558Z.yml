@@ -1,0 +1,17 @@
+- main [ref=f8e2]:
+  - link "← Challenge Index" [ref=f8e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f8e4]: FORENSICS / VERSION CONTROL
+  - heading "Git Aftermath" [level=1] [ref=f8e5]
+  - paragraph [ref=f8e6]: A repository was cleaned before handoff. Inspect its commit history and locate the removed configuration value.
+  - generic [ref=f8e7]:
+    - heading "Recovered evidence" [level=2] [ref=f8e8]
+    - generic [ref=f8e9]: "git log --oneline --all c81a92b remove temporary debug setting 22c7b01 add startup configuration git show c81a92b -- config/debug.env diff --git a/config/debug.env b/config/debug.env -DEBUG_ARCHIVE_TOKEN=FLAG{GIT_REMEMBERS} +DEBUG_ARCHIVE_TOKEN=removed"
+    - group [ref=f8e10]:
+      - generic "Hint" [ref=f8e11] [cursor=pointer]
+  - generic [ref=f8e12]:
+    - generic [ref=f8e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f8e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f8e15] [cursor=pointer]
+  - generic [ref=f8e17]: Self-contained challenge · one fixed answer shared by all teams

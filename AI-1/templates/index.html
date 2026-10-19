@@ -10,32 +10,89 @@
     <div class="container">
         <h1>[SERVER_ADMIN_LOG]</h1>
         <div id="chat-box"></div>
+        <p id="prompt-meter" class="prompt-meter" role="status" aria-live="polite">Loading prompt limit…</p>
         <div class="input-area">
-            <input type="text" id="msg" placeholder="Enter server command..." onkeydown="if(event.key==='Enter') send()">
-            <button onclick="send()">RUN</button>
+            <input type="text" id="msg" placeholder="Enter server command..." onkeydown="if(event.key==='Enter') send()" disabled>
+            <button id="send-button" onclick="send()" disabled>RUN</button>
         </div>
     </div>
 
     <script>
-        async function send() {
-            const input = document.getElementById('msg');
-            const msg = input.value;
-            if(!msg) return;
+        const input = document.getElementById('msg');
+        const sendButton = document.getElementById('send-button');
+        const promptMeter = document.getElementById('prompt-meter');
+        const box = document.getElementById('chat-box');
+        let challengeClosed = false;
+        let requestInFlight = false;
 
-            const box = document.getElementById('chat-box');
+        function updatePromptMeter(data) {
+            const used = data.prompts_used;
+            const remaining = data.prompts_remaining;
+            const limit = data.prompt_limit;
+            challengeClosed = data.closed;
+
+            if (challengeClosed) {
+                promptMeter.textContent = `Challenge closed · ${used} of ${limit} prompts used · ${remaining} remaining.`;
+                input.disabled = true;
+                sendButton.disabled = true;
+            } else if (remaining === 0) {
+                promptMeter.textContent = `${used} of ${limit} prompts used · 0 remaining. The next prompt will close this challenge.`;
+                input.disabled = requestInFlight;
+                sendButton.disabled = requestInFlight;
+            } else {
+                promptMeter.textContent = `${used} of ${limit} prompts used · ${remaining} remaining.`;
+                input.disabled = requestInFlight;
+                sendButton.disabled = requestInFlight;
+            }
+        }
+
+        async function loadPromptMeter() {
+            try {
+                const res = await fetch('/status');
+                if (!res.ok) throw new Error('Prompt status unavailable');
+                updatePromptMeter(await res.json());
+            } catch (_error) {
+                promptMeter.textContent = 'Prompt limit status unavailable. Reload this page to reconnect.';
+                input.disabled = true;
+                sendButton.disabled = true;
+            }
+        }
+
+        async function send() {
+            const msg = input.value.trim();
+            if (!msg || challengeClosed || requestInFlight) return;
+
             box.innerHTML += `<p class="user"><span class="label">> Player:</span> ${msg}</p>`;
             input.value = '';
             box.scrollTop = box.scrollHeight;
+            requestInFlight = true;
+            input.disabled = true;
+            sendButton.disabled = true;
 
-            const res = await fetch('/chat', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({message: msg})
-            });
-            const data = await res.json();
-            box.innerHTML += `<p class="bot"><span class="label">[Guardian]:</span> ${data.reply}</p>`;
-            box.scrollTop = box.scrollHeight;
+            try {
+                const res = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: msg})
+                });
+                const data = await res.json();
+                box.innerHTML += `<p class="bot"><span class="label">[Guardian]:</span> ${data.reply}</p>`;
+                updatePromptMeter(data);
+            } catch (_error) {
+                box.innerHTML += '<p class="bot"><span class="label">[Guardian]:</span> Connection lost. Reload to check your prompt count.</p>';
+                await loadPromptMeter();
+            } finally {
+                requestInFlight = false;
+                if (!challengeClosed) {
+                    input.disabled = false;
+                    sendButton.disabled = false;
+                    input.focus();
+                }
+                box.scrollTop = box.scrollHeight;
+            }
         }
+
+        loadPromptMeter();
     </script>
 </body>
 </html>

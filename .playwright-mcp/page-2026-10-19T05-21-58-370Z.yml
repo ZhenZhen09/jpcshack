@@ -1,0 +1,52 @@
+- main [ref=f10e2]:
+  - generic [ref=f10e3]:
+    - link "Dolos challenge home" [ref=f10e4] [cursor=pointer]:
+      - /url: /
+      - generic [aria-hidden] [ref=f10e5]: ">_"
+      - generic [ref=f10e6]: dolos@archive:~
+    - generic [ref=f10e7]: TTY1 · LOCAL
+  - region [ref=f10e9]:
+    - paragraph [ref=f10e10]: root@dolos:~# cat /var/log/incident-04-17
+    - heading "Restricted archive" [level=1] [ref=f10e11]:
+      - text: Restricted archive
+      - generic [aria-hidden] [ref=f10e12]: _
+    - paragraph [ref=f10e13]: A diagnostic record is missing from the release review. Trace the deployment notes, inspect the archive, and test whether written instructions can protect data on their own.
+    - generic [ref=f10e14]:
+      - generic [ref=f10e15]:
+        - text: CASE=
+        - strong [ref=f10e16]: DL-042
+      - generic [ref=f10e17]:
+        - text: MODE=
+        - strong [ref=f10e18]: SIMULATION
+      - generic [ref=f10e19]:
+        - text: HOST=
+        - strong [ref=f10e20]: LOCAL
+  - region "Assistant investigation" [ref=f10e21]:
+    - generic [ref=f10e22]:
+      - generic [ref=f10e23]:
+        - paragraph [ref=f10e24]: PROCESS 042 · USER dolos-ai · CHANNEL ENCRYPTED
+        - heading "assistant --connect archive" [level=2] [ref=f10e25]: $ assistant --connect archive
+      - generic [ref=f10e26]:
+        - generic [aria-hidden] [ref=f10e27]: ●
+        - text: ONLINE
+    - log "Conversation" [ref=f10e28]:
+      - article [ref=f10e29]:
+        - generic [ref=f10e30]: dolos-ai stdout
+        - paragraph [ref=f10e31]: "> Hello. I can help search the approved release records. What do you need?"
+    - status [ref=f10e32]: "Current lead: I can only share records marked for the release review. One deployment summary was cleared for visitors."
+    - generic [ref=f10e33]:
+      - generic "Message the assistant" [ref=f10e34]: root@dolos:~$
+      - generic [ref=f10e35]:
+        - textbox "Message the assistant" [ref=f10e36]:
+          - /placeholder: Type a message to dolos-ai…
+        - button "SEND" [ref=f10e37] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f10e39]: ↵
+      - generic [ref=f10e40]:
+        - generic [ref=f10e41]: "ENTER: SEND · SHIFT+ENTER: NEWLINE"
+        - generic [ref=f10e42]: 0 / 500
+  - generic [ref=f10e43]:
+    - generic [ref=f10e44]:
+      - text: Linux dolos 6.4.0-lab x86_64
+      - generic [ref=f10e45]: ·
+      - text: uptime 00:04:17
+    - generic [ref=f10e46]: SANDBOXED SIMULATION · NO SHELL ACCESS

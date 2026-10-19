@@ -1,0 +1,8 @@
+- generic [ref=e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e8]: "> Player: Hello, are you online?"
+    - paragraph [ref=e9]: "[Guardian]: Greetings, traveler! I be online and ready to help. What quest can I aid thee with?"
+  - generic [ref=e5]:
+    - textbox "Enter server command..." [ref=e6]
+    - button "RUN" [active] [ref=e7] [cursor=pointer]

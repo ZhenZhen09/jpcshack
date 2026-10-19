@@ -1,0 +1,17 @@
+- main [ref=f6e2]:
+  - link "← Challenge Index" [ref=f6e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f6e4]: BLUE TEAM / LOG ANALYSIS
+  - heading "Logbook at 03:17" [level=1] [ref=f6e5]
+  - paragraph [ref=f6e6]: A web server recorded routine traffic and one unusual request just after 03:17. Find and decode the incident request value.
+  - generic [ref=f6e7]:
+    - heading "Recovered evidence" [level=2] [ref=f6e8]
+    - generic [ref=f6e9]: web-07 access.log (UTC) 03:16:58 10.0.2.4 GET /health 200 ua=monitor 03:17:03 10.0.2.9 GET /assets/logo.svg 200 ua=browser 03:17:19 10.0.2.9 GET /export?receipt=RkxBR3tMT0dTX1RFTExfU1RPUklFU30= 200 ua=curl/8.1 03:17:25 10.0.2.4 GET /health 200 ua=monitor
+    - group [ref=f6e10]:
+      - generic "Hint" [ref=f6e11] [cursor=pointer]
+  - generic [ref=f6e12]:
+    - generic [ref=f6e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f6e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f6e15] [cursor=pointer]
+  - generic [ref=f6e17]: Self-contained challenge · one fixed answer shared by all teams

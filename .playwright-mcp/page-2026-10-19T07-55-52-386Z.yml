@@ -1,0 +1,20 @@
+- main [ref=f5e2]:
+  - link "<- Challenge Index" [ref=f5e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f5e4]: REVERSING / XOR
+  - heading "Ghost Binary" [level=1] [ref=f5e5]
+  - paragraph [ref=f5e6]: A tiny firmware dump contains bytes XORed with one repeated key byte. Find the key, decode the data, and recover the flag. This is a new session-generated exercise inspired by the repository's reversing category.
+  - generic [ref=f5e7]:
+    - heading "Firmware dump (hex)" [level=2] [ref=f5e8]
+    - generic [ref=f5e9]: 939994928e8d9a87aa87908390878690aac496cdcdc4cdcdc4c4c5c7cd88
+    - button "Download ghost.bin" [ref=f5e10] [cursor=pointer]
+    - group [ref=f5e11]:
+      - generic "Hint" [ref=f5e12]
+  - generic [ref=f5e13]:
+    - generic [ref=f5e14]: Repeated XOR key (hex byte)
+    - textbox "Repeated XOR key (hex byte)" [ref=f5e15]:
+      - /placeholder: 00-ff
+      - text: f5
+    - button "Decode firmware" [active] [ref=f5e16] [cursor=pointer]
+    - generic [ref=f5e17]: "Decoded firmware: flag{xor_reverse_1c8818811028}"
+  - generic [ref=f5e18]: Session-generated artifact

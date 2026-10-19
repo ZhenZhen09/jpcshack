@@ -1,0 +1,17 @@
+- main [ref=f3e2]:
+  - link "← Challenge Index" [ref=f3e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f3e4]: NETWORK FORENSICS / DNS
+  - heading "DNS Breadcrumbs" [level=1] [ref=f3e5]
+  - paragraph [ref=f3e6]: A resolver log was exported after an incident. Reassemble the query labels in sequence and recover the message.
+  - generic [ref=f3e7]:
+    - heading "Recovered evidence" [level=2] [ref=f3e8]
+    - generic [ref=f3e9]: "Resolver query export (fragment index is authoritative): 03:22:00.0 client=10.8.0.14 qname=05-PU.vault.corp.test 03:22:01.0 client=10.8.0.14 qname=04-KJKU2QST.vault.corp.test 03:22:02.0 client=10.8.0.14 qname=03-KJCUCRCD.vault.corp.test 03:22:03.0 client=10.8.0.14 qname=02-IRHFGX2C.vault.corp.test 03:22:04.0 client=10.8.0.14 qname=01-IZGECR33.vault.corp.test"
+    - group [ref=f3e10]:
+      - generic "Hint" [ref=f3e11] [cursor=pointer]
+  - generic [ref=f3e12]:
+    - generic [ref=f3e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f3e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f3e15] [cursor=pointer]
+  - generic [ref=f3e17]: Self-contained challenge · one fixed answer shared by all teams

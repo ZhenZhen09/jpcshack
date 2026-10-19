@@ -1,13 +1,18 @@
-# Graph Report - website  (2026-10-18)
+# Graph Report - website  (2026-10-19)
 
 ## Corpus Check
-- 57 files · ~49,352 words
+- 142 files · ~63,112 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 513 nodes · 673 edges · 46 communities (36 shown, 10 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.74)
+- 804 nodes · 959 edges · 131 communities (75 shown, 56 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `d1262ce8`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Community 0
@@ -46,6 +51,8 @@
 - ChallengeHandler
 - Review Focus
 - install.sh
+- portal.js
+- providers.py
 - ProviderTests
 - challenge.py
 - ChallengeServerTests
@@ -55,18 +62,66 @@
 - Dolos Lab
 - Dolos Lab Solution — Author Only
 - __init__.py
+- PortalHandler
+- ChallengeHandler
+- common.js
+- challenge.py
+- challenge.py
+- build_capture.py
+- app.js
+- README.md
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- challenge.py
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
+- README.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `ChallengeServerTests` - 36 edges
 2. `ChallengeHandler` - 21 edges
 3. `ChallengeServerTests` - 17 edges
-4. `ChallengeHandler` - 15 edges
-5. `Deepfake Help Desk: Adversarial Audio CTF Design` - 14 edges
-6. `What You Must Do When Invoked` - 12 edges
-7. `Dolos Simulated Challenge Implementation Plan` - 12 edges
-8. `Prompt Me Maybe — design spec` - 12 edges
-9. `Prompt Me Maybe Token Audit Challenge Design` - 12 edges
-10. `generate_assets()` - 10 edges
+4. `ChallengeHandler` - 16 edges
+5. `ChallengeHandler` - 15 edges
+6. `Deepfake Help Desk: Adversarial Audio CTF Design` - 14 edges
+7. `What You Must Do When Invoked` - 12 edges
+8. `Dolos Simulated Challenge Implementation Plan` - 12 edges
+9. `Prompt Me Maybe — design spec` - 12 edges
+10. `Prompt Me Maybe Token Audit Challenge Design` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ChallengeServerTests` --uses--> `LocalServer`  [INFERRED]
@@ -83,23 +138,23 @@
 ## Import Cycles
 - None detected.
 
-## Communities (46 total, 10 thin omitted)
+## Communities (131 total, 56 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
 Nodes (32): `app.py`, Application architecture, Audience and learning outcomes, Audio contract, `audio_features.py`, Audio tests, Browser interface, Challenge mechanics (+24 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.12
-Nodes (9): ChallengeHandler, LocalServer, main(), BaseHTTPRequestHandler, ThreadingHTTPServer, Local HTTP server for the isolated, simulated Dolos challenge., SessionRecord, GroqClientTests (+1 more)
+Cohesion: 0.11
+Nodes (12): ChallengeHandler, _connect_prompt_database(), _initialize_prompt_database(), LocalServer, main(), _prompt_status(), BaseHTTPRequestHandler, ThreadingHTTPServer (+4 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.08
 Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.21
-Nodes (11): addMessage(), completion, feedback, form, input, restoreProgress(), sendButton, setBusy() (+3 more)
+Cohesion: 0.20
+Nodes (13): addMessage(), completion, feedback, form, input, promptMeter, restoreProgress(), sendButton (+5 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.15
@@ -130,8 +185,8 @@ Cohesion: 0.22
 Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
 ### Community 12 - "app.py"
-Cohesion: 0.32
-Nodes (10): chat(), cloudflare_reply(), contains_term(), gemini_reply(), groq_reply(), is_unlock_request(), log_to_sheet(), model_reply() (+2 more)
+Cohesion: 0.23
+Nodes (16): chat(), cloudflare_reply(), _connect_prompt_database(), contains_term(), gemini_reply(), groq_reply(), _initialize_prompt_database(), is_unlock_request() (+8 more)
 
 ### Community 13 - "Review Focus"
 Cohesion: 0.29
@@ -143,7 +198,7 @@ Nodes (5): For /graphify explain, For /graphify path, graphify reference: query,
 
 ### Community 15 - "Prompt Me Maybe"
 Cohesion: 0.17
-Nodes (10): Install on a fresh Ubuntu VM, Optional AI-1 providers, Prepare and export an OVA, Service operations, Ubuntu CTF VM deployment, Challenge walkthrough (author reference), Prompt Me Maybe, Run on Windows (+2 more)
+Nodes (10): Install on a fresh Ubuntu VM, Prepare and export an OVA, Service operations, Shared AI provider configuration, Ubuntu CTF VM deployment, Challenge walkthrough (author reference), Prompt Me Maybe, Run on Windows (+2 more)
 
 ### Community 16 - "Ponytail"
 Cohesion: 0.40
@@ -167,7 +222,7 @@ Nodes (9): Approaches considered, Components and data flow, Goal, Next step, Out
 
 ### Community 27 - "test_app.py"
 Cohesion: 0.10
-Nodes (27): Path, create_app(), Local Flask server for the Sigma Tech image-classifier challenge., count_edits(), load_model(), predict_pixels(), Shared image validation and inference for Sigma Tech., validate_pixels() (+19 more)
+Nodes (27): create_app(), Local Flask server for the Sigma Tech image-classifier challenge., count_edits(), load_model(), predict_pixels(), Shared image validation and inference for Sigma Tech., validate_pixels(), find_solution() (+19 more)
 
 ### Community 28 - "Sigma Tech Implementation Plan"
 Cohesion: 0.20
@@ -187,7 +242,7 @@ Nodes (3): draw(), setResult(), togglePixel()
 
 ### Community 33 - "ChallengeHandler"
 Cohesion: 0.11
-Nodes (11): assistant_prompt(), ChallengeHandler, cloudflare_reply(), gemini_reply(), groq_reply(), LocalServer, model_reply(), openai_reply() (+3 more)
+Nodes (14): assistant_prompt(), ChallengeHandler, cloudflare_reply(), _connect_prompt_database(), gemini_reply(), groq_reply(), _initialize_prompt_database(), LocalServer (+6 more)
 
 ### Community 34 - "Review Focus"
 Cohesion: 0.29
@@ -197,12 +252,12 @@ Nodes (6): Global Constraints, Groq to Gemini Chat Fallback Implementation Plan,
 Cohesion: 0.70
 Nodes (4): create_service_user(), install_tree(), setup_venv(), install.sh script
 
-### Community 40 - "ProviderTests"
-Cohesion: 0.13
-Nodes (11): live_mode_configured(), openai_reply(), Optional, bounded Rebuff and OpenAI HTTP adapters., Live mode requires both service credentials., Screen one player message; return None if the optional service fails., Return validated assistant text and at most one fixed tool request., _read_json_response(), screen_message() (+3 more)
+### Community 37 - "providers.py"
+Cohesion: 0.19
+Nodes (19): _chat_reply(), cloudflare_reply(), gemini_reply(), groq_reply(), live_mode_configured(), _load_local_env(), model_reply(), openai_reply() (+11 more)
 
 ### Community 41 - "challenge.py"
-Cohesion: 0.21
+Cohesion: 0.20
 Nodes (11): accept_tool_request(), handle_local_message(), _is_prompt_injection(), new_state(), Deterministic Dolos challenge logic and the fixed simulated tool., Execute the single simulated, argument-free diagnostic lookup., Create a fresh per-browser challenge state., Advance known puzzle actions, or simulate an injected tool request. (+3 more)
 
 ### Community 43 - "Dolos Simulated Challenge Implementation Plan"
@@ -211,7 +266,7 @@ Nodes (12): Completion Checks, Dolos Simulated Challenge Implementation Plan, Fi
 
 ### Community 44 - "app.js"
 Cohesion: 0.18
-Nodes (6): count, form, input, sendButton, status, transcript
+Nodes (10): count, form, input, promptMeter, restoreSession(), sendButton, setBusy(), status (+2 more)
 
 ### Community 45 - "Dolos: Simulated Prompt Injection Challenge Design"
 Cohesion: 0.22
@@ -219,31 +274,47 @@ Nodes (8): Application and provider boundaries, Audience and learning outcomes, 
 
 ### Community 46 - "Dolos Lab"
 Cohesion: 0.33
-Nodes (5): Challenge outline, Dolos Lab, Optional Rebuff and OpenAI mode, Run challenge checks, Run locally on Windows
+Nodes (5): Challenge outline, Dolos Lab, Optional AI provider fallback, Run challenge checks, Run locally on Windows
 
 ### Community 47 - "Dolos Lab Solution — Author Only"
 Cohesion: 0.50
 Nodes (3): Dolos Lab Solution — Author Only, Intended path, Security boundary
 
+### Community 59 - "PortalHandler"
+Cohesion: 0.17
+Nodes (7): ChallengeManager, main(), port_is_open(), PortalHandler, Serve the local challenge index and launch only the selected challenge., Popen, SimpleHTTPRequestHandler
+
+### Community 60 - "ChallengeHandler"
+Cohesion: 0.13
+Nodes (10): ChallengeHandler, connect_db(), initialize_db(), main(), BaseHTTPRequestHandler, Path, valid_session_id(), is_solved() (+2 more)
+
+### Community 61 - "common.js"
+Cohesion: 0.80
+Nodes (4): init(), request(), show(), submit()
+
+### Community 68 - "build_capture.py"
+Cohesion: 0.48
+Nodes (6): ethernet_ipv4_udp(), internet_checksum(), main(), make_capture(), Build the fixed educational TFTP packet capture using Python's stdlib., rot13()
+
 ## Knowledge Gaps
-- **208 isolated node(s):** `builds`, `routes`, `transcript`, `form`, `input` (+203 more)
+- **232 isolated node(s):** `builds`, `routes`, `transcript`, `form`, `input` (+227 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **56 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ChallengeServerTests` connect `Community 1` to `ChallengeHandler`, `Community 2`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Why does `ChallengeHandler` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `ChallengeServerTests` (e.g. with `ChallengeHandler` and `LocalServer`) actually correct?**
   _`ChallengeServerTests` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 4 inferred relationships involving `ChallengeHandler` (e.g. with `main()` and `ChallengeServerTests`) actually correct?**
   _`ChallengeHandler` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `builds`, `routes`, `Deterministic Dolos challenge logic and the fixed simulated tool.` to the rest of the system?**
-  _223 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _272 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.12169312169312169 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11397849462365592 - nodes in this community are weakly interconnected._

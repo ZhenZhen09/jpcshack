@@ -1,0 +1,19 @@
+- main [ref=f16e2]:
+  - link "← Challenge Index" [ref=f16e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f16e4]: WEB SECURITY / SQL
+  - heading "SQL Query Room" [level=1] [ref=f16e5]
+  - paragraph [ref=f16e6]: A search service logged a crafted request and its returned rows. Identify the exposed recovery record.
+  - generic [ref=f16e7]:
+    - heading "Recovered evidence" [level=2] [ref=f16e8]
+    - generic [ref=f16e9]: "Synthetic query audit (no live database) Input: ' OR 1=1 -- Query: SELECT username,recovery_blob FROM users WHERE username='' OR 1=1 --' Returned rows: alice | ordinary bob | disabled service_backup | RkxBR3tVTlNBRkVfUVVFUll9"
+    - group [ref=f16e10]:
+      - generic "Hint" [ref=f16e11] [cursor=pointer]
+  - generic [ref=f16e12]:
+    - generic [ref=f16e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f16e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{UNSAFE_QUERY}"
+    - button "Submit flag" [active] [ref=f16e15] [cursor=pointer]
+    - generic [ref=f16e16]: "Correct. Flag accepted. Flag: FLAG{UNSAFE_QUERY}"
+  - generic [ref=f16e17]: Self-contained challenge · one fixed answer shared by all teams

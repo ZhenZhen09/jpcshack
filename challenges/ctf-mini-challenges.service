@@ -1,0 +1,30 @@
+[Unit]
+Description=JPCS self-contained CTF challenge API
+After=network.target
+
+[Service]
+Type=simple
+User=ctf-mini-challenges
+Group=ctf-mini-challenges
+WorkingDirectory=/opt/ctf-challenges/self-contained-challenges
+Environment=CHALLENGE_BIND=127.0.0.1
+Environment=PORT=8200
+Environment=CHALLENGE_WEB_ROOT=/var/www/ctf-portal/challenges
+Environment=CHALLENGE_STATE_DIR=/var/lib/ctf-challenges
+ExecStart=/usr/bin/python3 /opt/ctf-challenges/self-contained-challenges/server.py
+Restart=on-failure
+RestartSec=2
+StateDirectory=ctf-challenges
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

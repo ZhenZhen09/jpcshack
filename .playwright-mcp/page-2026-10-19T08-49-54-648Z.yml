@@ -1,0 +1,17 @@
+- main [ref=f24e2]:
+  - link "← Challenge Index" [ref=f24e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f24e4]: FORENSICS / IMAGE METADATA
+  - heading "Metadata Mosaic" [level=1] [ref=f24e5]
+  - paragraph [ref=f24e6]: Three evidence images were copied into an archive. Their descriptions are fragments; use their capture times to restore the order.
+  - generic [ref=f24e7]:
+    - heading "Recovered evidence" [level=2] [ref=f24e8]
+    - generic [ref=f24e9]: "Synthetic EXIF inventory: img_03.jpg | DateTimeOriginal=2026:10:18 09:42:11 | ImageDescription=AIC} img_01.jpg | DateTimeOriginal=2026:10:18 09:41:02 | ImageDescription=FLAG{MET img_02.jpg | DateTimeOriginal=2026:10:18 09:41:37 | ImageDescription=ADATA_MOS decoy.jpg | DateTimeOriginal=2026:10:18 09:40:00 | ImageDescription=ordinary conference photo"
+    - group [ref=f24e10]:
+      - generic "Hint" [ref=f24e11] [cursor=pointer]
+  - generic [ref=f24e12]:
+    - generic [ref=f24e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f24e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f24e15] [cursor=pointer]
+  - generic [ref=f24e17]: Self-contained challenge · one fixed answer shared by all teams

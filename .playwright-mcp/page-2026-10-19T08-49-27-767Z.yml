@@ -1,0 +1,19 @@
+- main [ref=f13e2]:
+  - link "← Challenge Index" [ref=f13e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f13e4]: WEB / HTTP FORENSICS
+  - heading "Header Hunt" [level=1] [ref=f13e5]
+  - paragraph [ref=f13e6]: A service response points to an overlooked backup route. Follow the response headers and inspect the archived value.
+  - generic [ref=f13e7]:
+    - heading "Recovered evidence" [level=2] [ref=f13e8]
+    - generic [ref=f13e9]: "HTTP/1.1 302 Found Server: archive-proxy X-Fallback: /backup/rollout.old Location: /status GET /backup/rollout.old HTTP/1.1 200 OK Content-Type: text/plain X-Recovery-Field: token token=FLAG%7BHEADER_HUNT_COMPLETE%7D"
+    - group [ref=f13e10]:
+      - generic "Hint" [ref=f13e11] [cursor=pointer]
+  - generic [ref=f13e12]:
+    - generic [ref=f13e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f13e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{HEADER_HUNT_COMPLETE}"
+    - button "Submit flag" [active] [ref=f13e15] [cursor=pointer]
+    - generic [ref=f13e16]: "Correct. Flag accepted. Flag: FLAG{HEADER_HUNT_COMPLETE}"
+  - generic [ref=f13e17]: Self-contained challenge · one fixed answer shared by all teams

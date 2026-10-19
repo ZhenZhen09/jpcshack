@@ -1,0 +1,17 @@
+- main [ref=f18e2]:
+  - link "← Challenge Index" [ref=f18e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f18e4]: WEB SECURITY / API REVIEW
+  - heading "API Contract Trap" [level=1] [ref=f18e5]
+  - paragraph [ref=f18e6]: A profile update endpoint accepts fields the client never displays. Review the request and response trace for mass assignment.
+  - generic [ref=f18e7]:
+    - heading "Recovered evidence" [level=2] [ref=f18e8]
+    - generic [ref=f18e9]: "Synthetic profile API trace: PATCH /api/profile/17 Content-Type: application/json {\"display_name\":\"Mira\",\"role\":\"admin\",\"is_staff\":true} Response: 200 {\"id\":17,\"role\":\"admin\",\"is_staff\":true,\"debug\":\"RkxBR3tNQVNTX0FTU0lHTk1FTlR9\"} The public form only exposes display_name; compare it with the accepted JSON fields."
+    - group [ref=f18e10]:
+      - generic "Hint" [ref=f18e11] [cursor=pointer]
+  - generic [ref=f18e12]:
+    - generic [ref=f18e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f18e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f18e15] [cursor=pointer]
+  - generic [ref=f18e17]: Self-contained challenge · one fixed answer shared by all teams

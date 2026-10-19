@@ -47,10 +47,10 @@
         <form class="composer" id="chat-form">
           <label for="message" aria-label="Message the assistant"><span aria-hidden="true">root@dolos:~$</span></label>
           <div class="composer-row">
-            <textarea id="message" name="message" rows="2" maxlength="500" required placeholder="Type a message to dolos-ai…" aria-describedby="composer-help"></textarea>
-            <button type="submit" id="send-button"><span>SEND</span><span aria-hidden="true">↵</span></button>
+            <textarea id="message" name="message" rows="2" maxlength="500" required placeholder="Type a message to dolos-ai…" aria-describedby="composer-help" disabled></textarea>
+            <button type="submit" id="send-button" disabled><span>SEND</span><span aria-hidden="true">↵</span></button>
           </div>
-          <div class="composer-footer"><span id="composer-help">ENTER: SEND · SHIFT+ENTER: NEWLINE</span><span id="character-count">0 / 500</span></div>
+          <div class="composer-footer"><span id="composer-help">ENTER: SEND · SHIFT+ENTER: NEWLINE</span><span id="prompt-meter" role="status" aria-live="polite">Loading prompt limit…</span><span id="character-count">0 / 500</span></div>
         </form>
       </section>
 

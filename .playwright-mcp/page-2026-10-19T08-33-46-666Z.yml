@@ -1,0 +1,62 @@
+- main [ref=f1e2]:
+  - link "← Challenge Index" [ref=f1e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f1e4]: NETWORK FORENSICS / TFTP
+  - 'heading "TFTP: The Last Block" [level=1] [ref=f1e5]'
+  - paragraph [ref=f1e6]: A router backup left a short packet capture behind. Find the useful TFTP transfer, follow its notes, and recover the protected file.
+  - generic [ref=f1e7]:
+    - heading "Evidence" [level=2] [ref=f1e8]
+    - paragraph [ref=f1e9]:
+      - text: The capture contains several TFTP transfers, including decoys. In Wireshark, use the
+      - code [ref=f1e10]: tftp
+      - text: display filter and choose
+      - strong [ref=f1e11]: File → Export Objects → TFTP
+      - text: ". You can also export with TShark:"
+    - generic [ref=f1e12]: tshark -r capture.pcap --export-objects tftp,out_dir
+    - link "Download capture.pcap" [ref=f1e13] [cursor=pointer]:
+      - /url: capture.pcap
+    - paragraph [ref=f1e14]: The capture and correct flag are identical for every team. Your browser saves only your progress through the steps.
+  - generic [ref=f1e15]:
+    - generic [ref=f1e16]:
+      - generic [ref=f1e17]: "01"
+      - generic [ref=f1e18]:
+        - heading "Identify the payload" [level=2] [ref=f1e19]
+        - paragraph [ref=f1e20]: Payload identified.
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]: TFTP filename
+      - generic [ref=f1e23]:
+        - textbox "TFTP filename" [ref=f1e24]:
+          - /placeholder: filename.ext
+        - button "Check file" [ref=f1e25] [cursor=pointer]
+    - group [ref=f1e26]:
+      - generic "Hint" [ref=f1e27] [cursor=pointer]
+  - generic [ref=f1e28]:
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]: "02"
+      - generic [ref=f1e31]:
+        - heading "Recover the key" [level=2] [ref=f1e32]
+        - paragraph [ref=f1e33]: Key recovered.
+    - group [ref=f1e34]:
+      - generic [ref=f1e35]:
+        - generic [ref=f1e36]: Repeating XOR key
+        - generic [ref=f1e37]:
+          - textbox "Repeating XOR key" [disabled] [ref=f1e38]:
+            - /placeholder: key
+          - button "Check key" [disabled] [ref=f1e39]
+    - group [ref=f1e40]:
+      - generic "Hint" [ref=f1e41] [cursor=pointer]
+  - generic [ref=f1e42]:
+    - generic [ref=f1e43]:
+      - generic [ref=f1e44]: "03"
+      - generic [ref=f1e45]:
+        - heading "Submit the recovered flag" [level=2] [ref=f1e46]
+        - paragraph [ref=f1e47]: Key recovered. Decrypt the payload and submit its flag.
+    - group [ref=f1e48]:
+      - generic [ref=f1e49]:
+        - generic [ref=f1e50]: Flag
+        - generic [ref=f1e51]:
+          - textbox "Flag" [ref=f1e52]:
+            - /placeholder: "FLAG{...}"
+          - button "Submit flag" [ref=f1e53]
+  - generic [ref=f1e54]: Correct. Use this repeating key to recover the payload.
+  - generic [ref=f1e55]: Self-contained packet-forensics challenge · fixed shared answer

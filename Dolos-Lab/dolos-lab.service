@@ -7,12 +7,16 @@ Type=simple
 User=ctf-dolos
 Group=ctf-dolos
 WorkingDirectory=/opt/ctf-challenges/dolos-lab
+EnvironmentFile=-/etc/ctf-challenges/ai-providers.env
 Environment=CHALLENGE_HOST=0.0.0.0
 Environment=PORT=8100
 ExecStart=/usr/bin/python3 /opt/ctf-challenges/dolos-lab/server.py
 Restart=on-failure
 RestartSec=3
 UMask=0077
+StateDirectory=ctf-dolos
+StateDirectoryMode=0700
+Environment=CHALLENGE_STATE_DIR=/var/lib/ctf-dolos
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectHome=true

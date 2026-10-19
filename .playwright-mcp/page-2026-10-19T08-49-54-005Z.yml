@@ -1,0 +1,17 @@
+- main [ref=f23e2]:
+  - link "← Challenge Index" [ref=f23e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f23e4]: NETWORK FORENSICS / SMTP
+  - heading "Mailbox in Transit" [level=1] [ref=f23e5]
+  - paragraph [ref=f23e6]: A mail relay capture contains several MIME parts. Extract the attachment that was sent during the incident.
+  - generic [ref=f23e7]:
+    - heading "Recovered evidence" [level=2] [ref=f23e8]
+    - generic [ref=f23e9]: "SMTP DATA excerpt — unrelated text parts omitted Content-Type: multipart/mixed; boundary=relay-77 --relay-77 Content-Type: text/plain; charset=utf-8 Please archive the attached delivery receipt. --relay-77 Content-Type: application/octet-stream; name=receipt.txt Content-Transfer-Encoding: base64 RkxBR3tNQUlMQk9YX0FUVEFDSE1FTlR9 --relay-77--"
+    - group [ref=f23e10]:
+      - generic "Hint" [ref=f23e11] [cursor=pointer]
+  - generic [ref=f23e12]:
+    - generic [ref=f23e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f23e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f23e15] [cursor=pointer]
+  - generic [ref=f23e17]: Self-contained challenge · one fixed answer shared by all teams

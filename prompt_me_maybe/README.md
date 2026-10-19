@@ -1,6 +1,6 @@
 # Prompt Me Maybe
 
-A prompt-injection training challenge with deterministic puzzle progression and optional Groq-powered conversation with Gemini fallback. Northstar is a nervous junior employee who gives short, plain-language replies. The clues mix a riddle, an archive sketch, binary, and a code snippet. The page and chat API are served together by Python; opening `index.html` directly or hosting only the `public` folder will not run the chat backend. The model never controls progression or the real challenge flag.
+A prompt-injection training challenge with deterministic puzzle progression and optional AI conversation. Northstar is a nervous junior employee who gives short, plain-language replies. The clues mix a riddle, an archive sketch, binary, and a code snippet. The page and chat API are served together by Python; opening `index.html` directly or hosting only the `public` folder will not run the chat backend. The model never controls progression or the real challenge flag.
 
 ## Run on Windows
 
@@ -10,7 +10,7 @@ A prompt-injection training challenge with deterministic puzzle progression and 
 4. Open <http://127.0.0.1:8000>.
 5. Stop the server with Ctrl+C in its console.
 
-Keys stay in the server-side `.env`, which is ignored by Git; never put them in browser code or commit them. Ordinary chat tries Groq first and Gemini second. Puzzle actions and direct flag/secret requests keep fixed server replies. If both providers fail, the current stage hint remains available. Live replies depend on provider availability, quotas, latency, and any applicable usage charges. Never use a key that has been pasted into chat; rotate it first.
+Keys stay in the server-side `.env`, which is ignored by Git; never put them in browser code or commit them. Ordinary chat tries Groq, Gemini, Cloudflare Workers AI, then OpenAI, skipping providers without credentials and continuing when a provider fails or returns an invalid reply. Puzzle actions and direct flag/secret requests keep fixed server replies. If all providers fail, the current stage hint remains available. Live replies depend on provider availability, quotas, latency, and any applicable usage charges. Never use a key that has been pasted into chat; rotate it first.
 
 ### Test on Windows
 
@@ -26,7 +26,7 @@ For a browser check, run `run.bat` and open the local URL. Complete the author w
 
 The Windows server listens only on this computer. The challenge uses a small in-memory session: progress belongs to the browser's HTTP-only cookie, expires after 30 minutes without activity, and resets when the Python server restarts.
 
-The assistant accepts common wording variations such as `pull up the public deployment summary`, `How is the archive indexed?`, and `How are records organized?`. It matches groups of related words with a small server-side synonym list. Fixed puzzle actions are processed locally. Other messages use Groq, then Gemini if Groq fails; each model receives only the current user message and the already-visible current-stage hint, not the flag, later clues, source code, prior conversation, or API key. Model output cannot change challenge progress, and outputs resembling `THM{...}` are discarded so generated text cannot masquerade as a challenge flag. Without either provider, unmatched messages get deterministic guidance.
+The assistant accepts common wording variations such as `pull up the public deployment summary`, `How is the archive indexed?`, and `How are records organized?`. It matches groups of related words with a small server-side synonym list. Fixed puzzle actions are processed locally. Other messages try Groq, Gemini, Cloudflare Workers AI, then OpenAI; each model receives only the current user message and the already-visible current-stage hint, not the flag, later clues, source code, prior conversation, or API key. Model output cannot change challenge progress, and outputs resembling `THM{...}` are discarded so generated text cannot masquerade as a challenge flag. Without a working provider, unmatched messages get deterministic guidance.
 
 The assistant gives a subtle, stage-aware lead when a player is stuck; the page does not display a separate hint or example prompt below the composer. Refreshing clears the visible conversation but restores the current lead from the session; players can request discovered records again without losing progress. After completing the challenge they can quote the appendix again to retrieve the flag.
 
@@ -46,6 +46,6 @@ The calculator is an external clue, not a server dependency, and the app never s
 
 For the combined Ubuntu VM hosting all four challenges, follow [`deploy/ubuntu/README.md`](../deploy/ubuntu/README.md). This challenge runs as an unprivileged systemd service on port 8000; the portal is on port 80. The VM firewall must permit the documented player-facing ports. The service starts at boot and does not need a privileged bind capability.
 
-The optional `/etc/ctf-challenges/prompt-me-maybe.env` can contain newly rotated provider keys and override `GROQ_MODEL` or `GEMINI_MODEL`. It is not required: deterministic challenge guidance remains available without keys. Never copy a key from chat or source control. Allow outbound HTTPS only if live providers are intentionally configured. Source-file concealment cannot protect the mock flag from someone with OS access to the VM.
+Provider settings for AI-1, Prompt Me Maybe, and Dolos Lab are stored together in `/etc/ctf-challenges/ai-providers.env`. For local development, use the project-root `ai-providers.env`. It is not required: deterministic challenge guidance remains available without keys. Never copy a key from chat or source control. Source-file concealment cannot protect the mock flag from someone with OS access to the VM.
 
 Publishing a TryHackMe room and configuring room metadata and platform flags remain separate tasks. The combined OVA preparation steps are documented in [`deploy/ubuntu/README.md`](../deploy/ubuntu/README.md); the OVA itself must be exported and clean-import tested from the hypervisor.

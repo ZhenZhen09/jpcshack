@@ -1,0 +1,19 @@
+- main [ref=f22e2]:
+  - link "← Challenge Index" [ref=f22e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f22e4]: INCIDENT RESPONSE / TIMELINES
+  - heading "Timeline Drift" [level=1] [ref=f22e5]
+  - paragraph [ref=f22e6]: A set of event records mixes local time zones and shuffled Base32 fragments. Normalize the times before rebuilding the message.
+  - generic [ref=f22e7]:
+    - heading "Recovered evidence" [level=2] [ref=f22e8]
+    - generic [ref=f22e9]: "event fragments (normalize to UTC; date is the same for this exercise): 2026-10-18T05:08:00-05:00 fragment=JFNEKRD5 2026-10-18T12:06:00+02:00 fragment=J5JE2QKM 2026-10-18T10:04:00+00:00 fragment=JFHEKX2O 2026-10-18T05:02:00-05:00 fragment=KREU2RKM 2026-10-18T12:00:00+02:00 fragment=IZGECR33"
+    - group [ref=f22e10]:
+      - generic "Hint" [ref=f22e11] [cursor=pointer]
+  - generic [ref=f22e12]:
+    - generic [ref=f22e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f22e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{TIMELINE_NORMALIZED}"
+    - button "Submit flag" [active] [ref=f22e15] [cursor=pointer]
+    - generic [ref=f22e16]: "Correct. Flag accepted. Flag: FLAG{TIMELINE_NORMALIZED}"
+  - generic [ref=f22e17]: Self-contained challenge · one fixed answer shared by all teams

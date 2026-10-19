@@ -1,0 +1,17 @@
+- main [ref=f14e2]:
+  - link "← Challenge Index" [ref=f14e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f14e4]: WEB SECURITY / TOKEN REVIEW
+  - heading "Cookie Crumbs" [level=1] [ref=f14e5]
+  - paragraph [ref=f14e6]: A test session cookie and a leaked staging key were recovered together. Verify the token signature, then inspect its claims.
+  - generic [ref=f14e7]:
+    - heading "Recovered evidence" [level=2] [ref=f14e8]
+    - generic [ref=f14e9]: "staging.env backup: SESSION_HMAC_KEY=staging-cookie-key session middleware: HS256; cookie format is header.payload.signature Set-Cookie: session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdGFnaW5nLWFkbWluIiwicm9sZSI6ImFkbWluIiwiZmxhZyI6IkZMQUd7Q09PS0lFX0NSVU1CX0FETUlOfSJ9.SFbryWQN05VRe6-9cc2DMyTU4yq7T4y2C_6jTIAUDd4; HttpOnly; SameSite=Lax Task: verify the signature with the recovered key, then inspect the claims."
+    - group [ref=f14e10]:
+      - generic "Hint" [ref=f14e11] [cursor=pointer]
+  - generic [ref=f14e12]:
+    - generic [ref=f14e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f14e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f14e15] [cursor=pointer]
+  - generic [ref=f14e17]: Self-contained challenge · one fixed answer shared by all teams

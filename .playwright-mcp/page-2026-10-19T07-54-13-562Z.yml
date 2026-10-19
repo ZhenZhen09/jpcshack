@@ -1,0 +1,18 @@
+- main [ref=e2]:
+  - link "← Challenge Index" [ref=e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=e4]: CRYPTO / CAESAR SHIFT
+  - heading "Sekur Julius" [level=1] [ref=e5]
+  - paragraph [ref=e6]: An archived note claims this message was protected by a thousand distinct Caesar shifts. Recover the net shift, read the message, and submit the flag it describes.
+  - generic [ref=e7]:
+    - heading "Encrypted note" [level=2] [ref=e8]
+    - generic [ref=e9]: "LZGMKSFV0USWKSJ0KZAXLK0JWVMUW0LG0GFW0KZAXL.0XDSY0XDSY{FWL_KZAXL_7X6T65W6}"
+    - paragraph [ref=e10]: Spaces were replaced with 0. The alphabet wraps from Z to A.
+    - group [ref=e11]:
+      - generic "Hint" [ref=e12]
+  - generic [ref=e13]:
+    - generic [ref=e14]: Recovered flag
+    - textbox "Recovered flag" [ref=e15]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=e16] [cursor=pointer]
+  - generic [ref=e18]: Offline practice recreation · session-generated artifact

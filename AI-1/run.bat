@@ -9,11 +9,13 @@ if not exist ".venv\Scripts\python.exe" (
 )
 
 ".venv\Scripts\python.exe" app.py
+if defined CTF_LAUNCHED_BY_PORTAL goto end
 pause
 goto end
 
 :error
 echo Setup failed. Check that Python 3 is installed and available on PATH.
+if defined CTF_LAUNCHED_BY_PORTAL goto end
 pause
 
 :end

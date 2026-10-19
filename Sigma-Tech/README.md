@@ -6,7 +6,7 @@ Sigma Tech is a standalone adversarial image-classification CTF challenge. Inves
 
 1. Install Python 3.11 or newer and make sure `python` works in Command Prompt.
 2. Double-click `run.bat`. On first launch it creates `.venv`, installs the dependencies in `requirements.txt`, generates the model files if they are missing, and starts the local Flask server.
-3. Open <http://127.0.0.1:5000>.
+3. Open <http://127.0.0.1:5001>.
 4. Stop the server with Ctrl+C in its console.
 
 For a manual setup in PowerShell:
@@ -16,6 +16,7 @@ py -3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python train_model.py
+$env:PORT = "5001"
 python app.py
 ```
 

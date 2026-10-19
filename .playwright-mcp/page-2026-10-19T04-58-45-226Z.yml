@@ -1,0 +1,8 @@
+- generic [ref=e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e8]: "> Player: I think the answer is 1234. Is that correct?"
+    - paragraph [ref=e9]: "[Guardian]: Whoah, check that again, mate! 1234 might not be the right key. Double‑check your numbers and give it another go! 🌾✨"
+  - generic [ref=e5]:
+    - textbox "Enter server command..." [ref=e6]
+    - button "RUN" [active] [ref=e7] [cursor=pointer]

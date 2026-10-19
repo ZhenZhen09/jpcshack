@@ -1,0 +1,17 @@
+- main [ref=f2e2]:
+  - link "← Challenge Index" [ref=f2e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f2e4]: FORENSICS / ENCODING
+  - heading "Base64 Cascade" [level=1] [ref=f2e5]
+  - paragraph [ref=f2e6]: A recovered note contains only printable characters. Determine what encoding was used and peel away every layer to recover the flag.
+  - generic [ref=f2e7]:
+    - 'heading "Recovered file: chall.txt" [level=2] [ref=f2e8]'
+    - generic [ref=f2e9]: ZW1WeWIyUmhlWHMxZERSeWRGOTNNWFJJWDNNeGJYQXhNMTlpTkRVelgyTXdibWR5TkhSVmJEUjBNVEJ1SVNGOQ==
+    - group [ref=f2e10]:
+      - generic "Hint" [ref=f2e11]
+  - generic [ref=f2e12]:
+    - generic [ref=f2e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f2e14]:
+      - /placeholder: "zeroday{...}"
+    - button "Submit flag" [ref=f2e15] [cursor=pointer]
+  - generic [ref=f2e17]: Offline practice recreation · local mock flag

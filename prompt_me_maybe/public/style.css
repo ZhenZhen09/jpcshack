@@ -58,7 +58,8 @@ body { min-width: 320px; min-height: 100vh; margin: 0; font-size: 16px; line-hei
 .composer button { display: grid; flex: 0 0 auto; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #e8e8e8; color: #202020; font: 700 25px/1 "Segoe UI", sans-serif; cursor: pointer; transition: background .15s ease, opacity .15s ease; }
 .composer button:hover:not(:disabled) { background: #fff; }
 .composer button:disabled { cursor: wait; opacity: .55; }
-.composer-meta { display: flex; justify-content: flex-end; min-height: 28px; padding: 7px 12px 0; color: var(--muted); font-size: 12px; }
+.composer-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; min-height: 28px; padding: 7px 12px 0; color: var(--muted); font-size: 12px; }
+.prompt-meter { flex: 1; }
 .composer-limit { white-space: nowrap; }
 .disclaimer { margin: 0; color: #999; font-size: 12px; text-align: center; }
 .completion { margin: 2px 0 8px; color: #c5efcf; font-size: 14px; font-weight: 650; text-align: center; }
@@ -78,7 +79,7 @@ body { min-width: 320px; min-height: 100vh; margin: 0; font-size: 16px; line-hei
   .bottom-area { padding: 0 14px 12px; }
   .composer { min-height: 54px; padding-left: 16px; }
   .composer button { width: 44px; height: 44px; }
-  .composer-meta { padding-right: 8px; padding-left: 8px; font-size: 12px; }
+  .composer-meta { gap: 8px; padding-right: 8px; padding-left: 8px; font-size: 11px; }
   .message-body { max-width: 90%; }
 }
 

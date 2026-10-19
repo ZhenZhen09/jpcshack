@@ -1,0 +1,17 @@
+- main [ref=f19e2]:
+  - link "← Challenge Index" [ref=f19e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f19e4]: REVERSING / BYTECODE
+  - heading "Tiny VM" [level=1] [ref=f19e5]
+  - paragraph [ref=f19e6]: A toy virtual machine executes three instructions against a byte buffer. Emulate the operations to recover its output.
+  - generic [ref=f19e7]:
+    - heading "Recovered evidence" [level=2] [ref=f19e8]
+    - generic [ref=f19e9]: "TinyVM instruction reference: 0x10 LOAD_BUFFER; 0x22 XOR_EACH_BYTE <imm8>; 0x30 OUTPUT_ASCII; 0xFF HALT Program: 0000: 10 0001: 22 37 0003: 30 0004: FF Buffer bytes (hex): 71 7B 76 70 4C 63 7E 79 6E 68 61 7A 68 65 72 61 72 65 64 72 73 4A"
+    - group [ref=f19e10]:
+      - generic "Hint" [ref=f19e11] [cursor=pointer]
+  - generic [ref=f19e12]:
+    - generic [ref=f19e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f19e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f19e15] [cursor=pointer]
+  - generic [ref=f19e17]: Self-contained challenge · one fixed answer shared by all teams

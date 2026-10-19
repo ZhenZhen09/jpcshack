@@ -28,4 +28,5 @@ goto done
 echo Could not create the local Python environment. Check your Python installation.
 
 :done
+if defined CTF_LAUNCHED_BY_PORTAL exit /b
 pause

@@ -35,6 +35,13 @@ h1 {
     margin-bottom: 15px;
 }
 
+.prompt-meter {
+    margin: 0 0 10px;
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
 .input-area {
     display: flex;
     gap: 5px;
@@ -63,6 +70,12 @@ button {
 
 button:hover {
     background: #2db302;
+}
+
+button:disabled,
+input:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
 }
 
 .label { font-weight: bold; }

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08100b">
+  <title>TFTP: The Last Block · JPCS CTF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <a class="back" href="../../index.html">← Challenge Index</a>
+    <p class="tag">NETWORK FORENSICS / TFTP</p>
+    <h1>TFTP: The Last Block</h1>
+    <p class="lede">A router backup left a short packet capture behind. Find the useful TFTP transfer, follow its notes, and recover the protected file.</p>
+
+    <section class="box">
+      <h2>Evidence</h2>
+      <p>The capture contains several TFTP transfers, including decoys. In Wireshark, use the <code>tftp</code> display filter and choose <strong>File → Export Objects → TFTP</strong>. You can also export with TShark:</p>
+      <pre>tshark -r capture.pcap --export-objects tftp,out_dir</pre>
+      <a class="download" href="capture.pcap" download>Download capture.pcap</a>
+      <p class="small">The capture and correct flag are identical for every team. Your browser saves only your progress through the steps.</p>
+    </section>
+
+    <section class="stage" id="object-stage">
+      <div class="stage-head"><span class="step">01</span><div><h2>Identify the payload</h2><p id="object-status">Find the exported file that contains the protected payload.</p></div></div>
+      <form id="object-form">
+        <label for="object-answer">TFTP filename</label>
+        <div class="entry"><input id="object-answer" autocomplete="off" spellcheck="false" placeholder="filename.ext" required><button>Check file</button></div>
+      </form>
+      <details><summary>Hint</summary><p>One of the transferred text files names the encrypted payload. Work through the note chain.</p></details>
+    </section>
+
+    <section class="stage locked" id="key-stage">
+      <div class="stage-head"><span class="step">02</span><div><h2>Recover the key</h2><p id="key-status">Locked until you identify the payload.</p></div></div>
+      <fieldset id="key-fields" disabled>
+        <form id="key-form">
+          <label for="key-answer">Repeating XOR key</label>
+          <div class="entry"><input id="key-answer" autocomplete="off" spellcheck="false" placeholder="key" required><button>Check key</button></div>
+        </form>
+      </fieldset>
+      <details><summary>Hint</summary><p>The second note is ROT13 encoded. It names the operation and gives the repeating key.</p></details>
+    </section>
+
+    <section class="stage locked" id="flag-stage">
+      <div class="stage-head"><span class="step">03</span><div><h2>Submit the recovered flag</h2><p id="flag-status">Locked until you recover the key.</p></div></div>
+      <fieldset id="flag-fields" disabled>
+        <form id="flag-form">
+          <label for="flag-answer">Flag</label>
+          <div class="entry"><input id="flag-answer" autocomplete="off" spellcheck="false" placeholder="FLAG{...}" required><button>Submit flag</button></div>
+        </form>
+      </fieldset>
+    </section>
+
+    <div class="result" id="result" aria-live="polite"></div>
+    <footer>Self-contained packet-forensics challenge · fixed shared answer</footer>
+  </main>
+  <script src="../common.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -8,6 +8,8 @@ import os
 from pathlib import Path
 import re
 import secrets
+import sqlite3
+import tempfile
 import threading
 import time
 from urllib import request as urllib_request
@@ -17,7 +19,7 @@ from urllib.parse import urlsplit
 from dotenv import load_dotenv
 
 
-load_dotenv(Path(__file__).with_name(".env"))
+load_dotenv(Path(__file__).resolve().parent.parent / "ai-providers.env")
 
 HOST = os.environ.get("CHALLENGE_HOST", "127.0.0.1")
 PORT = int(os.environ.get("PORT", "8000"))
@@ -36,11 +38,18 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
 MAX_BODY = 4096
 MAX_MESSAGE = 500
+MAX_PROMPTS = 20
+PROMPT_SESSION_TTL_SECONDS = 48 * 60 * 60
 FLAG = "THM{prompt_rules_are_not_security}"
-SESSION_TTL = 30 * 60
-SESSION_COOKIE = "challenge_session"
+SESSION_TTL = PROMPT_SESSION_TTL_SECONDS
+SESSION_COOKIE = "prompt_me_maybe_session"
 SESSIONS = {}
 SESSION_LOCK = threading.Lock()
+PROMPT_STATE_DIR = Path(
+    os.environ.get("CHALLENGE_STATE_DIR")
+    or (Path(tempfile.gettempdir()) / "prompt-me-maybe")
+)
+PROMPT_DATABASE = PROMPT_STATE_DIR / "prompt-sessions.sqlite3"
 SAMPLE_RECORD = (
     "Uh, this one is marked public, so I think we're okay. The demo value is "
     "THM{northstar_demo_only}. There's a loose note in the archive sketch too. "
@@ -105,6 +114,74 @@ ASSETS = {
 }
 
 
+def _connect_prompt_database():
+    PROMPT_STATE_DIR.mkdir(parents=True, exist_ok=True)
+    connection = sqlite3.connect(PROMPT_DATABASE, timeout=15)
+    connection.execute("PRAGMA busy_timeout = 15000")
+    return connection
+
+
+def _initialize_prompt_database():
+    with _connect_prompt_database() as connection:
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS prompt_sessions (
+                session_id TEXT PRIMARY KEY,
+                prompts_used INTEGER NOT NULL DEFAULT 0,
+                closed INTEGER NOT NULL DEFAULT 0,
+                updated_at REAL NOT NULL
+            )
+            """
+        )
+
+
+def _prompt_status(session_id, consume_prompt=False):
+    now = time.time()
+    connection = _connect_prompt_database()
+    try:
+        connection.execute("BEGIN IMMEDIATE")
+        connection.execute(
+            "DELETE FROM prompt_sessions WHERE updated_at < ?",
+            (now - PROMPT_SESSION_TTL_SECONDS,),
+        )
+        connection.execute(
+            "INSERT OR IGNORE INTO prompt_sessions (session_id, updated_at) VALUES (?, ?)",
+            (session_id, now),
+        )
+        row = connection.execute(
+            "SELECT prompts_used, closed FROM prompt_sessions WHERE session_id = ?",
+            (session_id,),
+        ).fetchone()
+        prompts_used, closed = row
+
+        if consume_prompt and not closed:
+            if prompts_used >= MAX_PROMPTS:
+                closed = 1
+            else:
+                prompts_used += 1
+
+        connection.execute(
+            "UPDATE prompt_sessions SET prompts_used = ?, closed = ?, updated_at = ? WHERE session_id = ?",
+            (prompts_used, closed, now, session_id),
+        )
+        connection.commit()
+    except Exception:
+        connection.rollback()
+        raise
+    finally:
+        connection.close()
+
+    return {
+        "prompts_used": prompts_used,
+        "prompts_remaining": max(0, MAX_PROMPTS - prompts_used),
+        "prompt_limit": MAX_PROMPTS,
+        "closed": bool(closed),
+    }
+
+
+_initialize_prompt_database()
+
+
 def assistant_prompt(guidance):
     return (
         "You are Northstar Assistant, a nervous junior employee at Northstar Systems. "
@@ -126,7 +203,9 @@ def groq_reply(message, guidance):
             {"role": "system", "content": assistant_prompt(guidance)},
             {"role": "user", "content": message},
         ],
-        "max_tokens": 180,
+        "max_completion_tokens": 1024,
+        "reasoning_effort": "low",
+        "include_reasoning": False,
     }).encode("utf-8")
     request = urllib_request.Request(
         GROQ_API_URL,
@@ -134,6 +213,7 @@ def groq_reply(message, guidance):
         headers={
             "Authorization": f"Bearer {GROQ_API_KEY}",
             "Content-Type": "application/json",
+            "User-Agent": "Prompt-Me-Maybe/1.0",
         },
         method="POST",
     )
@@ -253,7 +333,7 @@ class ChallengeHandler(BaseHTTPRequestHandler):
         if cookie is not None:
             self.send_header(
                 "Set-Cookie",
-                f"{SESSION_COOKIE}={cookie}; Path=/; HttpOnly; SameSite=Strict",
+                f"{SESSION_COOKIE}={cookie}; Path=/; HttpOnly; SameSite=Strict; Max-Age={PROMPT_SESSION_TTL_SECONDS}",
             )
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
@@ -267,7 +347,11 @@ class ChallengeHandler(BaseHTTPRequestHandler):
         if urlsplit(self.path).path == "/api/session":
             session_id = self._get_or_create_session()
             with SESSION_LOCK:
-                state = self._progress(SESSIONS[session_id]["phase"])
+                session = SESSIONS[session_id]
+                state = {
+                    **self._progress(session["phase"]),
+                    **_prompt_status(session_id),
+                }
             self._respond(200, json.dumps(state).encode("utf-8"), "application/json; charset=utf-8", session_id)
             return
         asset = ASSETS.get(urlsplit(self.path).path)
@@ -318,7 +402,18 @@ class ChallengeHandler(BaseHTTPRequestHandler):
                 self._error(400)
                 return
             session_id = self._get_or_create_session()
-            result = self._reply_for_session(session_id, message)
+            prompt_status = _prompt_status(session_id, consume_prompt=True)
+            if prompt_status["closed"]:
+                with SESSION_LOCK:
+                    session = SESSIONS[session_id]
+                    result = {
+                        "reply": "Prompt limit reached. This challenge is now closed.",
+                        **self._progress(session["phase"]),
+                        **prompt_status,
+                    }
+            else:
+                result = self._reply_for_session(session_id, message)
+                result.update(prompt_status)
             body = json.dumps(result).encode("utf-8")
             self._respond(200, body, "application/json; charset=utf-8", session_id)
         except (UnicodeDecodeError, json.JSONDecodeError, ValueError):
@@ -346,7 +441,7 @@ class ChallengeHandler(BaseHTTPRequestHandler):
                 cookies.load(cookie_headers[0])
                 morsel = cookies.get(SESSION_COOKIE)
                 candidate = morsel.value if morsel else ""
-                if re.fullmatch(r"[A-Za-z0-9_-]{20,}", candidate):
+                if re.fullmatch(r"[A-Za-z0-9_-]{20,128}", candidate):
                     session_id = candidate
             except CookieError:
                 pass
@@ -362,7 +457,8 @@ class ChallengeHandler(BaseHTTPRequestHandler):
 
             session = SESSIONS.get(session_id) if session_id else None
             if session is None:
-                session_id = secrets.token_urlsafe(32)
+                if session_id is None:
+                    session_id = secrets.token_urlsafe(32)
                 SESSIONS[session_id] = {"phase": 0, "last_activity": now}
             else:
                 session["last_activity"] = now

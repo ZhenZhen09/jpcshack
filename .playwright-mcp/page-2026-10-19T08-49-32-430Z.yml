@@ -1,0 +1,19 @@
+- main [ref=f15e2]:
+  - link "← Challenge Index" [ref=f15e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f15e4]: WEB SECURITY / ACCESS CONTROL
+  - heading "Mock IDOR Maze" [level=1] [ref=f15e5]
+  - paragraph [ref=f15e6]: An API trace shows a support agent reading ticket records. Compare the requested IDs with the authenticated user's ownership.
+  - generic [ref=f15e7]:
+    - heading "Recovered evidence" [level=2] [ref=f15e8]
+    - generic [ref=f15e9]: "Synthetic API trace (authenticated account: user_id=17) GET /api/tickets/7101 -> 200 {\"owner_id\":17,\"subject\":\"printer\",\"note\":\"replace toner\"} GET /api/tickets/7102 -> 200 {\"owner_id\":22,\"subject\":\"vpn\",\"note\":\"reset requested\"} GET /api/tickets/7103 -> 200 {\"owner_id\":31,\"subject\":\"executive\",\"recovery_blob\":\"RkxBR3tJRE9SX0ZPVU5EfQ==\"} Route source: ticket = tickets.get(ticket_id); return ticket # ownership check absent"
+    - group [ref=f15e10]:
+      - generic "Hint" [ref=f15e11] [cursor=pointer]
+  - generic [ref=f15e12]:
+    - generic [ref=f15e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f15e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{IDOR_FOUND}"
+    - button "Submit flag" [active] [ref=f15e15] [cursor=pointer]
+    - generic [ref=f15e16]: "Correct. Flag accepted. Flag: FLAG{IDOR_FOUND}"
+  - generic [ref=f15e17]: Self-contained challenge · one fixed answer shared by all teams

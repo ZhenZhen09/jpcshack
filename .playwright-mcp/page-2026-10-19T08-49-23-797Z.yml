@@ -1,0 +1,17 @@
+- main [ref=f12e2]:
+  - link "← Challenge Index" [ref=f12e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f12e4]: NETWORK FORENSICS / TCP
+  - heading "Packet Split" [level=1] [ref=f12e5]
+  - paragraph [ref=f12e6]: A short message crossed the network in out-of-order TCP segments. Reassemble the stream before decoding it.
+  - generic [ref=f12e7]:
+    - heading "Recovered evidence" [level=2] [ref=f12e8]
+    - generic [ref=f12e9]: "TCP stream fragment log (sequence numbers are relative): seq=0x18A0 payload== seq=0x1880 payload=VUlMVH0 seq=0x1860 payload=FNfUkVC seq=0x1840 payload=VHTUVOV seq=0x1820 payload=UQ1BfU0 seq=0x1800 payload=RkxBR3t"
+    - group [ref=f12e10]:
+      - generic "Hint" [ref=f12e11] [cursor=pointer]
+  - generic [ref=f12e12]:
+    - generic [ref=f12e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f12e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f12e15] [cursor=pointer]
+  - generic [ref=f12e17]: Self-contained challenge · one fixed answer shared by all teams

@@ -1,0 +1,8 @@
+- generic [ref=f5e2]:
+  - heading "[SERVER_ADMIN_LOG]" [level=1] [ref=f5e3]
+  - generic [ref=f5e4]:
+    - paragraph [ref=f5e8]: "> Player: wrong answer"
+    - paragraph [ref=f5e9]: "[Guardian]: Yikes! Looks like my block got misplaced. Let’s dig up the right answer together! 🚧🏗️"
+  - generic [ref=f5e5]:
+    - textbox "Enter server command..." [ref=f5e6]
+    - button "RUN" [active] [ref=f5e7] [cursor=pointer]

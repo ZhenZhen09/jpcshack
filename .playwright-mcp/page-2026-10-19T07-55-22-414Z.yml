@@ -1,0 +1,21 @@
+- main [ref=f4e2]:
+  - link "← Challenge Index" [ref=f4e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f4e4]: CRYPTO / RSA
+  - heading "Redacted RSA" [level=1] [ref=f4e5]
+  - paragraph [ref=f4e6]: An archived key used tiny RSA primes and encrypted one ASCII byte per block. Factor n, compute φ(n), find the private exponent d, then decrypt each listed block.
+  - generic [ref=f4e7]:
+    - heading "Public data" [level=2] [ref=f4e8]
+    - generic [ref=f4e9]: "n = 103321 e = 17 ciphertext blocks: 99796 74310 5960 68517 86277 18458 23528 5960 91375 55876 5960 77397 64762 68286 99796 5960 42614 55876 99510 87135 44788 72559"
+    - group [ref=f4e10]:
+      - generic "Hint" [ref=f4e11]
+  - generic [ref=f4e12]:
+    - generic [ref=f4e13]:
+      - generic [ref=f4e14]:
+        - generic [ref=f4e15]: Prime p
+        - spinbutton "Prime p" [ref=f4e16]
+      - generic [ref=f4e17]:
+        - generic [ref=f4e18]: Prime q
+        - spinbutton "Prime q" [ref=f4e19]
+    - button "Recover the message" [ref=f4e20] [cursor=pointer]
+  - generic [ref=f4e22]: Offline practice recreation · session-generated toy RSA parameters

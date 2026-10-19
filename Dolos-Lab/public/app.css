@@ -78,7 +78,8 @@ button, textarea { font: inherit; }
 .composer button:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 18px rgba(99,255,155,.25); }
 .composer button:focus-visible { outline: 2px solid #effff3; outline-offset: 3px; }
 .composer button:disabled { cursor: wait; opacity: .62; }
-.composer-footer { justify-content: space-between; gap: 8px; margin-top: 6px; color: #607567; font-size: .49rem; letter-spacing: .045em; }
+.composer-footer { justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 6px; color: #607567; font-size: .49rem; letter-spacing: .045em; }
+#prompt-meter { flex: 1; text-align: center; }
 
 .page-footer { gap: 12px; padding-top: 9px; color: #5d7163; font-size: .47rem; letter-spacing: .06em; }
 .footer-divider { padding: 0 5px; color: #315c3f; }

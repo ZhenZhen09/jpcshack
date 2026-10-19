@@ -1,0 +1,19 @@
+- main [ref=f4e2]:
+  - link "← Challenge Index" [ref=f4e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f4e4]: CRYPTO / PASSWORD AUDIT
+  - heading "Lots of Passwords" [level=1] [ref=f4e5]
+  - paragraph [ref=f4e6]: A phished password list may contain the key used for this repeated-key cipher. The archived wordlist has been replaced with a small synthetic list for this local exercise.
+  - generic [ref=f4e7]:
+    - heading "Encrypted flag" [level=2] [ref=f4e8]
+    - generic [ref=f4e9]: "ufmv{nqpbxizpbg_ompne_loix_stse}"
+    - heading "Candidate passwords" [level=2] [ref=f4e10]
+    - generic [ref=f4e11]: sunshinepassword1candyshoppumpkin5redballoonwinter2025secretkeycoffee42
+    - group [ref=f4e12]:
+      - generic "Hint" [ref=f4e13]
+  - generic [ref=f4e14]:
+    - generic [ref=f4e15]: Candidate password
+    - textbox "Candidate password" [ref=f4e16]: pumpkin5
+    - button "Try password" [active] [ref=f4e17] [cursor=pointer]
+    - generic [ref=f4e18]: "Password found. Decrypted flag: flag{dictionary_beats_weak_keys}"
+  - generic [ref=f4e19]: Offline practice recreation · synthetic candidate list

@@ -1,0 +1,19 @@
+- main [ref=f20e2]:
+  - link "← Challenge Index" [ref=f20e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f20e4]: REVERSING / ELF
+  - heading "ELF Gatekeeper" [level=1] [ref=f20e5]
+  - paragraph [ref=f20e6]: A short x86-64 disassembly reveals how the program transforms its read-only data before printing it.
+  - generic [ref=f20e7]:
+    - heading "Recovered evidence" [level=2] [ref=f20e8]
+    - generic [ref=f20e9]: "ELF extract: Architecture: x86-64 0000000000401080 <print_secret>: mov ecx, LENGTH xor BYTE PTR [rdi+rcx], 0x5a loop print_secret call puts Section .rodata bytes: 1C 16 1B 1D 21 1F 16 1C 05 1D 1B 0E 1F 05 15 0A 1F 14 27"
+    - group [ref=f20e10]:
+      - generic "Hint" [ref=f20e11] [cursor=pointer]
+  - generic [ref=f20e12]:
+    - generic [ref=f20e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f20e14]:
+      - /placeholder: "FLAG{...}"
+      - text: "FLAG{ELF_GATE_OPEN}"
+    - button "Submit flag" [active] [ref=f20e15] [cursor=pointer]
+    - generic [ref=f20e16]: "Correct. Flag accepted. Flag: FLAG{ELF_GATE_OPEN}"
+  - generic [ref=f20e17]: Self-contained challenge · one fixed answer shared by all teams

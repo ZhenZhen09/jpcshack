@@ -1,3 +1,4 @@
 .env
+../ai-providers.env
 .venv/
 __pycache__/

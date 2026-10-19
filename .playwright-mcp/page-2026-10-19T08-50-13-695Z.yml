@@ -1,0 +1,17 @@
+- main [ref=f30e2]:
+  - link "← Challenge Index" [ref=f30e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f30e4]: WEB / HTTP REDIRECTS
+  - heading "Redirect Relay" [level=1] [ref=f30e5]
+  - paragraph [ref=f30e6]: A proxy captured a chain of redirects with a state parameter that was encoded more than once.
+  - generic [ref=f30e7]:
+    - heading "Recovered evidence" [level=2] [ref=f30e8]
+    - generic [ref=f30e9]: "HTTP redirect trace: GET /go?next=/relay -> 302 Location: /relay?state=unchanged GET /relay?state=unchanged -> 302 Location: /finish?state=FLAG%257BREDIRECT_CHAIN%257D GET /finish?state=<value> -> 200 archived status page The state parameter was URL-encoded twice by two proxy hops."
+    - group [ref=f30e10]:
+      - generic "Hint" [ref=f30e11] [cursor=pointer]
+  - generic [ref=f30e12]:
+    - generic [ref=f30e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f30e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f30e15] [cursor=pointer]
+  - generic [ref=f30e17]: Self-contained challenge · one fixed answer shared by all teams

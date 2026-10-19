@@ -1,0 +1,17 @@
+- main [ref=f21e2]:
+  - link "← Challenge Index" [ref=f21e3] [cursor=pointer]:
+    - /url: ../../index.html
+  - paragraph [ref=f21e4]: BLUE TEAM / CONFIG REVIEW
+  - heading "Policy Diff" [level=1] [ref=f21e5]
+  - paragraph [ref=f21e6]: Compare two service policies, then use the access log to determine what the newly exposed route returned.
+  - generic [ref=f21e7]:
+    - heading "Recovered evidence" [level=2] [ref=f21e8]
+    - generic [ref=f21e9]: "old policy.conf: location /internal/backup { allow 127.0.0.1; deny all; } current policy.conf: location /internal/backup { allow all; } access.log: 10.0.4.5 GET /internal/health 200 10.0.4.5 GET /internal/backup 200 body=RkxBR3tQT0xJQ1lfRElGRl9GT1VORH0="
+    - group [ref=f21e10]:
+      - generic "Hint" [ref=f21e11] [cursor=pointer]
+  - generic [ref=f21e12]:
+    - generic [ref=f21e13]: Recovered flag
+    - textbox "Recovered flag" [ref=f21e14]:
+      - /placeholder: "FLAG{...}"
+    - button "Submit flag" [ref=f21e15] [cursor=pointer]
+  - generic [ref=f21e17]: Self-contained challenge · one fixed answer shared by all teams
